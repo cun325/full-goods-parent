@@ -1,5 +1,0 @@
-org/example/imageservice/ImageServiceApplication.class
-org/example/imageservice/config/WebConfig.class
-org/example/imageservice/controller/ImageController.class
-org/example/imageservice/service/ImageService.class
-org/example/imageservice/config/ImageUploadConfig.class
