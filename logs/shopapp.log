@@ -20077,3 +20077,880 @@ Caused by: io.minio.errors.InvalidResponseException: Non-XML response from serve
 2025-08-21 23:21:30 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={total=4, size=4, page=1, list=[{id=22, orderNo=1755773189714c2cb8e, userId=3, statu (truncated)...]
 2025-08-21 23:21:30 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/orders, 耗时: 13ms, 状态: 200
 2025-08-21 23:21:30 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:41:00 [restartedMain] INFO  org.example.api.ApiApplication - Starting ApiApplication using Java 1.8.0_462 on cuncun with PID 11024 (started by 黄春红 in D:\bysjjjjjjjjjjj\full-goods-parent)
+2025-08-21 23:41:00 [restartedMain] DEBUG org.example.api.ApiApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-21 23:41:00 [restartedMain] INFO  org.example.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-21 23:41:00 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-21 23:41:00 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-21 23:41:00 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2025-08-21 23:41:00 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.*.mapper]' package. Please check your configuration.
+2025-08-21 23:41:00 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.api.mapper, org.example.api.mapper]' package. Please check your configuration.
+2025-08-21 23:41:00 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-08-21 23:41:00 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-21 23:41:00 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-21 23:41:00 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-21 23:41:00 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-21 23:41:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 548 ms
+2025-08-21 23:41:00 [restartedMain] DEBUG o.s.web.filter.HiddenHttpMethodFilter - Filter 'hiddenHttpMethodFilter' configured for use
+2025-08-21 23:41:00 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cacheUtils': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<java.lang.String, java.lang.Object>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-08-21 23:41:00 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-08-21 23:41:00 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-08-21 23:41:00 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field redisTemplate in org.example.common.utils.CacheUtils required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
+
+2025-08-21 23:46:16 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-08-21 23:46:16 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 1.8.0_462 on cuncun with PID 19852 (D:\bysjjjjjjjjjjj\full-goods-parent\full-goods-admin\target\classes started by 黄春红 in D:\bysjjjjjjjjjjj\full-goods-parent)
+2025-08-21 23:46:16 [main] DEBUG org.example.admin.AdminApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-21 23:46:16 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-21 23:46:16 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@23941fb4
+2025-08-21 23:46:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-21 23:46:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-21 23:46:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-08-21 23:46:17 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 23:46:17 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 23:46:17 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 23:46:17 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 23:46:17 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.admin.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-21 23:46:18 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: C:\Users\黄春红\.m2\repository\org\springframework\boot\spring-boot\2.7.5\spring-boot-2.7.5.jar
+2025-08-21 23:46:18 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: C:\Users\黄春红\.m2\repository\org\springframework\boot\spring-boot\2.7.5\spring-boot-2.7.5.jar
+2025-08-21 23:46:18 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-08-21 23:46:18 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2025-08-21 23:46:18 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-08-21 23:46:18 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-21 23:46:18 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-21 23:46:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-21 23:46:18 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2025-08-21 23:46:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2145 ms
+2025-08-21 23:46:18 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: filterRegistrationBean urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, hiddenHttpMethodFilter urls=[/*] order=2147483647
+2025-08-21 23:46:18 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], statViewServlet urls=[/druid/*]
+2025-08-21 23:46:18 [main] DEBUG o.s.b.w.servlet.filter.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+2025-08-21 23:46:18 [main] DEBUG o.s.web.filter.HiddenHttpMethodFilter - Filter 'hiddenHttpMethodFilter' configured for use
+2025-08-21 23:46:18 [main] DEBUG o.s.b.w.s.filter.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
+2025-08-21 23:46:18 [main] DEBUG o.s.b.web.servlet.filter.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+2025-08-21 23:46:18 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-21 23:46:20 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.server.support.WebSocketHandlerMapping - Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.AdminMessageController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.AdminMessageSendingController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.AdminMessageTemplateController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.AuthController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.BannerController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.CategoryController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.DashboardController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.DeliveryController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.ModelController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.OrderController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.ProductController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.TrainingController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.e.a.c.UserController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.WebSocketAnnotationMethodMessageHandler - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 150 mappings in 'requestMappingHandlerMapping'
+2025-08-21 23:46:21 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /uploads/**, /images/**] in 'resourceHandlerMapping'
+2025-08-21 23:46:21 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-21 23:46:21 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-21 23:46:22 [main] DEBUG o.s.d.redis.listener.RedisMessageListenerContainer - Starting RedisMessageListenerContainer...
+2025-08-21 23:46:22 [main] DEBUG o.s.d.redis.listener.RedisMessageListenerContainer - Postpone listening for Redis messages until actual listeners are added.
+2025-08-21 23:46:22 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-08-21 23:46:22 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8082 is already in use
+2025-08-21 23:46:22 [main] DEBUG o.s.d.redis.listener.RedisMessageListenerContainer - Stopped RedisMessageListenerContainer.
+2025-08-21 23:46:22 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-21 23:46:22 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-21 23:46:22 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2025-08-21 23:46:22 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-08-21 23:46:22 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2025-08-21 23:46:22 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8082"]
+2025-08-21 23:46:22 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-08-21 23:46:22 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2025-08-21 23:46:32.265  INFO 23332 --- [main] o.e.i.ImageServiceApplication            : Starting ImageServiceApplication using Java 1.8.0_462 on cuncun with PID 23332 (D:\bysjjjjjjjjjjj\full-goods-parent\full-goods-image-service\target\classes started by 黄春红 in D:\bysjjjjjjjjjjj\full-goods-parent)
+2025-08-21 23:46:32.272 DEBUG 23332 --- [main] o.e.i.ImageServiceApplication            : Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-21 23:46:32.272  INFO 23332 --- [main] o.e.i.ImageServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-08-21 23:46:32.879  INFO 23332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-21 23:46:32.884  INFO 23332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-21 23:46:32.899  INFO 23332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-08-21 23:46:33.251  INFO 23332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2025-08-21 23:46:33.256  INFO 23332 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8083"]
+2025-08-21 23:46:33.256  INFO 23332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-21 23:46:33.256  INFO 23332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-21 23:46:33.381  INFO 23332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1059 ms
+2025-08-21 23:46:33.381  INFO 23332 --- [main] o.a.c.c.C.[.[.[/image-service]           : Initializing Spring embedded WebApplicationContext
+2025-08-21 23:46:33.440  INFO 23332 --- [main] o.e.imageservice.config.MinioConfig      : 初始化MinIO客户端，endpoint: http://127.0.0.1:9090, accessKey: miniotest
+2025-08-21 23:46:33.731  INFO 23332 --- [main] o.e.imageservice.config.MinioConfig      : MinIO客户端初始化成功
+2025-08-21 23:46:33.753  INFO 23332 --- [main] o.e.i.util.MinioConnectionTest           : 开始测试MinIO连接...
+2025-08-21 23:46:33.753  INFO 23332 --- [main] o.e.i.util.MinioConnectionTest           : Endpoint: http://127.0.0.1:9090
+2025-08-21 23:46:33.753  INFO 23332 --- [main] o.e.i.util.MinioConnectionTest           : Access Key: miniotest
+2025-08-21 23:46:33.753  INFO 23332 --- [main] o.e.i.util.MinioConnectionTest           : Bucket Name: full-goods-images
+2025-08-21 23:46:33.917  INFO 23332 --- [main] o.e.i.util.MinioConnectionTest           : MinIO连接测试成功！Bucket 'full-goods-images' 存在。
+2025-08-21 23:46:34.048 DEBUG 23332 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-21 23:46:34.107 DEBUG 23332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2025-08-21 23:46:34.125 DEBUG 23332 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /uploads/images/**] in 'resourceHandlerMapping'
+2025-08-21 23:46:34.130 DEBUG 23332 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-21 23:46:34.404 DEBUG 23332 --- [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
+2025-08-21 23:46:34.410 DEBUG 23332 --- [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added.
+2025-08-21 23:46:34.441  INFO 23332 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8083"]
+2025-08-21 23:46:34.446  WARN 23332 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8083 is already in use
+2025-08-21 23:46:34.448 DEBUG 23332 --- [main] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer.
+2025-08-21 23:46:34.459  INFO 23332 --- [main] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8083"]
+2025-08-21 23:46:34.459  INFO 23332 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-21 23:46:34.470  INFO 23332 --- [main] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8083"]
+2025-08-21 23:46:34.470  INFO 23332 --- [main] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8083"]
+2025-08-21 23:46:34.477  INFO 23332 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-08-21 23:46:34.491 ERROR 23332 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2025-08-21 23:47:10 [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2025-08-21 23:48:39.810 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/459f0e18-d995-4e79-9b51-a85f5e05b2b8.jpg", parameters={}
+2025-08-21 23:48:39.810 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:./uploads/images/]]
+2025-08-21 23:48:39.810 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 23:48:39.810 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 23:48:39.815 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 23:48:39.815 DEBUG 6476 --- [http-nio-8083-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 23:48:39.815 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:48:39.815 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 23:48:39 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 23:48:39.821 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 23:48:39.821 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/4ce42cfd-81bf-4434-9153-33f170c697c7.jpg", parameters={}
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:./uploads/images/]]
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/038fa43a-ce53-4603-9db3-ad088ba8df05.jpg", parameters={}
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:./uploads/images/]]
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/6976a519-673a-4d3d-9ebf-845efb924128.jpg", parameters={}
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:48:39.831 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 23:48:39 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 23:48:39.836 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 23:48:39.836 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:./uploads/images/]]
+2025-08-21 23:48:39.836 DEBUG 6476 --- [http-nio-8083-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:48:39.836 DEBUG 6476 --- [http-nio-8083-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 23:48:39 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 23:48:39.836 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 23:48:39.836 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 23:48:39.836 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 23:48:39.836 DEBUG 6476 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 23:48:39.838 DEBUG 6476 --- [http-nio-8083-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 23:48:39.838 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:48:39.838 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 23:48:39 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 23:48:39.840 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 23:48:59.542 DEBUG 6476 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/image-service/uploads/images/default-avatar.jpg", parameters={}
+2025-08-21 23:48:59.542 DEBUG 6476 --- [http-nio-8083-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:./uploads/images/]]
+2025-08-21 23:48:59.542 DEBUG 6476 --- [http-nio-8083-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 23:48:59.542 DEBUG 6476 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 23:48:59.544 DEBUG 6476 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 23:48:59.544 DEBUG 6476 --- [http-nio-8083-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 23:48:59.550 DEBUG 6476 --- [http-nio-8083-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:48:59.563 DEBUG 6476 --- [http-nio-8083-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 23:48:59 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 23:48:59.565 DEBUG 6476 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 23:49:14.938 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/459f0e18-d995-4e79-9b51-a85f5e05b2b8.jpg", parameters={}
+2025-08-21 23:49:14.939 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:./uploads/images/]]
+2025-08-21 23:49:14.939 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 23:49:14.939 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 23:49:14.940 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 23:49:14.941 DEBUG 6476 --- [http-nio-8083-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 23:49:14.943 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:14.943 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 23:49:14 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 23:49:14.970 DEBUG 6476 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 23:49:14.996 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/038fa43a-ce53-4603-9db3-ad088ba8df05.jpg", parameters={}
+2025-08-21 23:49:14.997 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:./uploads/images/]]
+2025-08-21 23:49:14.998 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 23:49:14.999 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 23:49:14.999 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 23:49:15.000 DEBUG 6476 --- [http-nio-8083-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 23:49:15.001 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:15.001 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 23:49:15 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 23:49:15.004 DEBUG 6476 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 23:49:27 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/admin/auth/send-code", parameters={}
+2025-08-21 23:49:27 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.AuthController#sendVerificationCode(Map)
+2025-08-21 23:49:27 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [{phone=19127810932}]
+2025-08-21 23:49:27 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:27 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=验证码发送成功)]
+2025-08-21 23:49:27 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:49:43 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/admin/auth/login", parameters={}
+2025-08-21 23:49:43 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.AuthController#login(Map)
+2025-08-21 23:49:43 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [{phone=19127810932, code=683522}]
+2025-08-21 23:49:43 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:43 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={expiresIn=86400, loginTime=Thu Aug 21 23:49:43 CST 2025, phone= (truncated)...]
+2025-08-21 23:49:43 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:49:44 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/dashboard/sales-trend?days=7", parameters={masked}
+2025-08-21 23:49:44 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DashboardController#getSalesTrend(int)
+2025-08-21 23:49:44 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/order/statistics", parameters={}
+2025-08-21 23:49:44 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/dashboard/delivery-efficiency", parameters={}
+2025-08-21 23:49:44 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.OrderController#getOrderStatistics()
+2025-08-21 23:49:44 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DashboardController#getDeliveryEfficiency()
+2025-08-21 23:49:44 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/dashboard/promotion-effect", parameters={}
+2025-08-21 23:49:44 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/dashboard/delivery-efficiency, IP: 127.0.0.1
+2025-08-21 23:49:44 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/dashboard/sales-trend, 参数: days=7, IP: 127.0.0.1
+2025-08-21 23:49:44 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/order/statistics, IP: 127.0.0.1
+2025-08-21 23:49:44 [http-nio-8082-exec-2] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:49:44 [http-nio-8082-exec-8] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:49:44 [http-nio-8082-exec-9] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:49:44 [http-nio-8082-exec-8] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/statistics
+2025-08-21 23:49:44 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DashboardController#getPromotionEffect()
+2025-08-21 23:49:44 [http-nio-8082-exec-8] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:49:44 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/dashboard/delay-reasons", parameters={}
+2025-08-21 23:49:44 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:44 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DashboardController#getDelayReasons()
+2025-08-21 23:49:44 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/dashboard/promotion-effect, IP: 127.0.0.1
+2025-08-21 23:49:44 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/dashboard/delay-reasons, IP: 127.0.0.1
+2025-08-21 23:49:44 [http-nio-8082-exec-1] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:49:44 [http-nio-8082-exec-10] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:49:44 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={values=[65, 25, 8, 2], categories=[当日发货, 次日发货, 2-3天发货, 3天以上]})]
+2025-08-21 23:49:44 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:49:44 [http-nio-8082-exec-9] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/sales-trend?days=7
+2025-08-21 23:49:44 [http-nio-8082-exec-9] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:49:44 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/dashboard/delivery-efficiency, 耗时: 7ms, 状态: 200
+2025-08-21 23:49:44 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:44 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:44 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={revenue=[45000, 32000, 28000, 20000], channels=[微信小程序, APP, H5, (truncated)...]
+2025-08-21 23:49:44 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=[{reason=库存不足, impact=高, count=15}, {reason=商品缺货, impact=中, coun (truncated)...]
+2025-08-21 23:49:44 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/dashboard/delay-reasons, 耗时: 11ms, 状态: 200
+2025-08-21 23:49:44 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:49:44 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/dashboard/promotion-effect, 耗时: 14ms, 状态: 200
+2025-08-21 23:49:44 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:49:44 [http-nio-8082-exec-9] DEBUG org.springframework.web.client.RestTemplate - Response 404 NOT_FOUND
+2025-08-21 23:49:44 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:44 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={dates=[2024-01-21, 2024-01-20, 2024-01-19, 2024-01-18, 2024-01- (truncated)...]
+2025-08-21 23:49:44 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/dashboard/sales-trend, 耗时: 47ms, 状态: 200
+2025-08-21 23:49:44 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:49:44 [http-nio-8082-exec-8] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:49:44 [http-nio-8082-exec-8] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:49:44 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:44 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={code=200, message=操作成功, data={cancelledOrders=9, shippedOrders= (truncated)...]
+2025-08-21 23:49:44 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/order/statistics, 耗时: 63ms, 状态: 200
+2025-08-21 23:49:44 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:49:48 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/fruit/categories", parameters={}
+2025-08-21 23:49:48 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.ProductController#getCategories()
+2025-08-21 23:49:48 [http-nio-8082-exec-5] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/fruit/categories, IP: 127.0.0.1
+2025-08-21 23:49:48 [http-nio-8082-exec-5] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:49:48 [http-nio-8082-exec-5] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/fruit/categories
+2025-08-21 23:49:48 [http-nio-8082-exec-5] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:49:48 [http-nio-8082-exec-5] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:49:48 [http-nio-8082-exec-5] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.List<java.lang.String>]
+2025-08-21 23:49:48 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:48 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=[热带水果, 温带水果, 亚热带水果, 进口水果, 有机水果])]
+2025-08-21 23:49:48 [http-nio-8082-exec-5] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/fruit/categories, 耗时: 7ms, 状态: 200
+2025-08-21 23:49:48 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:49:48 [http-nio-8082-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/fruit/list?page=1&size=5&search=&category=&status=", parameters={masked}
+2025-08-21 23:49:48 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.ProductController#getProductList(int, int, String, String, String)
+2025-08-21 23:49:48 [http-nio-8082-exec-6] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/fruit/list, 参数: page=1&size=5&search=&category=&status=, IP: 127.0.0.1
+2025-08-21 23:49:48 [http-nio-8082-exec-6] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:49:48 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/fruit/admin/list?page=1&size=5
+2025-08-21 23:49:48 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:49:48 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:49:48 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:49:48 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:48 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=17, size=5, page=1, list=[{id=2, name=山东大樱桃, description= (truncated)...]
+2025-08-21 23:49:48 [http-nio-8082-exec-6] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/fruit/list, 耗时: 22ms, 状态: 200
+2025-08-21 23:49:48 [http-nio-8082-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/459f0e18-d995-4e79-9b51-a85f5e05b2b8.jpg", parameters={}
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/038fa43a-ce53-4603-9db3-ad088ba8df05.jpg", parameters={}
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/6976a519-673a-4d3d-9ebf-845efb924128.jpg", parameters={}
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:./uploads/images/]]
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:./uploads/images/]]
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:./uploads/images/]]
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 23:49:48 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 23:49:48 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 23:49:48 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 23:49:48.884 DEBUG 6476 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 23:49:48.889 DEBUG 6476 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/71c0b704-2ea7-478e-870b-987e078baf88.jpg", parameters={}
+2025-08-21 23:49:48.889 DEBUG 6476 --- [http-nio-8083-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:./uploads/images/]]
+2025-08-21 23:49:48.894 DEBUG 6476 --- [http-nio-8083-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 23:49:48.894 DEBUG 6476 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 23:49:48.894 DEBUG 6476 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 23:49:48.894 DEBUG 6476 --- [http-nio-8083-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 23:49:48.894 DEBUG 6476 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:49:48.894 DEBUG 6476 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 23:49:48 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 23:49:48.894 DEBUG 6476 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 23:50:26 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/category/list?page=1&size=5&search=", parameters={masked}
+2025-08-21 23:50:26 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.CategoryController#getCategories(Integer, Integer, String)
+2025-08-21 23:50:26 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/category/list, 参数: page=1&size=5&search=, IP: 127.0.0.1
+2025-08-21 23:50:26 [http-nio-8082-exec-7] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:50:26 [http-nio-8082-exec-7] DEBUG o.e.a.m.CategoryMapper.selectByConditions_COUNT - ==>  Preparing: SELECT count(0) FROM t_fruit_category
+2025-08-21 23:50:26 [http-nio-8082-exec-7] DEBUG o.e.a.m.CategoryMapper.selectByConditions_COUNT - ==> Parameters: 
+2025-08-21 23:50:26 [http-nio-8082-exec-7] DEBUG o.e.a.m.CategoryMapper.selectByConditions_COUNT - <==      Total: 1
+2025-08-21 23:50:26 [http-nio-8082-exec-7] DEBUG o.e.admin.mapper.CategoryMapper.selectByConditions - ==>  Preparing: SELECT id, name, icon_name, icon_url, sort_order, status, create_time, update_time, create_by, update_by, remark FROM t_fruit_category ORDER BY sort_order ASC, id ASC LIMIT ?
+2025-08-21 23:50:26 [http-nio-8082-exec-7] DEBUG o.e.admin.mapper.CategoryMapper.selectByConditions - ==> Parameters: 5(Integer)
+2025-08-21 23:50:26 [http-nio-8082-exec-7] DEBUG o.e.admin.mapper.CategoryMapper.selectByConditions - <==      Total: 5
+2025-08-21 23:50:26 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:50:26 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={total=6, pages=2, size=5, page=1, list=[{iconName=Apple, createTime=2025-08-21 23:5 (truncated)...]
+2025-08-21 23:50:26 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:50:26 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/category/list, 耗时: 26ms, 状态: 200
+2025-08-21 23:50:31 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/banner/list?page=1&size=5&search=", parameters={masked}
+2025-08-21 23:50:31 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.BannerController#getBanners(Integer, Integer, String)
+2025-08-21 23:50:31 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/banner/list, 参数: page=1&size=5&search=, IP: 127.0.0.1
+2025-08-21 23:50:31 [http-nio-8082-exec-4] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:50:31 [http-nio-8082-exec-4] DEBUG o.e.admin.mapper.AdminBannerMapper.countBanners - ==>  Preparing: SELECT COUNT(*) FROM t_banner
+2025-08-21 23:50:31 [http-nio-8082-exec-4] DEBUG o.e.admin.mapper.AdminBannerMapper.countBanners - ==> Parameters: 
+2025-08-21 23:50:31 [http-nio-8082-exec-4] DEBUG o.e.admin.mapper.AdminBannerMapper.countBanners - <==      Total: 1
+2025-08-21 23:50:31 [http-nio-8082-exec-4] DEBUG o.e.a.mapper.AdminBannerMapper.selectBannerList - ==>  Preparing: SELECT id, image_url, link_url, sort, status, create_time, update_time, create_by, update_by, remark FROM t_banner ORDER BY sort ASC, create_time DESC LIMIT ?, ?
+2025-08-21 23:50:31 [http-nio-8082-exec-4] DEBUG o.e.a.mapper.AdminBannerMapper.selectBannerList - ==> Parameters: 0(Integer), 5(Integer)
+2025-08-21 23:50:31 [http-nio-8082-exec-4] DEBUG o.e.a.mapper.AdminBannerMapper.selectBannerList - <==      Total: 5
+2025-08-21 23:50:31 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:50:31 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={total=5, size=5, page=1, list=[Banner(id=1, imageUrl=/api/images/11c5f4c6-8e78-4740 (truncated)...]
+2025-08-21 23:50:31 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/banner/list, 耗时: 38ms, 状态: 200
+2025-08-21 23:50:31 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:50:34 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/orders?page=1&size=10", parameters={masked}
+2025-08-21 23:50:34 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:50:34 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:50:34 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getDeliveryOrders(Integer, Integer, String, String, String, String)
+2025-08-21 23:50:34 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:50:34 [http-nio-8082-exec-3] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/orders, 参数: page=1&size=10, IP: 127.0.0.1
+2025-08-21 23:50:34 [http-nio-8082-exec-2] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:50:34 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:50:34 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:50:34 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 0ms, 状态: 200
+2025-08-21 23:50:34 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:50:34 [http-nio-8082-exec-3] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:50:34 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=10&status=paid
+2025-08-21 23:50:34 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:50:34 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:50:34 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:50:34 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:50:34 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={total=4, size=4, page=1, list=[{id=22, orderNo=1755773189714c2cb8e, userId=3, statu (truncated)...]
+2025-08-21 23:50:34 [http-nio-8082-exec-3] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/orders, 耗时: 20ms, 状态: 200
+2025-08-21 23:50:34 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:52:09 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/model/list", parameters={}
+2025-08-21 23:52:09 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.ModelController#getModelList(Integer, Integer, String, String)
+2025-08-21 23:52:09 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/model/list, IP: 127.0.0.1
+2025-08-21 23:52:09 [http-nio-8082-exec-1] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:52:09 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:52:09 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=3, size=10, page=1, list=[{provider=OpenAI, createTime=20 (truncated)...]
+2025-08-21 23:52:09 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/model/list, 耗时: 20ms, 状态: 200
+2025-08-21 23:52:09 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:52:11 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/statistics", parameters={}
+2025-08-21 23:52:11 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getTrainingStatistics()
+2025-08-21 23:52:11 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/training/statistics, IP: 127.0.0.1
+2025-08-21 23:52:11 [http-nio-8082-exec-10] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:52:11 [http-nio-8082-exec-10] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/training/statistics
+2025-08-21 23:52:11 [http-nio-8082-exec-10] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:52:11 [http-nio-8082-exec-10] DEBUG org.springframework.web.client.RestTemplate - Response 404 NOT_FOUND
+2025-08-21 23:52:11 [http-nio-8082-exec-10] ERROR org.example.admin.service.impl.TrainingServiceImpl - 获取训练统计信息失败
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2025-08-21T15:52:11.482+00:00","status":404,"error":"Not Found","message":"No message available","path":"/api/training/statistics"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:631)
+	at org.example.admin.service.impl.TrainingServiceImpl.getTrainingStatistics(TrainingServiceImpl.java:415)
+	at org.example.admin.controller.TrainingController.getTrainingStatistics(TrainingController.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:114)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-08-21 23:52:11 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:52:11 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={pendingTasks=1, completedTasks=18, performance={avgLoss=0.24999 (truncated)...]
+2025-08-21 23:52:11 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/training/statistics, 耗时: 229ms, 状态: 200
+2025-08-21 23:52:11 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:52:11 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/model-types", parameters={}
+2025-08-21 23:52:11 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getSupportedModelTypes()
+2025-08-21 23:52:11 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/training/model-types, IP: 127.0.0.1
+2025-08-21 23:52:11 [http-nio-8082-exec-9] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:52:11 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:52:11 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={types=[{name=文本分类, description=对文本进行分类，如情感分析、主题分类等, id=text_cla (truncated)...]
+2025-08-21 23:52:11 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/training/model-types, 耗时: 0ms, 状态: 200
+2025-08-21 23:52:11 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:52:12 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/datasets?page=1&size=100&dataType=", parameters={masked}
+2025-08-21 23:52:12 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getDatasets(Integer, Integer, String)
+2025-08-21 23:52:12 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/training/datasets, 参数: page=1&size=100&dataType=, IP: 127.0.0.1
+2025-08-21 23:52:12 [http-nio-8082-exec-8] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:52:12 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:52:12 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=0, size=100, datasets=[], page=1})]
+2025-08-21 23:52:12 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/training/datasets, 耗时: 22ms, 状态: 200
+2025-08-21 23:52:12 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:52:12 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/tasks?page=1&size=10&status=&modelType=", parameters={masked}
+2025-08-21 23:52:12 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getTrainingTasks(Integer, Integer, String, String)
+2025-08-21 23:52:12 [http-nio-8082-exec-5] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/training/tasks, 参数: page=1&size=10&status=&modelType=, IP: 127.0.0.1
+2025-08-21 23:52:12 [http-nio-8082-exec-5] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:52:12 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:52:12 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=0, size=10, page=1, tasks=[]})]
+2025-08-21 23:52:12 [http-nio-8082-exec-5] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/training/tasks, 耗时: 5ms, 状态: 200
+2025-08-21 23:52:12 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:52:13 [http-nio-8082-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/message-templates/list?page=1&size=10&templateName=", parameters={masked}
+2025-08-21 23:52:13 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.AdminMessageTemplateController#getTemplateList(Integer, Integer, String, Integer, Integer)
+2025-08-21 23:52:13 [http-nio-8082-exec-6] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/message-templates/list, 参数: page=1&size=10&templateName=, IP: 127.0.0.1
+2025-08-21 23:52:13 [http-nio-8082-exec-6] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:52:13 [http-nio-8082-exec-6] INFO  o.e.a.controller.AdminMessageTemplateController - 获取消息模板列表请求，页码：1，大小：10，模板名称：，消息类型：null，状态：null
+2025-08-21 23:52:13 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/message-templates?page=1&size=10
+2025-08-21 23:52:13 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:52:13 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:52:13 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - Reading to [org.example.common.response.Result<?>]
+2025-08-21 23:52:13 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:52:13 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=5, list=[{id=55, templateCode=TEST_DB_CONNECTION, templat (truncated)...]
+2025-08-21 23:52:13 [http-nio-8082-exec-6] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/message-templates/list, 耗时: 109ms, 状态: 200
+2025-08-21 23:52:13 [http-nio-8082-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:52:13 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/message-templates/statistics", parameters={}
+2025-08-21 23:52:13 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.AdminMessageTemplateController#getTemplateStatistics()
+2025-08-21 23:52:13 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/message-templates/statistics, IP: 127.0.0.1
+2025-08-21 23:52:13 [http-nio-8082-exec-7] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:52:13 [http-nio-8082-exec-7] INFO  o.e.a.controller.AdminMessageTemplateController - 获取模板统计数据请求
+2025-08-21 23:52:13 [http-nio-8082-exec-7] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/message-templates/statistics
+2025-08-21 23:52:13 [http-nio-8082-exec-7] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:52:13 [http-nio-8082-exec-7] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:52:13 [http-nio-8082-exec-7] DEBUG org.springframework.web.client.RestTemplate - Reading to [org.example.common.response.Result<?>]
+2025-08-21 23:52:13 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:52:13 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={enabledCount=5, typeStatistics={1=2, 2=1, 5=2}, disabledCount=0 (truncated)...]
+2025-08-21 23:52:13 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/message-templates/statistics, 耗时: 15ms, 状态: 200
+2025-08-21 23:52:13 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:54:27 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/order/list?page=1&size=5&search=&status=", parameters={masked}
+2025-08-21 23:54:27 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:54:27 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.OrderController#getOrderList(int, int, String, String, String, String)
+2025-08-21 23:54:27 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:54:27 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:54:27 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/order/list, 参数: page=1&size=5&search=&status=, IP: 127.0.0.1
+2025-08-21 23:54:27 [http-nio-8082-exec-2] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:54:27 [http-nio-8082-exec-4] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:54:27 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:54:27 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:54:27 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 3ms, 状态: 200
+2025-08-21 23:54:27 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:54:27 [http-nio-8082-exec-4] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=5
+2025-08-21 23:54:27 [http-nio-8082-exec-4] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:54:27 [http-nio-8082-exec-4] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:54:27 [http-nio-8082-exec-4] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:54:27 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:54:27 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=5, size=5, page=1, list=[{id=24, orderNo=1755784246503b3f (truncated)...]
+2025-08-21 23:54:27 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/order/list, 耗时: 101ms, 状态: 200
+2025-08-21 23:54:27 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:54:28 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/orders?page=1&size=10", parameters={masked}
+2025-08-21 23:54:28 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getDeliveryOrders(Integer, Integer, String, String, String, String)
+2025-08-21 23:54:28 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:54:28 [http-nio-8082-exec-3] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/orders, 参数: page=1&size=10, IP: 127.0.0.1
+2025-08-21 23:54:28 [http-nio-8082-exec-3] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:54:28 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:54:28 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:54:28 [http-nio-8082-exec-1] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:54:28 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=10&status=paid
+2025-08-21 23:54:28 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:54:28 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:54:28 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:54:28 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 10ms, 状态: 200
+2025-08-21 23:54:28 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:54:28 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:54:28 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:54:28 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:54:28 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={total=4, size=4, page=1, list=[{id=22, orderNo=1755773189714c2cb8e, userId=3, statu (truncated)...]
+2025-08-21 23:54:28 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:54:28 [http-nio-8082-exec-3] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/orders, 耗时: 44ms, 状态: 200
+2025-08-21 23:54:30 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/order/list?page=1&size=5&search=&status=", parameters={masked}
+2025-08-21 23:54:30 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.OrderController#getOrderList(int, int, String, String, String, String)
+2025-08-21 23:54:30 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:54:30 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/order/list, 参数: page=1&size=5&search=&status=, IP: 127.0.0.1
+2025-08-21 23:54:30 [http-nio-8082-exec-10] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:54:30 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:54:30 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:54:30 [http-nio-8082-exec-9] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:54:30 [http-nio-8082-exec-10] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=5
+2025-08-21 23:54:30 [http-nio-8082-exec-10] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:54:30 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:54:30 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:54:30 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 1ms, 状态: 200
+2025-08-21 23:54:30 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:54:30 [http-nio-8082-exec-10] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:54:30 [http-nio-8082-exec-10] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:54:30 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:54:30 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=5, size=5, page=1, list=[{id=24, orderNo=1755784246503b3f (truncated)...]
+2025-08-21 23:54:30 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/order/list, 耗时: 35ms, 状态: 200
+2025-08-21 23:54:30 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:54:47 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/orders?page=1&size=10", parameters={masked}
+2025-08-21 23:54:47 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getDeliveryOrders(Integer, Integer, String, String, String, String)
+2025-08-21 23:54:47 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/orders, 参数: page=1&size=10, IP: 127.0.0.1
+2025-08-21 23:54:47 [http-nio-8082-exec-8] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:54:47 [http-nio-8082-exec-8] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=10&status=paid
+2025-08-21 23:54:47 [http-nio-8082-exec-8] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:54:47 [http-nio-8082-exec-8] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:54:47 [http-nio-8082-exec-8] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:54:47 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:54:47 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={total=4, size=4, page=1, list=[{id=22, orderNo=1755773189714c2cb8e, userId=3, statu (truncated)...]
+2025-08-21 23:54:47 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/orders, 耗时: 31ms, 状态: 200
+2025-08-21 23:54:47 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:54:48 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:54:48 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:54:48 [http-nio-8082-exec-5] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:54:48 [http-nio-8082-exec-5] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:54:48 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:54:48 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:54:48 [http-nio-8082-exec-5] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 6ms, 状态: 200
+2025-08-21 23:54:48 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:54:50 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:54:50 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:54:50 [http-nio-8082-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/order/list?page=1&size=5&search=&status=", parameters={masked}
+2025-08-21 23:54:50 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.OrderController#getOrderList(int, int, String, String, String, String)
+2025-08-21 23:54:50 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:54:50 [http-nio-8082-exec-7] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:54:50 [http-nio-8082-exec-6] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/order/list, 参数: page=1&size=5&search=&status=, IP: 127.0.0.1
+2025-08-21 23:54:50 [http-nio-8082-exec-6] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:54:50 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:54:50 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:54:50 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=5
+2025-08-21 23:54:50 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:54:50 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 0ms, 状态: 200
+2025-08-21 23:54:50 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:54:50 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:54:50 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:54:50 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:54:50 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=5, size=5, page=1, list=[{id=24, orderNo=1755784246503b3f (truncated)...]
+2025-08-21 23:54:50 [http-nio-8082-exec-6] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/order/list, 耗时: 16ms, 状态: 200
+2025-08-21 23:54:50 [http-nio-8082-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:55:54 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/orders?page=1&size=10", parameters={masked}
+2025-08-21 23:55:54 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:55:54 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getDeliveryOrders(Integer, Integer, String, String, String, String)
+2025-08-21 23:55:54 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:55:54 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/orders, 参数: page=1&size=10, IP: 127.0.0.1
+2025-08-21 23:55:54 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:55:54 [http-nio-8082-exec-4] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:55:54 [http-nio-8082-exec-2] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:55:54 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:55:54 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:55:54 [http-nio-8082-exec-2] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=10&status=paid
+2025-08-21 23:55:54 [http-nio-8082-exec-2] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:55:54 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 2ms, 状态: 200
+2025-08-21 23:55:54 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:55:54 [http-nio-8082-exec-2] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:55:54 [http-nio-8082-exec-2] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:55:54 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:55:54 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={total=4, size=4, page=1, list=[{id=22, orderNo=1755773189714c2cb8e, userId=3, statu (truncated)...]
+2025-08-21 23:55:54 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/orders, 耗时: 17ms, 状态: 200
+2025-08-21 23:55:54 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:55:56 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/order/list?page=1&size=5&search=&status=", parameters={masked}
+2025-08-21 23:55:56 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.OrderController#getOrderList(int, int, String, String, String, String)
+2025-08-21 23:55:56 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/order/list, 参数: page=1&size=5&search=&status=, IP: 127.0.0.1
+2025-08-21 23:55:56 [http-nio-8082-exec-1] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:55:56 [http-nio-8082-exec-1] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=5
+2025-08-21 23:55:56 [http-nio-8082-exec-1] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:55:56 [http-nio-8082-exec-1] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:55:56 [http-nio-8082-exec-1] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:55:56 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:55:56 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=5, size=5, page=1, list=[{id=24, orderNo=1755784246503b3f (truncated)...]
+2025-08-21 23:55:56 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:55:56 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/order/list, 耗时: 37ms, 状态: 200
+2025-08-21 23:55:56 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:55:56 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:55:56 [http-nio-8082-exec-3] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:55:56 [http-nio-8082-exec-3] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:55:56 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:55:56 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:55:56 [http-nio-8082-exec-3] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 0ms, 状态: 200
+2025-08-21 23:55:56 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:57:52 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:57:52 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:57:52 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:57:52 [http-nio-8082-exec-10] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:57:52 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/order/list?page=1&size=5&search=&status=", parameters={masked}
+2025-08-21 23:57:52 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:57:52 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.OrderController#getOrderList(int, int, String, String, String, String)
+2025-08-21 23:57:52 [http-nio-8082-exec-9] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=5
+2025-08-21 23:57:52 [http-nio-8082-exec-9] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:57:52 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:57:52 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/order/list, 参数: page=1&size=5&search=&status=, IP: 127.0.0.1
+2025-08-21 23:57:52 [http-nio-8082-exec-9] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:57:52 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:57:52 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 107ms, 状态: 200
+2025-08-21 23:57:52 [http-nio-8082-exec-9] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:57:52 [http-nio-8082-exec-9] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:57:52 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:57:52 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=5, size=5, page=1, list=[{id=24, orderNo=1755784246503b3f (truncated)...]
+2025-08-21 23:57:52 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:57:52 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/order/list, 耗时: 84ms, 状态: 200
+2025-08-21 23:58:00 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/banner/list?page=1&size=5&search=", parameters={masked}
+2025-08-21 23:58:00 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.BannerController#getBanners(Integer, Integer, String)
+2025-08-21 23:58:00 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/banner/list, 参数: page=1&size=5&search=, IP: 127.0.0.1
+2025-08-21 23:58:00 [http-nio-8082-exec-8] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:00 [http-nio-8082-exec-8] DEBUG o.e.admin.mapper.AdminBannerMapper.countBanners - ==>  Preparing: SELECT COUNT(*) FROM t_banner
+2025-08-21 23:58:00 [http-nio-8082-exec-8] DEBUG o.e.admin.mapper.AdminBannerMapper.countBanners - ==> Parameters: 
+2025-08-21 23:58:00 [http-nio-8082-exec-8] DEBUG o.e.admin.mapper.AdminBannerMapper.countBanners - <==      Total: 1
+2025-08-21 23:58:00 [http-nio-8082-exec-8] DEBUG o.e.a.mapper.AdminBannerMapper.selectBannerList - ==>  Preparing: SELECT id, image_url, link_url, sort, status, create_time, update_time, create_by, update_by, remark FROM t_banner ORDER BY sort ASC, create_time DESC LIMIT ?, ?
+2025-08-21 23:58:00 [http-nio-8082-exec-8] DEBUG o.e.a.mapper.AdminBannerMapper.selectBannerList - ==> Parameters: 0(Integer), 5(Integer)
+2025-08-21 23:58:00 [http-nio-8082-exec-8] DEBUG o.e.a.mapper.AdminBannerMapper.selectBannerList - <==      Total: 5
+2025-08-21 23:58:00 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:00 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={total=5, size=5, page=1, list=[Banner(id=1, imageUrl=/api/images/11c5f4c6-8e78-4740 (truncated)...]
+2025-08-21 23:58:00 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/banner/list, 耗时: 42ms, 状态: 200
+2025-08-21 23:58:00 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:02 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/order/list?page=1&size=5&search=&status=", parameters={masked}
+2025-08-21 23:58:02 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.OrderController#getOrderList(int, int, String, String, String, String)
+2025-08-21 23:58:02 [http-nio-8082-exec-5] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/order/list, 参数: page=1&size=5&search=&status=, IP: 127.0.0.1
+2025-08-21 23:58:02 [http-nio-8082-exec-5] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:02 [http-nio-8082-exec-5] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=5
+2025-08-21 23:58:02 [http-nio-8082-exec-5] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:58:02 [http-nio-8082-exec-5] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:58:02 [http-nio-8082-exec-5] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:58:02 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:02 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=5, size=5, page=1, list=[{id=24, orderNo=1755784246503b3f (truncated)...]
+2025-08-21 23:58:02 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:02 [http-nio-8082-exec-5] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/order/list, 耗时: 31ms, 状态: 200
+2025-08-21 23:58:02 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:58:02 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:58:02 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:58:02 [http-nio-8082-exec-7] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:02 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:02 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:58:02 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 2ms, 状态: 200
+2025-08-21 23:58:02 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:03 [http-nio-8082-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/orders?page=1&size=10", parameters={masked}
+2025-08-21 23:58:03 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:58:03 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getDeliveryOrders(Integer, Integer, String, String, String, String)
+2025-08-21 23:58:03 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:58:03 [http-nio-8082-exec-6] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/orders, 参数: page=1&size=10, IP: 127.0.0.1
+2025-08-21 23:58:03 [http-nio-8082-exec-6] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:03 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:58:03 [http-nio-8082-exec-4] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:03 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=10&status=paid
+2025-08-21 23:58:03 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:03 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:58:03 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:03 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 1ms, 状态: 200
+2025-08-21 23:58:03 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:58:03 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:58:03 [http-nio-8082-exec-6] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:58:03 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:03 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={total=4, size=4, page=1, list=[{id=22, orderNo=1755773189714c2cb8e, userId=3, statu (truncated)...]
+2025-08-21 23:58:03 [http-nio-8082-exec-6] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/orders, 耗时: 11ms, 状态: 200
+2025-08-21 23:58:03 [http-nio-8082-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:10 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/order/list?page=1&size=5&search=&status=", parameters={masked}
+2025-08-21 23:58:10 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.OrderController#getOrderList(int, int, String, String, String, String)
+2025-08-21 23:58:10 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/order/list, 参数: page=1&size=5&search=&status=, IP: 127.0.0.1
+2025-08-21 23:58:10 [http-nio-8082-exec-2] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:10 [http-nio-8082-exec-2] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=5
+2025-08-21 23:58:10 [http-nio-8082-exec-2] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:58:10 [http-nio-8082-exec-2] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:58:10 [http-nio-8082-exec-2] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:58:10 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:10 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=5, size=5, page=1, list=[{id=24, orderNo=1755784246503b3f (truncated)...]
+2025-08-21 23:58:10 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/order/list, 耗时: 92ms, 状态: 200
+2025-08-21 23:58:10 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:10 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:58:10 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:58:10 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:58:10 [http-nio-8082-exec-1] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:10 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:10 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:58:10 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 8ms, 状态: 200
+2025-08-21 23:58:10 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:23 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:58:23 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/orders?page=1&size=10", parameters={masked}
+2025-08-21 23:58:23 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getDeliveryOrders(Integer, Integer, String, String, String, String)
+2025-08-21 23:58:23 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:58:23 [http-nio-8082-exec-3] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/orders, 参数: page=1&size=10, IP: 127.0.0.1
+2025-08-21 23:58:23 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:58:23 [http-nio-8082-exec-10] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:23 [http-nio-8082-exec-3] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:23 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:23 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:58:23 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=10&status=paid
+2025-08-21 23:58:23 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:58:23 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 1ms, 状态: 200
+2025-08-21 23:58:23 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:23 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:58:23 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:58:23 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:23 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={total=4, size=4, page=1, list=[{id=22, orderNo=1755773189714c2cb8e, userId=3, statu (truncated)...]
+2025-08-21 23:58:23 [http-nio-8082-exec-3] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/orders, 耗时: 17ms, 状态: 200
+2025-08-21 23:58:23 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:25 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/order/list?page=1&size=5&search=&status=", parameters={masked}
+2025-08-21 23:58:25 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.OrderController#getOrderList(int, int, String, String, String, String)
+2025-08-21 23:58:25 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:58:25 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/order/list, 参数: page=1&size=5&search=&status=, IP: 127.0.0.1
+2025-08-21 23:58:25 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:58:25 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:58:25 [http-nio-8082-exec-8] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:25 [http-nio-8082-exec-9] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:25 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:25 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:58:25 [http-nio-8082-exec-9] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=5
+2025-08-21 23:58:25 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 3ms, 状态: 200
+2025-08-21 23:58:25 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:25 [http-nio-8082-exec-9] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:58:25 [http-nio-8082-exec-9] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:58:25 [http-nio-8082-exec-9] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:58:25 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:25 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=5, size=5, page=1, list=[{id=24, orderNo=1755784246503b3f (truncated)...]
+2025-08-21 23:58:25 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/order/list, 耗时: 52ms, 状态: 200
+2025-08-21 23:58:25 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:27 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/order/list?page=1&size=5&search=&status=", parameters={masked}
+2025-08-21 23:58:27 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.OrderController#getOrderList(int, int, String, String, String, String)
+2025-08-21 23:58:27 [http-nio-8082-exec-5] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/order/list, 参数: page=1&size=5&search=&status=, IP: 127.0.0.1
+2025-08-21 23:58:27 [http-nio-8082-exec-5] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:27 [http-nio-8082-exec-5] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=5
+2025-08-21 23:58:27 [http-nio-8082-exec-5] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:58:27 [http-nio-8082-exec-5] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:58:27 [http-nio-8082-exec-5] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:58:27 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:27 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=5, size=5, page=1, list=[{id=24, orderNo=1755784246503b3f (truncated)...]
+2025-08-21 23:58:27 [http-nio-8082-exec-5] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/order/list, 耗时: 155ms, 状态: 200
+2025-08-21 23:58:27 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:27 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:58:27 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:58:27 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:58:27 [http-nio-8082-exec-7] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:27 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:27 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:58:27 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 8ms, 状态: 200
+2025-08-21 23:58:27 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:44 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/order/list?page=1&size=5&search=&status=", parameters={masked}
+2025-08-21 23:58:44 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.OrderController#getOrderList(int, int, String, String, String, String)
+2025-08-21 23:58:44 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/order/list, 参数: page=1&size=5&search=&status=, IP: 127.0.0.1
+2025-08-21 23:58:44 [http-nio-8082-exec-4] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/list?page=1&size=5
+2025-08-21 23:58:44 [http-nio-8082-exec-4] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:44 [http-nio-8082-exec-4] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-21 23:58:44 [http-nio-8082-exec-4] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-21 23:58:44 [http-nio-8082-exec-4] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-21 23:58:44 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:44 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=5, size=5, page=1, list=[{id=24, orderNo=1755784246503b3f (truncated)...]
+2025-08-21 23:58:44 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-21 23:58:44 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/order/list, 耗时: 18ms, 状态: 200
+2025-08-21 23:58:44 [http-nio-8082-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/delivery/express-companies", parameters={}
+2025-08-21 23:58:44 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DeliveryController#getExpressCompanies()
+2025-08-21 23:58:44 [http-nio-8082-exec-6] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - 方法: GET, URI: /admin/admin/delivery/express-companies, IP: 127.0.0.1
+2025-08-21 23:58:44 [http-nio-8082-exec-6] DEBUG org.example.common.interceptor.LoggingInterceptor - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-21 23:58:44 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 23:58:44 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{code=SF, name=顺丰速运}, {code=YTO, name=圆通速递}, {code=ZTO, name=中通快递}, {code=STO, name (truncated)...]
+2025-08-21 23:58:44 [http-nio-8082-exec-6] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - 方法: GET, URI: /admin/admin/delivery/express-companies, 耗时: 1ms, 状态: 200
+2025-08-21 23:58:44 [http-nio-8082-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
