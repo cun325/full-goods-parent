@@ -2,6 +2,7 @@ package org.example.api.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.example.api.vo.CategoryVO;
 import org.example.common.entity.FruitCategory;
 
 import java.util.List;
@@ -17,7 +18,7 @@ public interface FruitCategoryMapper {
      *
      * @return 分类列表
      */
-    List<FruitCategory> selectAllEnabled();
+    List<CategoryVO> selectAllEnabled();
 
     /**
      * 根据ID查询分类

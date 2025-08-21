@@ -1,18 +1,19 @@
 package org.example.imageservice.service;
 
+import io.minio.errors.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.example.imageservice.config.ImageUploadConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
 import java.io.IOException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 
 /**
  * 图片服务
@@ -20,8 +21,13 @@ import java.util.UUID;
 @Service
 public class ImageService {
     
+    private static final Logger logger = LoggerFactory.getLogger(ImageService.class);
+    
     @Autowired
     private ImageUploadConfig uploadConfig;
+    
+    @Autowired
+    private MinioService minioService;
     
     /**
      * 上传图片
@@ -30,44 +36,54 @@ public class ImageService {
         Map<String, Object> result = new HashMap<>();
         
         try {
+            logger.debug("开始处理图片上传请求");
+            
             // 验证文件
             String validationError = validateFile(file);
             if (validationError != null) {
                 result.put("success", false);
                 result.put("message", validationError);
+                logger.warn("文件验证失败: {}", validationError);
                 return result;
             }
             
-            // 生成文件名
-            String fileName = generateFileName(file.getOriginalFilename());
-            
-            // 创建目录结构
-            String datePath = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
-            String uploadPath = uploadConfig.getPath() + datePath + "/";
-            File uploadDir = new File(uploadPath);
-            if (!uploadDir.exists()) {
-                uploadDir.mkdirs();
-            }
-            
-            // 保存文件
-            File targetFile = new File(uploadDir, fileName);
-            file.transferTo(targetFile);
+            // 上传到MinIO
+            logger.debug("文件验证通过，开始上传到MinIO");
+            String fileName = minioService.uploadFile(file);
             
             // 生成访问URL
-            String relativePath = datePath + "/" + fileName;
-            String url = uploadConfig.getUrlPrefix() + relativePath;
-            String fullUrl = "http://localhost:8083/image-service" + url;
+            String url = "/api/images/" + fileName;
             
             result.put("success", true);
             result.put("fileName", fileName);
             result.put("url", url);
-            result.put("fullUrl", fullUrl);
-            result.put("relativePath", relativePath);
             result.put("message", "图片上传成功");
             
-        } catch (IOException e) {
+            logger.info("图片上传成功，文件名: {}", fileName);
+            
+        } catch (InvalidKeyException | InvalidResponseException | InsufficientDataException |
+                NoSuchAlgorithmException | ServerException | InternalException |
+                XmlParserException | ErrorResponseException e) {
+            logger.error("MinIO相关错误: {}", e.getMessage(), e);
+            String errorMsg = "文件上传失败: " + e.getMessage();
+            // 检查是否是端口配置错误
+            if (errorMsg.contains("API port")) {
+                errorMsg = "MinIO服务器配置错误，请检查MinIO服务是否在正确的端口运行，通常API端口是9000";
+            }
             result.put("success", false);
-            result.put("message", "文件保存失败: " + e.getMessage());
+            result.put("message", errorMsg);
+        } catch (IOException e) {
+            logger.error("IO错误: {}", e.getMessage(), e);
+            result.put("success", false);
+            result.put("message", "文件上传失败: " + e.getMessage());
+        } catch (RuntimeException e) {
+            logger.error("运行时错误: {}", e.getMessage(), e);
+            result.put("success", false);
+            result.put("message", e.getMessage());
+        } catch (Exception e) {
+            logger.error("上传过程中发生未知错误: {}", e.getMessage(), e);
+            result.put("success", false);
+            result.put("message", "文件上传失败: " + e.getMessage());
         }
         
         return result;
@@ -76,27 +92,24 @@ public class ImageService {
     /**
      * 删除图片
      */
-    public Map<String, Object> deleteImage(String relativePath) {
+    public Map<String, Object> deleteImage(String fileName) {
         Map<String, Object> result = new HashMap<>();
         
         try {
-            File file = new File(uploadConfig.getPath() + relativePath);
-            if (file.exists() && file.isFile()) {
-                boolean deleted = file.delete();
-                if (deleted) {
-                    result.put("success", true);
-                    result.put("message", "图片删除成功");
-                } else {
-                    result.put("success", false);
-                    result.put("message", "图片删除失败");
-                }
-            } else {
-                result.put("success", false);
-                result.put("message", "图片文件不存在");
-            }
+            logger.debug("开始删除图片: {}", fileName);
+            minioService.deleteFile(fileName);
+            result.put("success", true);
+            result.put("message", "图片删除成功");
+            logger.info("图片删除成功: {}", fileName);
         } catch (Exception e) {
+            logger.error("删除图片时发生错误: {}", e.getMessage(), e);
+            String errorMsg = "删除图片时发生错误: " + e.getMessage();
+            // 检查是否是端口配置错误
+            if (errorMsg.contains("API port")) {
+                errorMsg = "MinIO服务器配置错误，请检查MinIO服务是否在正确的端口运行，通常API端口是9000";
+            }
             result.put("success", false);
-            result.put("message", "删除图片时发生错误: " + e.getMessage());
+            result.put("message", errorMsg);
         }
         
         return result;
@@ -132,14 +145,6 @@ public class ImageService {
         }
         
         return null;
-    }
-    
-    /**
-     * 生成唯一文件名
-     */
-    private String generateFileName(String originalFileName) {
-        String extension = getFileExtension(originalFileName);
-        return UUID.randomUUID().toString() + "." + extension;
     }
     
     /**

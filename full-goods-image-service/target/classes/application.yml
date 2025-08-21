@@ -12,11 +12,19 @@ spring:
       max-request-size: 10MB
       enabled: true
 
+# MinIO配置
+# 注意：MinIO可能在不同的端口运行API服务
+# 通常MinIO控制台端口是9001，API端口是9000
+# 如果9000不行，请尝试9001或其他端口
+minio:
+  endpoint: http://127.0.0.1:9090
+  access-key: miniotest
+  secret-key: miniotest123
+  bucket-name: full-goods-images
+
 # 图片上传配置
 image:
   upload:
-    # 上传路径 - 使用相对路径，适配Windows环境
-    path: D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images
     # 允许的文件类型
     allowed-types: jpg,jpeg,png,gif,bmp,webp
     # 最大文件大小(MB)
@@ -27,5 +35,6 @@ image:
 logging:
   level:
     com.fullgoods: DEBUG
+    org.example.imageservice: DEBUG
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

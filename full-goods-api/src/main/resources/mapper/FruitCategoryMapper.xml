@@ -20,7 +20,7 @@
         id, name, icon_name, icon_url, sort_order, status, create_time, update_time, create_by, update_by, remark
     </sql>
 
-    <select id="selectAllEnabled" resultMap="BaseResultMap">
+    <select id="selectAllEnabled" resultType="org.example.api.vo.CategoryVO">
         SELECT
         <include refid="Base_Column_List" />
         FROM t_fruit_category

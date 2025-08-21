@@ -262,24 +262,11 @@ public class FruitServiceImpl implements FruitService {
     }
     
     @Override
-    @Cacheable(value = "fruitCache", key = "'categories'")
+ //   @Cacheable(value = "fruitCache", key = "'categories'")
     public List<CategoryVO> getCategories() {
         // 从数据库获取所有启用的分类
-        List<FruitCategory> categories = fruitCategoryMapper.selectAllEnabled();
-        
-        // 转换为VO
-        List<CategoryVO> categoryVOList = new ArrayList<>();
-        for (FruitCategory category : categories) {
-            CategoryVO vo = new CategoryVO();
-            vo.setId(category.getId());
-            vo.setName(category.getName());
-            vo.setIconName(category.getIconName());
-            // 使用processImageUrl处理图标URL
-            vo.setIconUrl(processImageUrl(category.getIconUrl()));
-            categoryVOList.add(vo);
-        }
-        
-        return categoryVOList;
+        List<CategoryVO> categories = fruitCategoryMapper.selectAllEnabled();
+        return categories;
     }
     
     @Override

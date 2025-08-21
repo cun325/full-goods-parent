@@ -1,0 +1,12 @@
+2025-08-21 18:15:26.545 [http-nio-8082-exec-2] WARN  BUSINESS - HTTP消息不可读 - URI: /admin/admin/fruit/add, 错误信息: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "on": not a valid `java.lang.Integer` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "on": not a valid `java.lang.Integer` value
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 197] (through reference chain: org.example.common.entity.Fruit["status"])
+2025-08-21 22:01:54.101 [http-nio-8082-exec-2] WARN  BUSINESS - HTTP方法不支持 - URI: /admin/admin/delivery/ship, 方法: PUT, 支持的方法: POST
+2025-08-21 22:09:21.881 [http-nio-8082-exec-4] WARN  BUSINESS - HTTP方法不支持 - URI: /admin/admin/delivery/ship, 方法: POST, 支持的方法: PUT
+2025-08-21 22:09:26.672 [http-nio-8082-exec-8] WARN  BUSINESS - HTTP方法不支持 - URI: /admin/admin/delivery/ship, 方法: POST, 支持的方法: PUT
+2025-08-21 22:09:29.927 [http-nio-8082-exec-9] WARN  BUSINESS - HTTP方法不支持 - URI: /admin/admin/delivery/ship, 方法: POST, 支持的方法: PUT
+2025-08-21 22:09:31.003 [http-nio-8082-exec-10] WARN  BUSINESS - HTTP方法不支持 - URI: /admin/admin/delivery/ship, 方法: POST, 支持的方法: PUT
+2025-08-21 22:09:40.481 [http-nio-8082-exec-1] WARN  BUSINESS - HTTP方法不支持 - URI: /admin/admin/delivery/ship, 方法: POST, 支持的方法: PUT
+2025-08-21 22:15:06.814 [http-nio-8082-exec-3] WARN  BUSINESS - HTTP方法不支持 - URI: /admin/admin/delivery/ship, 方法: POST, 支持的方法: PUT
+2025-08-21 22:15:13.312 [http-nio-8082-exec-2] WARN  BUSINESS - HTTP方法不支持 - URI: /admin/admin/delivery/ship, 方法: POST, 支持的方法: PUT
+2025-08-21 22:15:19.781 [http-nio-8082-exec-7] WARN  BUSINESS - HTTP方法不支持 - URI: /admin/admin/delivery/ship, 方法: POST, 支持的方法: PUT
+2025-08-21 22:16:33.784 [http-nio-8082-exec-4] WARN  BUSINESS - HTTP方法不支持 - URI: /admin/admin/delivery/ship, 方法: POST, 支持的方法: PUT

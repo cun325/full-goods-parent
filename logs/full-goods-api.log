@@ -5106,3 +5106,624 @@ Caused by: java.lang.ClassNotFoundException: org.example.api.vo.AddressVO
 2025-08-21 16:56:28.025 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
 2025-08-21 16:57:28.011 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
 2025-08-21 16:58:28.023 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:59:28.014 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:00:26.027 [http-nio-8080-exec-10] WARN  BUSINESS - 参数类型不匹配 - URI: /api/order/detail/confirm, 参数名: orderId, 期望类型: class java.lang.Long, 实际值: confirm
+2025-08-21 17:00:26.027 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "confirm"]
+2025-08-21 17:00:28.015 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:01:28.018 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:01:48.315 [http-nio-8080-exec-6] WARN  BUSINESS - 参数类型不匹配 - URI: /api/order/detail/confirm, 参数名: orderId, 期望类型: class java.lang.Long, 实际值: confirm
+2025-08-21 17:01:48.315 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "confirm"]
+2025-08-21 17:02:28.017 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:03:28.024 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:04:28.013 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:05:28.019 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:06:28.022 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 6ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:07:28.024 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:08:28.011 [MessageBroker-8] INFO  org.example.api.service.OrderScheduleService - 自动取消超时订单 - 订单号: 1755766353712792cdc, 用户ID: 3, 金额: 29.90
+2025-08-21 17:08:28.011 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了1个超时订单，成功取消1个
+2025-08-21 17:09:28.023 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:10:28.013 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:11:28.022 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:12:28.012 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:13:28.024 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:14:28.021 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:15:28.014 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:16:28.012 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:16:33.969 [http-nio-8080-exec-9] WARN  BUSINESS - 参数类型不匹配 - URI: /api/order/detail/confirm, 参数名: orderId, 期望类型: class java.lang.Long, 实际值: confirm
+2025-08-21 17:16:33.969 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "confirm"]
+2025-08-21 17:17:28.019 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:18:28.023 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:19:28.011 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:20:28.023 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:21:28.026 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:22:28.024 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:23:28.016 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:24:28.016 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:25:28.014 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:26:28.014 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:27:28.022 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:28:28.022 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:29:28.013 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:30:28.011 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:31:28.027 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:32:28.014 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:33:28.016 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:34:28.021 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:35:28.012 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:36:28.024 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:37:28.020 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 6ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:38:28.021 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:39:28.020 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:40:28.024 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:41:28.022 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:42:28.015 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:43:28.014 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:44:28.013 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:45:28.025 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:46:28.021 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:47:28.022 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:48:28.016 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:49:28.016 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:50:28.029 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 8ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:51:28.019 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:52:28.020 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:53:28.016 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:54:28.018 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:55:28.014 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:56:28.020 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:57:28.022 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:58:28.012 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 17:59:28.016 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:00:28.019 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:01:28.022 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:02:28.018 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:03:28.019 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:04:28.014 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:05:28.012 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:06:28.022 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:07:28.019 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:08:28.020 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:09:28.020 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:10:28.022 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:11:28.013 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:12:28.025 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:13:28.021 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:14:28.020 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:15:28.026 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:16:28.024 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:17:28.018 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:18:28.015 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:19:28.023 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:20:28.016 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:21:28.024 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:22:28.026 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:23:28.020 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:24:28.012 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:25:28.015 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:26:28.024 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:27:28.021 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:28:28.016 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:29:28.025 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:30:28.016 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:31:28.025 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:32:28.010 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:33:28.022 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:34:28.010 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:35:28.022 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:36:28.027 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:37:28.012 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:38:28.018 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:39:28.016 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:40:28.015 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:41:28.011 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:42:28.019 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:43:28.012 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:44:28.026 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:45:28.058 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 40ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:46:28.027 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:47:28.028 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:48:28.013 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:49:28.031 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:50:28.024 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:51:28.023 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:52:28.015 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:53:28.024 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:54:28.026 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:55:28.022 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 18:55:35.475 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-21 18:55:35.524 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-21 18:59:09.822 [restartedMain] INFO  org.example.api.ApiApplication - Starting ApiApplication using Java 1.8.0_462 on cuncun with PID 17376 (D:\bysjjjjjjjjjjj\full-goods-parent\full-goods-api\target\classes started by 黄春红 in D:\bysjjjjjjjjjjj\full-goods-parent)
+2025-08-21 18:59:09.833 [restartedMain] INFO  org.example.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-21 18:59:12.048 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.054 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 18:59:12.055 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.api.mapper, org.example.api.mapper]' package. Please check your configuration.
+2025-08-21 18:59:13.011 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-21 18:59:13.011 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-21 18:59:13.013 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-21 18:59:13.234 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-08-21 18:59:13.583 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-21 18:59:14.929 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-21 18:59:17.591 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-21 18:59:18.639 [restartedMain] INFO  org.example.api.ApiApplication - Started ApiApplication in 9.845 seconds (JVM running for 11.659)
+2025-08-21 18:59:18.822 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 143ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:00:18.661 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:00:18.688 [http-nio-8080-exec-4] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-21 19:01:18.635 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:02:18.648 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:03:18.647 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:04:18.643 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:05:18.652 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 6ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:06:18.646 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:07:18.638 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:08:18.640 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:09:18.640 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:10:18.639 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:11:18.639 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:12:18.640 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:13:18.640 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:14:18.651 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:15:18.641 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:16:18.645 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:17:18.635 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:18:18.636 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:19:18.637 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:20:18.644 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:21:18.639 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:22:18.645 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:23:18.641 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:24:18.648 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:25:18.637 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:26:18.648 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:27:18.643 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:28:18.635 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:29:18.638 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:30:18.644 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:31:18.642 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:32:18.648 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:33:18.647 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:34:18.654 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 6ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:35:18.646 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:36:18.634 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:37:18.641 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:38:18.635 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:39:18.640 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:40:18.638 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:41:18.634 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:42:18.642 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:43:18.648 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 7ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:44:18.645 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:45:18.644 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:46:18.637 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:47:18.645 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:48:18.638 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:49:18.644 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:50:18.651 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:51:18.642 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:52:18.643 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:53:18.642 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:54:18.644 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:55:18.650 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:56:18.653 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:57:18.654 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:58:18.645 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 19:59:18.638 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:00:18.641 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:01:18.649 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:02:18.644 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:03:18.640 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:04:18.644 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:05:18.642 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:06:18.640 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:07:18.642 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:08:18.636 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:09:18.650 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:10:18.638 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:11:18.636 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:12:18.645 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:13:18.655 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:14:18.652 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:15:18.641 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:16:18.646 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:17:18.640 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:18:18.653 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:19:18.644 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:20:18.646 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:21:18.654 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:22:18.638 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:23:18.641 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:24:18.653 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:25:18.637 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:26:18.649 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:27:18.645 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:28:18.636 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:29:18.636 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:30:18.636 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:31:18.651 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:32:18.647 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:33:18.646 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:34:18.650 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:35:18.652 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:36:18.644 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:37:18.639 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:38:18.640 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:39:18.638 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:40:18.645 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:41:18.650 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:42:18.648 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 10ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:43:18.641 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:44:18.650 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:45:18.653 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 6ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:46:18.653 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:47:18.638 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:48:18.645 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:49:18.644 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:50:18.642 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:51:18.645 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:52:18.649 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:53:18.640 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:54:18.638 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:54:33.198 [http-nio-8080-exec-3] WARN  org.example.api.controller.FruitController - 无效的token: 833cfc0dd7ae4180ae676a90978dea331755760702087
+2025-08-21 20:54:33.984 [http-nio-8080-exec-3] INFO  org.example.api.service.impl.NLPServiceImpl - 输入: 山东的水果, 提取关键词: [山东, 水果]
+2025-08-21 20:54:33.984 [http-nio-8080-exec-3] INFO  org.example.api.service.impl.FruitServiceImpl - 解析关键词: [山东, 水果]
+2025-08-21 20:54:34.013 [http-nio-8080-exec-3] INFO  org.example.api.service.impl.FruitServiceImpl - 推荐水果数量: 16
+2025-08-21 20:55:18.648 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 6ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:56:18.639 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:57:18.641 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:58:18.784 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 55ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 20:59:18.646 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:00:18.642 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:01:18.638 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:02:18.640 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:03:18.643 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:04:18.652 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:05:18.639 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:06:18.636 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:07:18.650 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:08:18.640 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:09:18.641 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:10:18.636 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:11:18.638 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:12:18.650 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:13:18.642 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:13:26.491 [http-nio-8080-exec-9] WARN  BUSINESS - 参数类型不匹配 - URI: /api/order/detail/confirm, 参数名: orderId, 期望类型: class java.lang.Long, 实际值: confirm
+2025-08-21 21:13:26.491 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "confirm"]
+2025-08-21 21:13:40.156 [http-nio-8080-exec-6] WARN  org.example.api.controller.FruitController - 无效的token: 833cfc0dd7ae4180ae676a90978dea331755760702087
+2025-08-21 21:13:40.159 [http-nio-8080-exec-6] INFO  org.example.api.service.impl.NLPServiceImpl - 输入: 山东的水果, 提取关键词: [山东, 水果]
+2025-08-21 21:13:40.159 [http-nio-8080-exec-6] INFO  org.example.api.service.impl.FruitServiceImpl - 解析关键词: [山东, 水果]
+2025-08-21 21:13:40.171 [http-nio-8080-exec-6] INFO  org.example.api.service.impl.FruitServiceImpl - 推荐水果数量: 18
+2025-08-21 21:14:00.513 [http-nio-8080-exec-9] INFO  org.example.api.service.WebSocketMessageService - 向用户3发送WebSocket消息成功
+2025-08-21 21:14:00.513 [http-nio-8080-exec-9] INFO  org.example.api.service.impl.MessageServiceImpl - WebSocket推送消息成功，用户ID: 3, 消息ID: 48
+2025-08-21 21:14:18.645 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:15:18.641 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:16:18.642 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:17:18.692 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 49ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:18:18.636 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:19:18.645 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:20:18.636 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:21:18.725 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 58ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:22:18.648 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:23:18.649 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:24:18.650 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:25:18.648 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:26:18.647 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:27:18.646 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:28:18.640 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:29:18.642 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:30:18.640 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:31:18.657 [MessageBroker-3] INFO  org.example.api.service.OrderScheduleService - 自动取消超时订单 - 订单号: 1755782129639b780a8, 用户ID: 3, 金额: 29.90
+2025-08-21 21:31:18.657 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 18ms, 详情: 检查了1个超时订单，成功取消1个
+2025-08-21 21:32:18.649 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:33:18.636 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:34:18.636 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:35:18.636 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:36:18.638 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:37:18.649 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:38:18.650 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:39:18.642 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:40:18.657 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:41:18.641 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:42:18.645 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:43:18.635 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:44:18.648 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:45:18.642 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:46:18.673 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 22ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:47:18.646 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:48:18.648 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:49:18.641 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:50:18.639 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:51:18.645 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:52:18.642 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:53:18.634 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:54:18.638 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:55:18.636 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:56:18.639 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:57:18.639 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:58:18.639 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 21:59:18.641 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:00:18.638 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:01:18.636 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:02:18.648 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:03:18.643 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:04:18.639 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:05:18.641 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:06:18.637 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:07:18.640 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:08:18.638 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:09:18.638 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:10:18.641 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:11:18.640 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:12:18.637 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:13:18.643 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:14:18.643 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:15:18.633 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:16:18.644 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:17:18.647 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:18:18.644 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:19:18.638 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:20:18.647 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:21:18.641 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:22:18.650 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:23:18.648 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:24:18.635 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:25:18.639 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:26:18.643 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:27:18.638 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:28:18.639 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:29:18.636 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:30:17.555 [http-nio-8080-exec-10] WARN  BUSINESS - HTTP方法不支持 - URI: /api/order/admin/ship/24, 方法: POST, 支持的方法: PUT
+2025-08-21 22:30:17.558 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2025-08-21 22:30:18.650 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:31:18.644 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:32:18.649 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:33:18.673 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 35ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:34:18.646 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:35:18.640 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:36:18.637 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:37:18.647 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:38:18.638 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:39:18.646 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:40:18.647 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:41:18.642 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:42:18.649 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:43:18.647 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:44:18.645 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:45:18.634 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:46:18.664 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:47:18.643 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:48:18.644 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:49:09.927 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-21 22:49:09.996 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-21 22:49:20.449 [restartedMain] INFO  org.example.api.ApiApplication - Starting ApiApplication using Java 1.8.0_462 on cuncun with PID 16956 (D:\bysjjjjjjjjjjj\full-goods-parent\full-goods-api\target\classes started by 黄春红 in D:\bysjjjjjjjjjjj\full-goods-parent)
+2025-08-21 22:49:20.450 [restartedMain] INFO  org.example.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-21 22:49:21.822 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.822 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.822 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.822 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.822 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.823 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.823 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.823 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.823 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.823 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.823 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.823 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.823 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.824 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.825 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.825 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.825 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.825 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.825 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.825 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.825 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.825 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.825 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.825 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.825 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.826 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.826 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.826 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:49:21.826 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.api.mapper, org.example.api.mapper]' package. Please check your configuration.
+2025-08-21 22:49:22.482 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-21 22:49:22.482 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-21 22:49:22.482 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-21 22:49:22.578 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-08-21 22:49:22.806 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-21 22:49:23.644 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-21 22:49:25.495 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-21 22:49:26.369 [restartedMain] INFO  org.example.api.ApiApplication - Started ApiApplication in 6.466 seconds (JVM running for 7.595)
+2025-08-21 22:49:26.495 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 105ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:49:36.758 [http-nio-8080-exec-10] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-21 22:50:26.388 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 8ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:51:26.386 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:52:26.387 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 8ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:52:54.296 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-21 22:52:54.323 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-21 22:53:04.008 [restartedMain] INFO  org.example.api.ApiApplication - Starting ApiApplication using Java 1.8.0_462 on cuncun with PID 4020 (D:\bysjjjjjjjjjjj\full-goods-parent\full-goods-api\target\classes started by 黄春红 in D:\bysjjjjjjjjjjj\full-goods-parent)
+2025-08-21 22:53:04.009 [restartedMain] INFO  org.example.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-21 22:53:05.302 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.302 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.302 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.302 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.302 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.302 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.302 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.302 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.302 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.302 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.302 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.302 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.303 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.303 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.305 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:53:05.306 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.api.mapper, org.example.api.mapper]' package. Please check your configuration.
+2025-08-21 22:53:05.919 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-21 22:53:05.920 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-21 22:53:05.920 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-21 22:53:06.004 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-08-21 22:53:06.197 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-21 22:53:06.941 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-21 22:53:08.757 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-21 22:53:09.030 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-21 22:53:09.690 [restartedMain] INFO  org.example.api.ApiApplication - Started ApiApplication in 6.224 seconds (JVM running for 7.371)
+2025-08-21 22:53:09.793 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 90ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:54:09.700 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:54:33.198 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-21 22:54:33.215 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-21 22:54:41.687 [restartedMain] INFO  org.example.api.ApiApplication - Starting ApiApplication using Java 1.8.0_462 on cuncun with PID 23776 (D:\bysjjjjjjjjjjj\full-goods-parent\full-goods-api\target\classes started by 黄春红 in D:\bysjjjjjjjjjjj\full-goods-parent)
+2025-08-21 22:54:41.688 [restartedMain] INFO  org.example.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.049 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.051 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.051 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.051 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.051 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.051 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.051 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.051 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.051 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.051 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.052 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.052 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.052 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.052 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.052 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:54:43.052 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.api.mapper, org.example.api.mapper]' package. Please check your configuration.
+2025-08-21 22:54:43.662 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-21 22:54:43.663 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-21 22:54:43.663 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-21 22:54:43.748 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-08-21 22:54:43.960 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-21 22:54:44.700 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-21 22:54:46.484 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-21 22:54:47.363 [restartedMain] INFO  org.example.api.ApiApplication - Started ApiApplication in 6.222 seconds (JVM running for 7.246)
+2025-08-21 22:54:47.475 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 97ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:55:05.300 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-21 22:55:47.368 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 7ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:56:47.369 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:57:47.384 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 13ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:58:47.377 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:59:24.051 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-21 22:59:24.065 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-21 22:59:33.984 [restartedMain] INFO  org.example.api.ApiApplication - Starting ApiApplication using Java 1.8.0_462 on cuncun with PID 11024 (D:\bysjjjjjjjjjjj\full-goods-parent\full-goods-api\target\classes started by 黄春红 in D:\bysjjjjjjjjjjj\full-goods-parent)
+2025-08-21 22:59:33.986 [restartedMain] INFO  org.example.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-21 22:59:35.295 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.295 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.295 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.295 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.295 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.295 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.295 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.295 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.295 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.295 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.295 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.295 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.296 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.296 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.297 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-21 22:59:35.298 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.api.mapper, org.example.api.mapper]' package. Please check your configuration.
+2025-08-21 22:59:35.921 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-21 22:59:35.922 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-21 22:59:35.922 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-21 22:59:36.022 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-08-21 22:59:36.238 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-21 22:59:36.943 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-21 22:59:38.765 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-21 22:59:39.638 [restartedMain] INFO  org.example.api.ApiApplication - Started ApiApplication in 6.268 seconds (JVM running for 7.615)
+2025-08-21 22:59:39.746 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 92ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 22:59:44.264 [http-nio-8080-exec-9] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-21 23:00:39.649 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:01:39.650 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:02:39.644 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 8ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:03:39.637 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:03:48.494 [http-nio-8080-exec-4] WARN  BUSINESS - 缺少请求参数 - URI: /api/fruit/history, 参数名: token
+2025-08-21 23:03:48.500 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'token' for method parameter type String is not present]
+2025-08-21 23:04:39.644 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:05:39.646 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:06:30.695 [http-nio-8080-exec-9] INFO  org.example.api.service.impl.UserServiceImpl - 用户登录成功，用户ID: 3, 生成token: d1450e54b3754aa1aefc85e8f3af6f501755788790663
+2025-08-21 23:06:36.344 [http-nio-8080-exec-1] WARN  BUSINESS - 参数类型不匹配 - URI: /api/order/detail/confirm, 参数名: orderId, 期望类型: class java.lang.Long, 实际值: confirm
+2025-08-21 23:06:36.344 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "confirm"]
+2025-08-21 23:06:39.640 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:07:39.643 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:08:39.639 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:09:39.650 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:10:39.641 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:11:39.652 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:12:39.649 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:13:39.644 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:14:39.635 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:15:39.649 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:16:39.644 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:17:39.637 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:18:39.639 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:19:39.633 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:20:39.638 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:21:39.633 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:22:39.637 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:23:39.644 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 23:24:39.648 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个

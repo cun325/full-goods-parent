@@ -1,6 +1,9 @@
 package org.example.admin.controller;
 
 import org.example.admin.service.AdminOrderService;
+import org.example.common.entity.Order;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +17,7 @@ import java.math.BigDecimal;
 @CrossOrigin(origins = "*")
 public class DeliveryController {
 
+    private static final Logger log = LoggerFactory.getLogger(DeliveryController.class);
     @Autowired
     private AdminOrderService adminOrderService;
 
@@ -102,67 +106,9 @@ public class DeliveryController {
             
             return ResponseEntity.ok(result);
         } catch (Exception e) {
-            // 如果调用真实API失败，返回模拟数据
-            List<Map<String, Object>> filteredOrders = new ArrayList<>(orders);
-            
-            // 强制筛选待发货状态的订单（已付款状态，status=1）
-            Integer deliveryStatus = 1; // 默认筛选已付款待发货的订单
-            if (status != null && !status.trim().isEmpty()) {
-                 try {
-                     deliveryStatus = Integer.parseInt(status);
-                 } catch (NumberFormatException nfe) {
-                     // 如果传入的是字符串状态，转换为数字
-                     if ("paid".equals(status)) {
-                         deliveryStatus = 1;
-                     } else if ("pending".equals(status)) {
-                         deliveryStatus = 0;
-                     } else if ("shipped".equals(status)) {
-                         deliveryStatus = 2;
-                     } else if ("delivered".equals(status)) {
-                         deliveryStatus = 3;
-                     }
-                 }
-             }
-            final Integer finalDeliveryStatus = deliveryStatus;
-            filteredOrders = filteredOrders.stream()
-                .filter(order -> order.get("status").equals(finalDeliveryStatus))
-                .collect(ArrayList::new, (list, item) -> list.add(item), ArrayList::addAll);
-            
-            // 搜索过滤
-            if (search != null && !search.trim().isEmpty()) {
-                filteredOrders = filteredOrders.stream()
-                    .filter(order -> 
-                        order.get("orderNo").toString().contains(search) ||
-                        order.get("userName").toString().contains(search) ||
-                        order.get("phone").toString().contains(search)
-                    )
-                    .collect(ArrayList::new, (list, item) -> list.add(item), ArrayList::addAll);
-            }
-            
-            // 按订单时间排序（最新的在前）
-            filteredOrders.sort((a, b) -> {
-                String timeA = (String) a.get("orderTime");
-                String timeB = (String) b.get("orderTime");
-                return timeB.compareTo(timeA);
-            });
-            
-            // 分页
-            int total = filteredOrders.size();
-            int start = (page - 1) * size;
-            int end = Math.min(start + size, total);
-            List<Map<String, Object>> pagedOrders = filteredOrders.subList(start, end);
-            
             Map<String, Object> result = new HashMap<>();
-            result.put("code", 200);
-            result.put("message", "获取订单列表成功（模拟数据）");
-            
-            Map<String, Object> data = new HashMap<>();
-            data.put("list", pagedOrders);
-            data.put("total", total);
-            data.put("page", page);
-            data.put("size", size);
-            result.put("data", data);
-            
+            result.put("code", 500);
+            result.put("message", "获取订单列表失败: " + e.getMessage());
             return ResponseEntity.ok(result);
         }
     }
@@ -172,22 +118,47 @@ public class DeliveryController {
      */
     @GetMapping("/orders/{id}")
     public ResponseEntity<Map<String, Object>> getOrderDetail(@PathVariable Long id) {
-        Map<String, Object> order = orders.stream()
-            .filter(o -> o.get("id").equals(id))
-            .findFirst()
-            .orElse(null);
-        
-        Map<String, Object> result = new HashMap<>();
-        if (order != null) {
-            result.put("code", 200);
-            result.put("message", "获取订单详情成功");
-            result.put("data", order);
-        } else {
-            result.put("code", 404);
-            result.put("message", "订单不存在");
+        try {
+            // 调用真实的订单管理服务获取订单详情
+            Order order = adminOrderService.getOrderById(id);
+            
+            if (order != null) {
+                Map<String, Object> orderMap = new HashMap<>();
+                orderMap.put("id", order.getId());
+                orderMap.put("orderNo", order.getOrderNo());
+                orderMap.put("receiverName", order.getReceiverName());
+                orderMap.put("receiverPhone", order.getReceiverPhone());
+                orderMap.put("totalAmount", order.getTotalAmount());
+                orderMap.put("payAmount", order.getPayAmount());
+                orderMap.put("status", order.getStatus());
+                orderMap.put("receiverAddress", order.getReceiverAddress());
+                orderMap.put("receiverProvince", order.getReceiverProvince());
+                orderMap.put("receiverCity", order.getReceiverCity());
+                orderMap.put("receiverDistrict", order.getReceiverDistrict());
+                orderMap.put("orderTime", order.getCreateTime() != null ? order.getCreateTime().toString() : "");
+                orderMap.put("createTime", order.getCreateTime() != null ? order.getCreateTime().toString() : "");
+                orderMap.put("expressCompany", order.getCourier());
+                orderMap.put("expressNo", order.getTrackingNumber());
+                orderMap.put("shipTime", order.getDeliveryTime() != null ? order.getDeliveryTime().toString() : "");
+                
+                Map<String, Object> result = new HashMap<>();
+                result.put("code", 200);
+                result.put("message", "获取订单详情成功");
+                result.put("data", orderMap);
+                
+                return ResponseEntity.ok(result);
+            } else {
+                Map<String, Object> result = new HashMap<>();
+                result.put("code", 404);
+                result.put("message", "订单不存在");
+                return ResponseEntity.ok(result);
+            }
+        } catch (Exception e) {
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 500);
+            result.put("message", "获取订单详情失败: " + e.getMessage());
+            return ResponseEntity.ok(result);
         }
-        
-        return ResponseEntity.ok(result);
     }
 
     /**
@@ -196,32 +167,13 @@ public class DeliveryController {
     @PostMapping("/ship")
     public ResponseEntity<Map<String, Object>> shipOrder(@RequestBody Map<String, Object> shipData) {
         Long orderId = Long.valueOf(shipData.get("orderId").toString());
-        String expressCompany = (String) shipData.get("expressCompany");
-        String expressNo = (String) shipData.get("expressNo");
-        
-        // 先更新模拟数据中的订单状态
-        Map<String, Object> order = orders.stream()
-            .filter(o -> o.get("id").equals(orderId))
-            .findFirst()
-            .orElse(null);
-        
+        String expressCompany = (String) shipData.get("courier");
+        String expressNo = (String) shipData.get("trackingNumber");
+        log.info("发货请求，订单ID: {}, 快递公司: {}, 快递单号: {}", orderId, expressCompany, expressNo);
         Map<String, Object> result = new HashMap<>();
-        if (order == null) {
-            result.put("code", 404);
-            result.put("message", "订单不存在");
-            return ResponseEntity.ok(result);
-        }
-        
         try {
             // 调用真实的发货服务
             adminOrderService.shipOrder(orderId, expressNo, expressCompany);
-            
-            // 更新模拟数据中的订单状态
-            order.put("status", 2); // 已发货
-            order.put("expressCompany", expressCompany);
-            order.put("expressNo", expressNo);
-            order.put("shipTime", LocalDateTime.now().format(formatter));
-            order.put("updateTime", LocalDateTime.now().format(formatter));
             
             result.put("code", 200);
             result.put("message", "发货成功");
@@ -235,17 +187,9 @@ public class DeliveryController {
             
             return ResponseEntity.ok(result);
         } catch (Exception e) {
-            // 如果调用真实API失败，仍然更新模拟数据
-            order.put("status", 2); // 已发货
-            order.put("expressCompany", expressCompany);
-            order.put("expressNo", expressNo);
-            order.put("shipTime", LocalDateTime.now().format(formatter));
-            order.put("updateTime", LocalDateTime.now().format(formatter));
-            
-            result.put("code", 200);
-            result.put("message", "发货成功（模拟数据）");
-            result.put("data", order);
-            
+            System.err.println("发货失败，订单ID: " + orderId + ", 错误: " + e.getMessage());
+            result.put("code", 500);
+            result.put("message", "发货失败: " + e.getMessage());
             return ResponseEntity.ok(result);
         }
     }
@@ -259,29 +203,22 @@ public class DeliveryController {
         List<Long> orderIds = (List<Long>) batchShipData.get("orderIds");
         String expressCompany = (String) batchShipData.get("expressCompany");
         
-        int shippedCount = 0;
-        for (Long orderId : orderIds) {
-            Map<String, Object> order = orders.stream()
-                .filter(o -> o.get("id").equals(orderId))
-                .findFirst()
-                .orElse(null);
-            
-            if (order != null && Integer.valueOf(1).equals(order.get("status"))) {
-                order.put("status", 2); // 已发货
-                order.put("expressCompany", expressCompany);
-                order.put("expressNo", expressCompany.substring(0, 2).toUpperCase() + System.currentTimeMillis() + orderId);
-                order.put("shipTime", LocalDateTime.now().format(formatter));
-                order.put("updateTime", LocalDateTime.now().format(formatter));
-                shippedCount++;
-            }
-        }
-        
         Map<String, Object> result = new HashMap<>();
-        result.put("code", 200);
-        result.put("message", "批量发货成功，共发货 " + shippedCount + " 个订单");
-        result.put("data", shippedCount);
-        
-        return ResponseEntity.ok(result);
+        try {
+            // 调用真实的批量发货服务
+            adminOrderService.batchShipOrders(orderIds, expressCompany);
+            
+            result.put("code", 200);
+            result.put("message", "批量发货成功");
+            result.put("data", orderIds.size());
+            
+            return ResponseEntity.ok(result);
+        } catch (Exception e) {
+            System.err.println("批量发货失败，订单ID列表: " + orderIds + ", 错误: " + e.getMessage());
+            result.put("code", 500);
+            result.put("message", "批量发货失败: " + e.getMessage());
+            return ResponseEntity.ok(result);
+        }
     }
 
     /**
@@ -289,18 +226,20 @@ public class DeliveryController {
      */
     @DeleteMapping("/orders/{id}")
     public ResponseEntity<Map<String, Object>> deleteOrder(@PathVariable Long id) {
-        boolean removed = orders.removeIf(order -> order.get("id").equals(id));
-        
         Map<String, Object> result = new HashMap<>();
-        if (removed) {
+        try {
+            // 调用真实的订单删除服务
+            adminOrderService.deleteOrder(id);
+            
             result.put("code", 200);
             result.put("message", "订单删除成功");
-        } else {
-            result.put("code", 404);
-            result.put("message", "订单不存在");
+            return ResponseEntity.ok(result);
+        } catch (Exception e) {
+            System.err.println("删除订单失败，订单ID: " + id + ", 错误: " + e.getMessage());
+            result.put("code", 500);
+            result.put("message", "删除订单失败: " + e.getMessage());
+            return ResponseEntity.ok(result);
         }
-        
-        return ResponseEntity.ok(result);
     }
 
     /**
@@ -308,20 +247,22 @@ public class DeliveryController {
      */
     @DeleteMapping("/batch-delete")
     public ResponseEntity<Map<String, Object>> batchDeleteOrders(@RequestBody List<Long> orderIds) {
-        int deletedCount = 0;
-        for (Long orderId : orderIds) {
-            boolean removed = orders.removeIf(order -> order.get("id").equals(orderId));
-            if (removed) {
-                deletedCount++;
-            }
-        }
-        
         Map<String, Object> result = new HashMap<>();
-        result.put("code", 200);
-        result.put("message", "批量删除成功，共删除 " + deletedCount + " 个订单");
-        result.put("data", deletedCount);
-        
-        return ResponseEntity.ok(result);
+        try {
+            // 调用真实的订单批量删除服务
+            adminOrderService.batchDeleteOrders(orderIds);
+            
+            result.put("code", 200);
+            result.put("message", "批量删除成功，共删除 " + orderIds.size() + " 个订单");
+            result.put("data", orderIds.size());
+            
+            return ResponseEntity.ok(result);
+        } catch (Exception e) {
+            System.err.println("批量删除订单失败，订单ID列表: " + orderIds + ", 错误: " + e.getMessage());
+            result.put("code", 500);
+            result.put("message", "批量删除订单失败: " + e.getMessage());
+            return ResponseEntity.ok(result);
+        }
     }
 
     /**
@@ -360,23 +301,21 @@ public class DeliveryController {
      */
     @GetMapping("/statistics")
     public ResponseEntity<Map<String, Object>> getDeliveryStatistics() {
-        long pendingCount = orders.stream().filter(o -> Integer.valueOf(0).equals(o.get("status"))).count();
-        long paidCount = orders.stream().filter(o -> Integer.valueOf(1).equals(o.get("status"))).count();
-        long shippedCount = orders.stream().filter(o -> Integer.valueOf(2).equals(o.get("status"))).count();
-        long deliveredCount = orders.stream().filter(o -> Integer.valueOf(3).equals(o.get("status"))).count();
-        
-        Map<String, Object> statistics = new HashMap<>();
-        statistics.put("pendingCount", pendingCount);
-        statistics.put("paidCount", paidCount);
-        statistics.put("shippedCount", shippedCount);
-        statistics.put("deliveredCount", deliveredCount);
-        statistics.put("totalCount", orders.size());
-        
-        Map<String, Object> result = new HashMap<>();
-        result.put("code", 200);
-        result.put("message", "获取配送统计成功");
-        result.put("data", statistics);
-        
-        return ResponseEntity.ok(result);
+        try {
+            // 调用真实的订单统计服务
+            Map<String, Object> statistics = adminOrderService.getOrderStatistics();
+            
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 200);
+            result.put("message", "获取配送统计成功");
+            result.put("data", statistics);
+            
+            return ResponseEntity.ok(result);
+        } catch (Exception e) {
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 500);
+            result.put("message", "获取配送统计数据失败: " + e.getMessage());
+            return ResponseEntity.ok(result);
+        }
     }
 }

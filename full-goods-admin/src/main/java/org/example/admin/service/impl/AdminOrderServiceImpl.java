@@ -136,6 +136,14 @@ public class AdminOrderServiceImpl implements AdminOrderService {
             shipOrder(orderId, "AUTO" + System.currentTimeMillis(), "默认快递");
         }
     }
+    
+    public void batchShipOrders(List<Long> orderIds, String expressCompany) {
+        for (Long orderId : orderIds) {
+            String trackingNumber = expressCompany.substring(0, Math.min(2, expressCompany.length())).toUpperCase() 
+                + System.currentTimeMillis() + orderId;
+            shipOrder(orderId, trackingNumber, expressCompany);
+        }
+    }
 
     @Override
     public void refundOrder(Long id) {

@@ -36,6 +36,11 @@ public interface AdminOrderService {
     void batchShipOrders(List<Long> orderIds);
 
     /**
+     * 批量发货（带快递公司信息）
+     */
+    void batchShipOrders(List<Long> orderIds, String expressCompany);
+
+    /**
      * 退款
      */
     void refundOrder(Long id);
