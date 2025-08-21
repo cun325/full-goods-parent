@@ -4984,3 +4984,15 @@ Caused by: java.lang.ClassNotFoundException: org.example.api.vo.AddressVO
 2025-08-21 15:22:28.011 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
 2025-08-21 15:23:28.014 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
 2025-08-21 15:24:28.018 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:25:28.026 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:26:28.012 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:26:32.952 [http-nio-8080-exec-7] WARN  BUSINESS - 参数类型不匹配 - URI: /api/fruit/undefined, 参数名: id, 期望类型: class java.lang.Long, 实际值: undefined
+2025-08-21 15:26:32.953 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2025-08-21 15:26:41.276 [http-nio-8080-exec-9] WARN  BUSINESS - 参数类型不匹配 - URI: /api/order/detail/confirm, 参数名: orderId, 期望类型: class java.lang.Long, 实际值: confirm
+2025-08-21 15:26:41.276 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "confirm"]
+2025-08-21 15:27:28.018 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:28:28.014 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:29:28.021 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:30:28.012 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:31:28.017 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:32:28.027 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
