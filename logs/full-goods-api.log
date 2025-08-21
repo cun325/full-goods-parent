@@ -1,2 +1,53 @@
 2025-08-22 00:00:00.008 [MessageBroker-4] INFO  org.example.api.config.MonitoringConfig - 监控统计计数器已重置
 2025-08-22 00:00:09.897 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:01:09.888 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:02:09.890 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:03:09.897 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:04:09.896 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:04:43.161 [http-nio-8080-exec-1] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_19127810932_1755791383888_1ee2fce791854eaca4eafc5c98265686
+2025-08-22 00:04:43.161 [http-nio-8080-exec-1] WARN  BUSINESS - 参数类型不匹配 - URI: /api/messages/list, 参数名: messageId, 期望类型: class java.lang.Long, 实际值: list
+2025-08-22 00:04:43.163 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"]
+2025-08-22 00:04:44.573 [http-nio-8080-exec-5] INFO  o.example.api.controller.MessageTemplateController - 获取模板统计信息请求
+2025-08-22 00:04:44.573 [http-nio-8080-exec-6] INFO  o.example.api.controller.MessageTemplateController - 分页查询模板列表请求，页码：1，大小：10，模板名称：null，类型：null，状态：null
+2025-08-22 00:04:45.241 [http-nio-8080-exec-7] INFO  o.example.api.controller.MessageTemplateController - 获取启用状态的模板列表请求
+2025-08-22 00:04:47.789 [http-nio-8080-exec-9] INFO  o.example.api.controller.MessageTemplateController - 获取模板统计信息请求
+2025-08-22 00:04:47.789 [http-nio-8080-exec-10] INFO  o.example.api.controller.MessageTemplateController - 分页查询模板列表请求，页码：1，大小：10，模板名称：null，类型：null，状态：null
+2025-08-22 00:05:09.896 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:06:09.886 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:07:09.887 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:08:09.892 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:09:09.897 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:10:09.893 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:11:09.886 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:12:09.892 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:13:09.885 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:13:38.162 [http-nio-8080-exec-10] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_19127810932_1755792600041_35f078d5cc5a48f4b7fcc1286437a859
+2025-08-22 00:13:38.162 [http-nio-8080-exec-10] WARN  BUSINESS - 参数类型不匹配 - URI: /api/messages/list, 参数名: messageId, 期望类型: class java.lang.Long, 实际值: list
+2025-08-22 00:13:38.162 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"]
+2025-08-22 00:14:09.897 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:14:17.135 [http-nio-8080-exec-4] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_19127810932_1755792600041_35f078d5cc5a48f4b7fcc1286437a859
+2025-08-22 00:14:17.135 [http-nio-8080-exec-4] WARN  BUSINESS - 参数类型不匹配 - URI: /api/messages/list, 参数名: messageId, 期望类型: class java.lang.Long, 实际值: list
+2025-08-22 00:14:17.135 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"]
+2025-08-22 00:14:30.834 [http-nio-8080-exec-8] INFO  o.example.api.controller.MessageTemplateController - 分页查询模板列表请求，页码：1，大小：10，模板名称：null，类型：null，状态：null
+2025-08-22 00:14:31.150 [http-nio-8080-exec-3] INFO  o.example.api.controller.MessageTemplateController - 获取模板统计信息请求
+2025-08-22 00:14:35.379 [http-nio-8080-exec-1] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_19127810932_1755792600041_35f078d5cc5a48f4b7fcc1286437a859
+2025-08-22 00:14:35.379 [http-nio-8080-exec-1] WARN  BUSINESS - 参数类型不匹配 - URI: /api/messages/list, 参数名: messageId, 期望类型: class java.lang.Long, 实际值: list
+2025-08-22 00:14:35.379 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"]
+2025-08-22 00:15:09.899 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:16:09.893 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:17:09.888 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:18:09.900 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:19:09.886 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:20:09.893 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:21:09.891 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:22:09.889 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:23:09.892 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:24:10.165 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 3ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:25:09.891 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:26:09.937 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 27ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:27:09.888 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:28:09.893 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:29:09.888 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:30:09.892 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:31:09.886 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-22 00:32:10.291 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 16ms, 详情: 检查了0个超时订单，成功取消0个
