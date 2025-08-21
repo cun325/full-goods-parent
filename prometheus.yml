@@ -1,0 +1,116 @@
+# Prometheus配置文件 - 商城项目监控
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'shopapp-monitor'
+
+# 规则文件
+rule_files:
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+
+# 告警管理器配置
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          # - alertmanager:9093
+
+# 抓取配置
+scrape_configs:
+  # Prometheus自身监控
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+    scrape_interval: 5s
+    metrics_path: /metrics
+
+  # Spring Boot应用监控 - Admin服务
+  - job_name: 'shopapp-admin'
+    static_configs:
+      - targets: ['admin-service:8082']
+    scrape_interval: 10s
+    metrics_path: /admin/actuator/prometheus
+    scrape_timeout: 5s
+    honor_labels: true
+    params:
+      format: ['prometheus']
+
+  # Spring Boot应用监控 - API服务
+  - job_name: 'shopapp-api'
+    static_configs:
+      - targets: ['api-service:8081']
+    scrape_interval: 10s
+    metrics_path: /api/actuator/prometheus
+    scrape_timeout: 5s
+    honor_labels: true
+    params:
+      format: ['prometheus']
+
+  # Spring Boot应用监控 - 图片服务
+  - job_name: 'shopapp-image-service'
+    static_configs:
+      - targets: ['image-service:8083']
+    scrape_interval: 10s
+    metrics_path: /actuator/prometheus
+    scrape_timeout: 5s
+    honor_labels: true
+    params:
+      format: ['prometheus']
+
+  # MySQL监控（需要mysql_exporter）
+  - job_name: 'mysql'
+    static_configs:
+      - targets: ['mysql-exporter:9104']
+    scrape_interval: 10s
+    scrape_timeout: 5s
+
+  # Redis监控（需要redis_exporter）
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis-exporter:9121']
+    scrape_interval: 10s
+    scrape_timeout: 5s
+
+  # Nginx监控（需要nginx-prometheus-exporter）
+  - job_name: 'nginx'
+    static_configs:
+      - targets: ['nginx-exporter:9113']
+    scrape_interval: 10s
+    scrape_timeout: 5s
+
+  # Node Exporter监控（系统指标）
+  - job_name: 'node'
+    static_configs:
+      - targets: ['node-exporter:9100']
+    scrape_interval: 10s
+    scrape_timeout: 5s
+
+  # cAdvisor监控（容器指标）
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+    scrape_interval: 10s
+    scrape_timeout: 5s
+    metrics_path: /metrics
+
+  # Docker监控
+  - job_name: 'docker'
+    static_configs:
+      - targets: ['docker-exporter:9323']
+    scrape_interval: 10s
+    scrape_timeout: 5s
+
+# 远程写入配置（可选）
+# remote_write:
+#   - url: "http://remote-storage:9201/write"
+#     queue_config:
+#       max_samples_per_send: 1000
+#       max_shards: 200
+#       capacity: 2500
+
+# 远程读取配置（可选）
+# remote_read:
+#   - url: "http://remote-storage:9201/read"

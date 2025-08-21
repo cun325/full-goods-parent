@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="full-goods-admin" />
+        <module name="full-goods-image-service" />
+      </profile>
+      <profile name="Annotation profile for full-goods-parent" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" />
+        </processorPath>
+        <module name="full-goods-common" />
+        <module name="full-goods-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="full-goods-admin" options="-parameters -Xlint:unchecked -Xlint:deprecation" />
+      <module name="full-goods-api" options="-parameters -Xlint:unchecked -Xlint:deprecation" />
+      <module name="full-goods-common" options="-parameters -Xlint:unchecked -Xlint:deprecation" />
+      <module name="full-goods-image-service" options="-parameters -Xlint:unchecked -Xlint:deprecation" />
+      <module name="full-goods-parent" options="-parameters -Xlint:unchecked -Xlint:deprecation" />
+    </option>
+  </component>
+</project>

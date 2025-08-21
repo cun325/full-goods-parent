@@ -1,0 +1,13 @@
+
+c
+java:S1192%"HDefine a constant instead of duplicating this literal "message" 7 times.(éÆî¯ÿÿÿÿÿ
+^
+java:S1192$"HDefine a constant instead of duplicating this literal "success" 7 times.(á÷Ê
+\
+java:S2184r"FCast one of the operands of this multiplication operation to a "long".(½ÁÂÍ
+A
+java:S1075."&Remove this hard-coded path-delimiter.(Ò·ˆ‰şÿÿÿÿ
+<
+java:S10759"&Remove this hard-coded path-delimiter.(şü³ş
+i
+java:S4042U"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(‰®èÛúÿÿÿÿ

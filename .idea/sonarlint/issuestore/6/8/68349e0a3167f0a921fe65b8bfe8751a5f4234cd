@@ -1,0 +1,18 @@
+
+\
+java:S2184"FCast one of the operands of this multiplication operation to a "long".(šæ¥å
+a
+java:S2184"FCast one of the operands of this multiplication operation to a "long".(€§úÿÿÿÿ
+E	java:S1065"+Replace this use of System.out by a logger.(òŞ¼ ıÿÿÿÿ
+:
+java:S1168C"$Return an empty map instead of null.(¥¹ï
+:
+java:S1168Z"$Return an empty map instead of null.(¥¹ï
+:
+java:S1168c"$Return an empty map instead of null.(¥¹ï
+:
+java:S1168o"$Return an empty map instead of null.(¥¹ï
+4
+java:S2119Â"Save and re-use this "Random".(¼İÅf
+P
+java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş

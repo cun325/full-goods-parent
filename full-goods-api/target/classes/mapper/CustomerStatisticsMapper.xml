@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.api.mapper.CustomerStatisticsMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.common.entity.CustomerStatistics">
+        <id column="id" property="id"/>
+        <result column="statistics_date" property="statisticsDate"/>
+        <result column="service_id" property="serviceId"/>
+        <result column="service_name" property="serviceName"/>
+        <result column="dialog_count" property="dialogCount"/>
+        <result column="message_count" property="messageCount"/>
+        <result column="avg_response_time" property="avgResponseTime"/>
+        <result column="avg_satisfaction" property="avgSatisfaction"/>
+        <result column="resolved_count" property="resolvedCount"/>
+        <result column="online_minutes" property="onlineMinutes"/>
+        <result column="efficiency_score" property="efficiencyScore"/>
+        <result column="note" property="note"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_by" property="createBy"/>
+        <result column="update_by" property="updateBy"/>
+        <result column="remark" property="remark"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id, statistics_date, service_id, service_name, dialog_count, message_count, avg_response_time, avg_satisfaction,
+        resolved_count, online_minutes, efficiency_score, note, create_time, update_time, create_by, update_by, remark
+    </sql>
+
+    <select id="selectAllWithPage" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_customer_statistics
+        ORDER BY statistics_date DESC, service_id ASC
+    </select>
+
+    <select id="selectByConditionsWithPage" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_customer_statistics
+        <where>
+            <if test="search != null and search != ''">
+                AND service_name LIKE CONCAT('%', #{search}, '%')
+            </if>
+            <if test="startDate != null">
+                AND statistics_date >= #{startDate}
+            </if>
+            <if test="endDate != null">
+                AND statistics_date &lt;= #{endDate}
+            </if>
+        </where>
+        ORDER BY statistics_date DESC, service_id ASC
+    </select>
+
+    <select id="selectByServiceId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_customer_statistics
+        WHERE service_id = #{serviceId}
+        ORDER BY statistics_date DESC
+    </select>
+
+    <select id="selectByDate" parameterType="java.util.Date" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_customer_statistics
+        WHERE statistics_date = #{statisticsDate}
+        ORDER BY service_id ASC
+    </select>
+
+    <select id="selectByServiceIdAndDate" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_customer_statistics
+        WHERE service_id = #{serviceId} AND statistics_date = #{statisticsDate}
+    </select>
+
+    <select id="selectById" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_customer_statistics
+        WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="org.example.common.entity.CustomerStatistics" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO t_customer_statistics
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="statisticsDate != null">statistics_date,</if>
+            <if test="serviceId != null">service_id,</if>
+            <if test="serviceName != null">service_name,</if>
+            <if test="dialogCount != null">dialog_count,</if>
+            <if test="messageCount != null">message_count,</if>
+            <if test="avgResponseTime != null">avg_response_time,</if>
+            <if test="avgSatisfaction != null">avg_satisfaction,</if>
+            <if test="resolvedCount != null">resolved_count,</if>
+            <if test="onlineMinutes != null">online_minutes,</if>
+            <if test="efficiencyScore != null">efficiency_score,</if>
+            <if test="note != null">note,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="remark != null">remark,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="statisticsDate != null">#{statisticsDate},</if>
+            <if test="serviceId != null">#{serviceId},</if>
+            <if test="serviceName != null">#{serviceName},</if>
+            <if test="dialogCount != null">#{dialogCount},</if>
+            <if test="messageCount != null">#{messageCount},</if>
+            <if test="avgResponseTime != null">#{avgResponseTime},</if>
+            <if test="avgSatisfaction != null">#{avgSatisfaction},</if>
+            <if test="resolvedCount != null">#{resolvedCount},</if>
+            <if test="onlineMinutes != null">#{onlineMinutes},</if>
+            <if test="efficiencyScore != null">#{efficiencyScore},</if>
+            <if test="note != null">#{note},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="remark != null">#{remark},</if>
+        </trim>
+    </insert>
+
+    <update id="update" parameterType="org.example.common.entity.CustomerStatistics">
+        UPDATE t_customer_statistics
+        <set>
+            <if test="statisticsDate != null">statistics_date = #{statisticsDate},</if>
+            <if test="serviceId != null">service_id = #{serviceId},</if>
+            <if test="serviceName != null">service_name = #{serviceName},</if>
+            <if test="dialogCount != null">dialog_count = #{dialogCount},</if>
+            <if test="messageCount != null">message_count = #{messageCount},</if>
+            <if test="avgResponseTime != null">avg_response_time = #{avgResponseTime},</if>
+            <if test="avgSatisfaction != null">avg_satisfaction = #{avgSatisfaction},</if>
+            <if test="resolvedCount != null">resolved_count = #{resolvedCount},</if>
+            <if test="onlineMinutes != null">online_minutes = #{onlineMinutes},</if>
+            <if test="efficiencyScore != null">efficiency_score = #{efficiencyScore},</if>
+            <if test="note != null">note = #{note},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteById" parameterType="java.lang.Long">
+        DELETE FROM t_customer_statistics WHERE id = #{id}
+    </delete>
+
+    <delete id="deleteByDateRange">
+        DELETE FROM t_customer_statistics 
+        WHERE statistics_date >= #{startDate} AND statistics_date &lt;= #{endDate}
+    </delete>
+
+    <select id="selectWorkloadRanking" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_customer_statistics
+        <where>
+            <if test="startDate != null">
+                AND statistics_date >= #{startDate}
+            </if>
+            <if test="endDate != null">
+                AND statistics_date &lt;= #{endDate}
+            </if>
+        </where>
+        GROUP BY service_id, service_name
+        ORDER BY SUM(dialog_count) DESC, SUM(message_count) DESC
+        <if test="limit != null">
+            LIMIT #{limit}
+        </if>
+    </select>
+
+    <select id="selectSatisfactionRanking" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_customer_statistics
+        <where>
+            <if test="startDate != null">
+                AND statistics_date >= #{startDate}
+            </if>
+            <if test="endDate != null">
+                AND statistics_date &lt;= #{endDate}
+            </if>
+            AND avg_satisfaction IS NOT NULL
+        </where>
+        GROUP BY service_id, service_name
+        ORDER BY AVG(avg_satisfaction) DESC
+        <if test="limit != null">
+            LIMIT #{limit}
+        </if>
+    </select>
+
+    <select id="selectOverallStatistics" resultMap="BaseResultMap">
+        SELECT
+            0 as id,
+            #{startDate} as statistics_date,
+            0 as service_id,
+            '总体统计' as service_name,
+            SUM(dialog_count) as dialog_count,
+            SUM(message_count) as message_count,
+            AVG(avg_response_time) as avg_response_time,
+            AVG(avg_satisfaction) as avg_satisfaction,
+            SUM(resolved_count) as resolved_count,
+            SUM(online_minutes) as online_minutes,
+            AVG(efficiency_score) as efficiency_score,
+            '系统自动生成的总体统计数据' as note,
+            NOW() as create_time,
+            NOW() as update_time,
+            'system' as create_by,
+            'system' as update_by,
+            '总体统计' as remark
+        FROM t_customer_statistics
+        <where>
+            <if test="startDate != null">
+                AND statistics_date >= #{startDate}
+            </if>
+            <if test="endDate != null">
+                AND statistics_date &lt;= #{endDate}
+            </if>
+        </where>
+    </select>
+
+</mapper>

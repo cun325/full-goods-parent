@@ -1,0 +1,1820 @@
+2025-08-20 03:30:11 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 1.8.0_351 on 192.168.0.14 with PID 57338 (/Users/peng/Downloads/full-goods-parent/full-goods-admin/target/classes started by peng in /Users/peng/Downloads/full-goods-parent/full-goods-admin)
+2025-08-20 03:30:11 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 03:30:12 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-20 03:30:12 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-20 03:30:12 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2025-08-20 03:30:12 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:30:12 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:30:12 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.common.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-20 03:30:13 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2025-08-20 03:30:13 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 03:30:13 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 03:30:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-20 03:30:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1789 ms
+2025-08-20 03:30:13 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-20 03:30:14 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-20 03:30:15 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-20 03:30:16 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/admin'
+2025-08-20 03:30:16 [main] INFO  org.example.admin.AdminApplication - Started AdminApplication in 5.523 seconds (JVM running for 5.975)
+2025-08-20 03:35:28 [http-nio-8082-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-20 03:35:28 [http-nio-8082-exec-9] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-20 03:35:28 [http-nio-8082-exec-9] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2025-08-20 03:36:21 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-20 03:36:21 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-20 03:36:36 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 1.8.0_351 on 192.168.0.14 with PID 76922 (/Users/peng/Downloads/full-goods-parent/full-goods-admin/target/classes started by peng in /Users/peng/Downloads/full-goods-parent/full-goods-admin)
+2025-08-20 03:36:36 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 03:36:37 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-20 03:36:37 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-20 03:36:37 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2025-08-20 03:36:37 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:36:37 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:36:37 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.common.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-20 03:36:38 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2025-08-20 03:36:38 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 03:36:38 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 03:36:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-20 03:36:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2078 ms
+2025-08-20 03:36:38 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-20 03:36:39 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-20 03:36:40 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-20 03:36:40 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/admin'
+2025-08-20 03:36:40 [main] INFO  org.example.admin.AdminApplication - Started AdminApplication in 5.25 seconds (JVM running for 5.893)
+2025-08-20 03:36:53 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-20 03:36:53 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-20 03:36:53 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-08-20 03:37:42 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-20 03:37:42 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-20 03:41:45 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 1.8.0_351 on 192.168.0.14 with PID 78085 (/Users/peng/Downloads/full-goods-parent/full-goods-admin/target/classes started by peng in /Users/peng/Downloads/full-goods-parent/full-goods-admin)
+2025-08-20 03:41:45 [main] DEBUG org.example.admin.AdminApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 03:41:45 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 03:41:45 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52b1beb6
+2025-08-20 03:41:47 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-20 03:41:47 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-20 03:41:47 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2025-08-20 03:41:47 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:41:47 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:41:47 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.common.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-20 03:41:47 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: /Users/peng/.m2/repository/org/springframework/boot/spring-boot/2.7.5/spring-boot-2.7.5.jar
+2025-08-20 03:41:47 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: /Users/peng/.m2/repository/org/springframework/boot/spring-boot/2.7.5/spring-boot-2.7.5.jar
+2025-08-20 03:41:47 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-08-20 03:41:47 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2025-08-20 03:41:48 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 03:41:48 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 03:41:48 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-20 03:41:48 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2025-08-20 03:41:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2238 ms
+2025-08-20 03:41:48 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: filterRegistrationBean urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, hiddenHttpMethodFilter urls=[/*] order=2147483647
+2025-08-20 03:41:48 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], statViewServlet urls=[/druid/*]
+2025-08-20 03:41:48 [main] DEBUG o.s.b.w.servlet.filter.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+2025-08-20 03:41:48 [main] DEBUG o.s.web.filter.HiddenHttpMethodFilter - Filter 'hiddenHttpMethodFilter' configured for use
+2025-08-20 03:41:48 [main] DEBUG o.s.b.w.s.filter.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
+2025-08-20 03:41:48 [main] DEBUG o.s.b.web.servlet.filter.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+2025-08-20 03:41:48 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-20 03:41:49 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-20 03:41:50 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-20 03:41:50 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 150 mappings in 'requestMappingHandlerMapping'
+2025-08-20 03:41:50 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /uploads/**, /images/**] in 'resourceHandlerMapping'
+2025-08-20 03:41:50 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-20 03:41:50 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-20 03:41:50 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/admin'
+2025-08-20 03:41:50 [main] INFO  org.example.admin.AdminApplication - Started AdminApplication in 5.642 seconds (JVM running for 6.074)
+2025-08-20 03:42:01 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-20 03:42:01 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@9ed8162
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1d852dd9
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-20 03:42:01 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/training/tasks", parameters={}
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:42:01 CST 2025, status=404, error=Not Found, path=/admin/training/tasks}]
+2025-08-20 03:42:01 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:42:08 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/actuator/health", parameters={}
+2025-08-20 03:42:08 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:42:08 [http-nio-8082-exec-2] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:42:08 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:42:08 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:42:08 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:42:08 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:42:08 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:42:08 CST 2025, status=404, error=Not Found, path=/admin/actuator/health}]
+2025-08-20 03:42:08 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:42:47 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52b1beb6, started on Wed Aug 20 03:41:45 CST 2025
+2025-08-20 03:42:47 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-20 03:42:47 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-20 03:43:01 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 1.8.0_351 on 192.168.0.14 with PID 79251 (/Users/peng/Downloads/full-goods-parent/full-goods-admin/target/classes started by peng in /Users/peng/Downloads/full-goods-parent/full-goods-admin)
+2025-08-20 03:43:01 [main] DEBUG org.example.admin.AdminApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 03:43:01 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 03:43:01 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@771a660
+2025-08-20 03:43:02 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-20 03:43:02 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-20 03:43:02 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2025-08-20 03:43:02 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:43:02 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:43:02 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.common.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-20 03:43:03 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: /Users/peng/.m2/repository/org/springframework/boot/spring-boot/2.7.5/spring-boot-2.7.5.jar
+2025-08-20 03:43:03 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: /Users/peng/.m2/repository/org/springframework/boot/spring-boot/2.7.5/spring-boot-2.7.5.jar
+2025-08-20 03:43:03 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-08-20 03:43:03 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2025-08-20 03:43:03 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 03:43:03 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 03:43:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-20 03:43:03 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2025-08-20 03:43:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2208 ms
+2025-08-20 03:43:03 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: filterRegistrationBean urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, hiddenHttpMethodFilter urls=[/*] order=2147483647
+2025-08-20 03:43:03 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], statViewServlet urls=[/druid/*]
+2025-08-20 03:43:03 [main] DEBUG o.s.b.w.servlet.filter.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+2025-08-20 03:43:03 [main] DEBUG o.s.web.filter.HiddenHttpMethodFilter - Filter 'hiddenHttpMethodFilter' configured for use
+2025-08-20 03:43:03 [main] DEBUG o.s.b.w.s.filter.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
+2025-08-20 03:43:03 [main] DEBUG o.s.b.web.servlet.filter.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+2025-08-20 03:43:03 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-20 03:43:04 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-20 03:43:05 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageController:
+	{GET [/admin/message/list]}: getMessageList(int,int,String,String,String)
+	{GET [/admin/message/{id}]}: getMessageDetail(Long)
+	{POST [/admin/message/reply]}: replyMessage(Map)
+	{PUT [/admin/message/read/{id}]}: markMessageRead(Long,Boolean)
+	{PUT [/admin/message/batch-read]}: batchMarkMessageRead(Map)
+	{DELETE [/admin/message/batch]}: batchDeleteMessages(List)
+	{POST [/admin/message/ai-reply]}: aiReply(Map)
+	{GET [/admin/message/statistics]}: getMessageStatistics()
+	{GET [/admin/message/export]}: exportMessages(String,String,String)
+	{POST [/admin/message/send-system]}: sendSystemMessage(Map)
+	{POST [/admin/message/send-batch]}: sendBatchMessage(Map)
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageSendingController:
+	{GET [/admin/message/users]}: getUsers(String,Long)
+	{POST [/admin/message/send/template]}: sendTemplateMessage(Map)
+	{GET [/admin/message/sending/history]}: getSendingHistory(Integer,Integer,String,String,String,String)
+	{GET [/admin/message/sending/{id}]}: getSendingDetail(Long)
+	{POST [/admin/message/sending/{id}/cancel]}: cancelSending(Long)
+	{POST [/admin/message/sending/{id}/resend]}: resendMessage(Long)
+	{GET [/admin/message/sending/statistics]}: getSendingStatistics(String)
+	{POST [/admin/message/template/preview]}: previewTemplateMessage(Map)
+	{POST [/admin/message/validate/userlist]}: validateUserListFile(MultipartFile)
+	{GET [/admin/message/usergroups]}: getUserGroups()
+	{POST [/admin/message/draft]}: saveDraft(Map)
+	{GET [/admin/message/drafts]}: getDrafts()
+	{DELETE [/admin/message/draft/{id}]}: deleteDraft(Long)
+	{POST [/admin/message/draft/{id}/create]}: createFromDraft(Long)
+	{GET [/admin/message/sending/config]}: getSendingConfig()
+	{PUT [/admin/message/sending/config]}: updateSendingConfig(Map)
+	{POST [/admin/message/test]}: testMessageSending(Map)
+	{GET [/admin/message/queue/status]}: getQueueStatus()
+	{POST [/admin/message/queue/clear]}: clearQueue()
+	{POST [/admin/message/sending/pause]}: pauseSending()
+	{POST [/admin/message/sending/resume]}: resumeSending()
+	{GET [/admin/message/sending/export]}: exportSendingHistory(String,String,String,String)
+	{GET [/admin/message/sending/report]}: getSendingReport(String,String,String)
+	{POST [/admin/message/send/system]}: sendSystemMessage(Map)
+	{POST [/admin/message/send/batch]}: sendBatchMessage(Map)
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageTemplateController:
+	{GET [/admin/message-templates/list]}: getTemplateList(Integer,Integer,String,Integer,Integer)
+	{GET [/admin/message-templates/{id}]}: getTemplateById(Long)
+	{POST [/admin/message-templates]}: createTemplate(MessageTemplate)
+	{PUT [/admin/message-templates/{id}]}: updateTemplate(Long,MessageTemplate)
+	{DELETE [/admin/message-templates/{id}]}: deleteTemplate(Long)
+	{DELETE [/admin/message-templates/batch]}: deleteTemplates(List)
+	{PUT [/admin/message-templates/{id}/status]}: updateTemplateStatus(Long,Integer)
+	{PUT [/admin/message-templates/batch/status]}: updateTemplatesStatus(List,Integer)
+	{POST [/admin/message-templates/{id}/copy]}: copyTemplate(Long,String,String)
+	{POST [/admin/message-templates/preview/{code}]}: previewTemplate(String,Map)
+	{POST [/admin/message-templates/validate/{code}]}: validateTemplateParams(String,Map)
+	{GET [/admin/message-templates/statistics]}: getTemplateStatistics()
+	{GET [/admin/message-templates/export]}: exportTemplates(String,Integer,Integer)
+	{GET [/admin/message-templates/enabled]}: getEnabledTemplates()
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AuthController:
+	{GET [/auth/user-info]}: getUserInfo(String)
+	{POST [/auth/send-code]}: sendVerificationCode(Map)
+	{POST [/auth/login]}: login(Map)
+	{POST [/auth/verify-token]}: verifyToken(String)
+	{POST [/auth/logout]}: logout(String)
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.BannerController:
+	{GET [/admin/banner/list]}: getBanners(Integer,Integer,String)
+	{GET [/admin/banner/{id}]}: getBannerDetail(Long)
+	{POST [/admin/banner/add]}: addBanner(Banner)
+	{PUT [/admin/banner/update]}: updateBanner(Banner)
+	{DELETE [/admin/banner/delete/{id}]}: deleteBanner(Long)
+	{DELETE [/admin/banner/batch-delete]}: batchDeleteBanners(List)
+	{PUT [/admin/banner/toggle-status/{id}]}: toggleBannerStatus(Long)
+	{PUT [/admin/banner/batch-toggle-status]}: batchToggleBannerStatus(List)
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.CategoryController:
+	{GET [/admin/category/list]}: getCategories(Integer,Integer,String)
+	{GET [/admin/category/{id}]}: getCategoryDetail(Long)
+	{POST [/admin/category/add]}: addCategory(Map)
+	{PUT [/admin/category/update]}: updateCategory(Map)
+	{DELETE [/admin/category/delete/{id}]}: deleteCategory(Long)
+	{DELETE [/admin/category/batch-delete]}: batchDeleteCategories(List)
+	{PUT [/admin/category/toggle-status/{id}]}: toggleCategoryStatus(Long)
+	{PUT [/admin/category/batch-toggle-status]}: batchToggleCategoryStatus(List)
+	{PUT [/admin/category/enable-all]}: enableAllCategories()
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.DashboardController:
+	{GET [/admin/dashboard/statistics]}: getDashboardStatistics()
+	{GET [/admin/dashboard/sales-trend]}: getSalesTrend(int)
+	{GET [/admin/dashboard/delivery-efficiency]}: getDeliveryEfficiency()
+	{GET [/admin/dashboard/promotion-effect]}: getPromotionEffect()
+	{GET [/admin/dashboard/delay-reasons]}: getDelayReasons()
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.DeliveryController:
+	{GET [/admin/delivery/orders]}: getDeliveryOrders(Integer,Integer,String,String,String,String)
+	{GET [/admin/delivery/orders/{id}]}: getOrderDetail(Long)
+	{POST [/admin/delivery/ship]}: shipOrder(Map)
+	{POST [/admin/delivery/batch-ship]}: batchShipOrders(Map)
+	{DELETE [/admin/delivery/orders/{id}]}: deleteOrder(Long)
+	{DELETE [/admin/delivery/batch-delete]}: batchDeleteOrders(List)
+	{GET [/admin/delivery/express-companies]}: getExpressCompanies()
+	{GET [/admin/delivery/statistics]}: getDeliveryStatistics()
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.ModelController:
+	{GET [/admin/model/list]}: getModelList(Integer,Integer,String,String)
+	{GET [/admin/model/{id}]}: getModelDetail(Long)
+	{POST [/admin/model]}: createModel(Map)
+	{POST [/admin/model/upload]}: uploadModel(MultipartFile,String,String,String)
+	{POST [/admin/model/{id}/test]}: testModel(Long)
+	{PUT [/admin/model/{id}/status]}: updateModelStatus(Long,Map)
+	{PUT [/admin/model/activate/{id}]}: activateModel(Long)
+	{PUT [/admin/model/deactivate/{id}]}: deactivateModel(Long)
+	{PUT [/admin/model/{id}]}: updateModel(Long,Map)
+	{DELETE [/admin/model/{id}]}: deleteModel(Long)
+	{POST [/admin/model/training-data]}: uploadTrainingData(MultipartFile,Long,String)
+	{POST [/admin/model/strategy]}: createStrategy(Map)
+	{GET [/admin/model/statistics]}: getModelStatistics()
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.OrderController:
+	{GET [/admin/order/statistics]}: getOrderStatistics()
+	{PUT [/admin/order/ship]}: shipOrder(Map)
+	{PUT [/admin/order/batch-ship]}: batchShipOrders(List)
+	{DELETE [/admin/order/delete/{id}]}: deleteOrder(Long)
+	{DELETE [/admin/order/batch-delete]}: batchDeleteOrders(List)
+	{GET [/admin/order/list]}: getOrderList(int,int,String,String,String,String)
+	{GET [/admin/order/{id}]}: getOrder(Long)
+	{PUT [/admin/order/mark-paid/{id}]}: markOrderPaid(Long)
+	{PUT [/admin/order/refund/{id}]}: refundOrder(Long)
+	{PUT [/admin/order/batch-refund]}: batchRefundOrders(List)
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.ProductController:
+	{GET [/admin/fruit/categories]}: getCategories()
+	{GET [/admin/fruit/list]}: getProductList(int,int,String,String,String)
+	{GET [/admin/fruit/{id}]}: getProduct(Long)
+	{PUT [/admin/fruit/recommend/{id}]}: setRecommended(Long,Boolean)
+	{PUT [/admin/fruit/recommend/batch]}: batchSetRecommended(Map)
+	{POST [/admin/fruit/flash-sale/{id}]}: setFlashSale(Long,Map)
+	{DELETE [/admin/fruit/flash-sale/{id}]}: cancelFlashSale(Long)
+	{POST [/admin/fruit/add]}: addProduct(Fruit)
+	{PUT [/admin/fruit/update]}: updateProduct(Fruit)
+	{DELETE [/admin/fruit/delete/{id}]}: deleteProduct(Long)
+	{DELETE [/admin/fruit/batch-delete]}: batchDeleteProducts(List)
+	{PUT [/admin/fruit/toggle-status/{id}]}: toggleProductStatus(Long)
+	{PUT [/admin/fruit/batch-toggle-status]}: batchToggleStatus(List)
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.TrainingController:
+	{GET [/admin/training/tasks]}: getTrainingTasks(Integer,Integer,String,String)
+	{POST [/admin/training/tasks]}: createTrainingTask(Map)
+	{GET [/admin/training/tasks/{id}]}: getTrainingTaskDetail(Long)
+	{POST [/admin/training/tasks/{id}/start]}: startTraining(Long)
+	{POST [/admin/training/tasks/{id}/stop]}: stopTraining(Long)
+	{GET [/admin/training/tasks/{id}/progress]}: getTrainingProgress(Long)
+	{POST [/admin/training/datasets]}: uploadDataset(MultipartFile,String,String,String)
+	{GET [/admin/training/datasets]}: getDatasets(Integer,Integer,String)
+	{POST [/admin/training/datasets/{id}/preprocess]}: preprocessData(Long,Map)
+	{GET [/admin/training/tasks/{id}/logs]}: getTrainingLogs(Long,Integer,Integer)
+	{POST [/admin/training/tasks/{id}/evaluate]}: evaluateModel(Long,Map)
+	{POST [/admin/training/tasks/{taskId}/evaluate]}: evaluateModel(Long,Long)
+	{GET [/admin/training/statistics]}: getTrainingStatistics()
+	{POST [/admin/training/tasks/{taskId}/export]}: exportModel(Long,String)
+	{POST [/admin/training/tasks/{id}/export]}: exportModel(Long,Map)
+	{GET [/admin/training/model-types]}: getSupportedModelTypes()
+	{GET [/admin/training/preprocess-options]}: getPreprocessOptions()
+	{POST [/admin/training/tasks/{taskId}/deploy]}: deployModel(Long,String,String)
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.UserController:
+	{POST [/admin/user/add]}: addUser(User)
+	{GET [/admin/user/statistics]}: getUserStatistics()
+	{PUT [/admin/user/batch-toggle-status]}: batchToggleStatus(List)
+	{GET [/admin/user/list]}: getUserList(int,int,String,String)
+	{GET [/admin/user/{id}]}: getUser(Long)
+	{PUT [/admin/user/update]}: updateUser(User)
+	{DELETE [/admin/user/delete/{id}]}: deleteUser(Long)
+	{DELETE [/admin/user/batch-delete]}: batchDeleteUsers(List)
+	{PUT [/admin/user/toggle-status/{id}]}: toggleUserStatus(Long)
+2025-08-20 03:43:05 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2025-08-20 03:43:05 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 150 mappings in 'requestMappingHandlerMapping'
+2025-08-20 03:43:05 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /uploads/**, /images/**] in 'resourceHandlerMapping'
+2025-08-20 03:43:06 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-20 03:43:06 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-20 03:43:06 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/admin'
+2025-08-20 03:43:06 [main] INFO  org.example.admin.AdminApplication - Started AdminApplication in 5.611 seconds (JVM running for 6.014)
+2025-08-20 03:43:18 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-20 03:43:18 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-20 03:43:18 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-08-20 03:43:18 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-08-20 03:43:18 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-08-20 03:43:18 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6f92918c
+2025-08-20 03:43:18 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@38d3c815
+2025-08-20 03:43:18 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-20 03:43:18 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-08-20 03:43:18 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/training/tasks", parameters={}
+2025-08-20 03:43:18 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:43:18 [http-nio-8082-exec-1] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:43:18 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:43:18 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:43:18 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:43:18 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:43:19 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:43:19 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:43:19 CST 2025, status=404, error=Not Found, path=/admin/training/tasks}]
+2025-08-20 03:43:19 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:43:24 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/training/tasks", parameters={}
+2025-08-20 03:43:24 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:43:24 [http-nio-8082-exec-2] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:43:24 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:43:24 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:43:24 [http-nio-8082-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:43:24 [http-nio-8082-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:43:24 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:43:24 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:43:24 CST 2025, status=404, error=Not Found, path=/admin/training/tasks}]
+2025-08-20 03:43:24 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:44:10 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@771a660, started on Wed Aug 20 03:43:01 CST 2025
+2025-08-20 03:44:10 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-20 03:44:10 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-20 03:44:23 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 1.8.0_351 on 192.168.0.14 with PID 79938 (/Users/peng/Downloads/full-goods-parent/full-goods-admin/target/classes started by peng in /Users/peng/Downloads/full-goods-parent/full-goods-admin)
+2025-08-20 03:44:23 [main] DEBUG org.example.admin.AdminApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 03:44:23 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 03:44:24 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@771a660
+2025-08-20 03:44:25 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-20 03:44:25 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-20 03:44:25 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2025-08-20 03:44:25 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:44:25 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:44:25 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.common.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-20 03:44:26 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: /Users/peng/.m2/repository/org/springframework/boot/spring-boot/2.7.5/spring-boot-2.7.5.jar
+2025-08-20 03:44:26 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: /Users/peng/.m2/repository/org/springframework/boot/spring-boot/2.7.5/spring-boot-2.7.5.jar
+2025-08-20 03:44:26 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-08-20 03:44:26 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2025-08-20 03:44:26 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 03:44:26 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 03:44:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-20 03:44:26 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2025-08-20 03:44:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2293 ms
+2025-08-20 03:44:26 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: filterRegistrationBean urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, hiddenHttpMethodFilter urls=[/*] order=2147483647
+2025-08-20 03:44:26 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], statViewServlet urls=[/druid/*]
+2025-08-20 03:44:26 [main] DEBUG o.s.b.w.servlet.filter.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+2025-08-20 03:44:26 [main] DEBUG o.s.web.filter.HiddenHttpMethodFilter - Filter 'hiddenHttpMethodFilter' configured for use
+2025-08-20 03:44:26 [main] DEBUG o.s.b.w.s.filter.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
+2025-08-20 03:44:26 [main] DEBUG o.s.b.web.servlet.filter.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+2025-08-20 03:44:26 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-20 03:44:27 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-20 03:44:28 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageController:
+	{GET [/admin/message/list]}: getMessageList(int,int,String,String,String)
+	{GET [/admin/message/{id}]}: getMessageDetail(Long)
+	{POST [/admin/message/reply]}: replyMessage(Map)
+	{PUT [/admin/message/read/{id}]}: markMessageRead(Long,Boolean)
+	{PUT [/admin/message/batch-read]}: batchMarkMessageRead(Map)
+	{DELETE [/admin/message/batch]}: batchDeleteMessages(List)
+	{POST [/admin/message/ai-reply]}: aiReply(Map)
+	{GET [/admin/message/statistics]}: getMessageStatistics()
+	{GET [/admin/message/export]}: exportMessages(String,String,String)
+	{POST [/admin/message/send-system]}: sendSystemMessage(Map)
+	{POST [/admin/message/send-batch]}: sendBatchMessage(Map)
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageSendingController:
+	{POST [/admin/message/send/system]}: sendSystemMessage(Map)
+	{POST [/admin/message/send/batch]}: sendBatchMessage(Map)
+	{POST [/admin/message/send/template]}: sendTemplateMessage(Map)
+	{GET [/admin/message/sending/history]}: getSendingHistory(Integer,Integer,String,String,String,String)
+	{GET [/admin/message/sending/{id}]}: getSendingDetail(Long)
+	{POST [/admin/message/sending/{id}/cancel]}: cancelSending(Long)
+	{POST [/admin/message/sending/{id}/resend]}: resendMessage(Long)
+	{GET [/admin/message/sending/statistics]}: getSendingStatistics(String)
+	{POST [/admin/message/template/preview]}: previewTemplateMessage(Map)
+	{POST [/admin/message/validate/userlist]}: validateUserListFile(MultipartFile)
+	{GET [/admin/message/usergroups]}: getUserGroups()
+	{GET [/admin/message/users]}: getUsers(String,Long)
+	{POST [/admin/message/draft]}: saveDraft(Map)
+	{GET [/admin/message/drafts]}: getDrafts()
+	{DELETE [/admin/message/draft/{id}]}: deleteDraft(Long)
+	{POST [/admin/message/draft/{id}/create]}: createFromDraft(Long)
+	{GET [/admin/message/sending/config]}: getSendingConfig()
+	{PUT [/admin/message/sending/config]}: updateSendingConfig(Map)
+	{POST [/admin/message/test]}: testMessageSending(Map)
+	{GET [/admin/message/queue/status]}: getQueueStatus()
+	{POST [/admin/message/queue/clear]}: clearQueue()
+	{POST [/admin/message/sending/pause]}: pauseSending()
+	{POST [/admin/message/sending/resume]}: resumeSending()
+	{GET [/admin/message/sending/export]}: exportSendingHistory(String,String,String,String)
+	{GET [/admin/message/sending/report]}: getSendingReport(String,String,String)
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageTemplateController:
+	{GET [/admin/message-templates/list]}: getTemplateList(Integer,Integer,String,Integer,Integer)
+	{GET [/admin/message-templates/{id}]}: getTemplateById(Long)
+	{POST [/admin/message-templates]}: createTemplate(MessageTemplate)
+	{PUT [/admin/message-templates/{id}]}: updateTemplate(Long,MessageTemplate)
+	{DELETE [/admin/message-templates/{id}]}: deleteTemplate(Long)
+	{DELETE [/admin/message-templates/batch]}: deleteTemplates(List)
+	{PUT [/admin/message-templates/{id}/status]}: updateTemplateStatus(Long,Integer)
+	{PUT [/admin/message-templates/batch/status]}: updateTemplatesStatus(List,Integer)
+	{POST [/admin/message-templates/{id}/copy]}: copyTemplate(Long,String,String)
+	{POST [/admin/message-templates/preview/{code}]}: previewTemplate(String,Map)
+	{POST [/admin/message-templates/validate/{code}]}: validateTemplateParams(String,Map)
+	{GET [/admin/message-templates/statistics]}: getTemplateStatistics()
+	{GET [/admin/message-templates/export]}: exportTemplates(String,Integer,Integer)
+	{GET [/admin/message-templates/enabled]}: getEnabledTemplates()
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AuthController:
+	{POST [/auth/send-code]}: sendVerificationCode(Map)
+	{POST [/auth/login]}: login(Map)
+	{POST [/auth/verify-token]}: verifyToken(String)
+	{POST [/auth/logout]}: logout(String)
+	{GET [/auth/user-info]}: getUserInfo(String)
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.BannerController:
+	{GET [/admin/banner/list]}: getBanners(Integer,Integer,String)
+	{GET [/admin/banner/{id}]}: getBannerDetail(Long)
+	{POST [/admin/banner/add]}: addBanner(Banner)
+	{PUT [/admin/banner/update]}: updateBanner(Banner)
+	{DELETE [/admin/banner/delete/{id}]}: deleteBanner(Long)
+	{DELETE [/admin/banner/batch-delete]}: batchDeleteBanners(List)
+	{PUT [/admin/banner/toggle-status/{id}]}: toggleBannerStatus(Long)
+	{PUT [/admin/banner/batch-toggle-status]}: batchToggleBannerStatus(List)
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.CategoryController:
+	{GET [/admin/category/list]}: getCategories(Integer,Integer,String)
+	{GET [/admin/category/{id}]}: getCategoryDetail(Long)
+	{POST [/admin/category/add]}: addCategory(Map)
+	{PUT [/admin/category/update]}: updateCategory(Map)
+	{DELETE [/admin/category/delete/{id}]}: deleteCategory(Long)
+	{DELETE [/admin/category/batch-delete]}: batchDeleteCategories(List)
+	{PUT [/admin/category/toggle-status/{id}]}: toggleCategoryStatus(Long)
+	{PUT [/admin/category/batch-toggle-status]}: batchToggleCategoryStatus(List)
+	{PUT [/admin/category/enable-all]}: enableAllCategories()
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.DashboardController:
+	{GET [/admin/dashboard/statistics]}: getDashboardStatistics()
+	{GET [/admin/dashboard/sales-trend]}: getSalesTrend(int)
+	{GET [/admin/dashboard/delivery-efficiency]}: getDeliveryEfficiency()
+	{GET [/admin/dashboard/promotion-effect]}: getPromotionEffect()
+	{GET [/admin/dashboard/delay-reasons]}: getDelayReasons()
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.DeliveryController:
+	{GET [/admin/delivery/orders]}: getDeliveryOrders(Integer,Integer,String,String,String,String)
+	{GET [/admin/delivery/orders/{id}]}: getOrderDetail(Long)
+	{POST [/admin/delivery/ship]}: shipOrder(Map)
+	{POST [/admin/delivery/batch-ship]}: batchShipOrders(Map)
+	{DELETE [/admin/delivery/orders/{id}]}: deleteOrder(Long)
+	{DELETE [/admin/delivery/batch-delete]}: batchDeleteOrders(List)
+	{GET [/admin/delivery/express-companies]}: getExpressCompanies()
+	{GET [/admin/delivery/statistics]}: getDeliveryStatistics()
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.ModelController:
+	{GET [/admin/model/list]}: getModelList(Integer,Integer,String,String)
+	{GET [/admin/model/{id}]}: getModelDetail(Long)
+	{POST [/admin/model]}: createModel(Map)
+	{POST [/admin/model/upload]}: uploadModel(MultipartFile,String,String,String)
+	{POST [/admin/model/{id}/test]}: testModel(Long)
+	{PUT [/admin/model/{id}/status]}: updateModelStatus(Long,Map)
+	{PUT [/admin/model/activate/{id}]}: activateModel(Long)
+	{PUT [/admin/model/deactivate/{id}]}: deactivateModel(Long)
+	{PUT [/admin/model/{id}]}: updateModel(Long,Map)
+	{DELETE [/admin/model/{id}]}: deleteModel(Long)
+	{POST [/admin/model/training-data]}: uploadTrainingData(MultipartFile,Long,String)
+	{POST [/admin/model/strategy]}: createStrategy(Map)
+	{GET [/admin/model/statistics]}: getModelStatistics()
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.OrderController:
+	{GET [/admin/order/statistics]}: getOrderStatistics()
+	{PUT [/admin/order/ship]}: shipOrder(Map)
+	{PUT [/admin/order/batch-ship]}: batchShipOrders(List)
+	{DELETE [/admin/order/delete/{id}]}: deleteOrder(Long)
+	{DELETE [/admin/order/batch-delete]}: batchDeleteOrders(List)
+	{GET [/admin/order/list]}: getOrderList(int,int,String,String,String,String)
+	{PUT [/admin/order/mark-paid/{id}]}: markOrderPaid(Long)
+	{PUT [/admin/order/refund/{id}]}: refundOrder(Long)
+	{PUT [/admin/order/batch-refund]}: batchRefundOrders(List)
+	{GET [/admin/order/{id}]}: getOrder(Long)
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.ProductController:
+	{GET [/admin/fruit/categories]}: getCategories()
+	{GET [/admin/fruit/list]}: getProductList(int,int,String,String,String)
+	{GET [/admin/fruit/{id}]}: getProduct(Long)
+	{PUT [/admin/fruit/recommend/{id}]}: setRecommended(Long,Boolean)
+	{PUT [/admin/fruit/recommend/batch]}: batchSetRecommended(Map)
+	{POST [/admin/fruit/flash-sale/{id}]}: setFlashSale(Long,Map)
+	{DELETE [/admin/fruit/flash-sale/{id}]}: cancelFlashSale(Long)
+	{POST [/admin/fruit/add]}: addProduct(Fruit)
+	{PUT [/admin/fruit/update]}: updateProduct(Fruit)
+	{DELETE [/admin/fruit/delete/{id}]}: deleteProduct(Long)
+	{DELETE [/admin/fruit/batch-delete]}: batchDeleteProducts(List)
+	{PUT [/admin/fruit/toggle-status/{id}]}: toggleProductStatus(Long)
+	{PUT [/admin/fruit/batch-toggle-status]}: batchToggleStatus(List)
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.TrainingController:
+	{GET [/admin/training/tasks]}: getTrainingTasks(Integer,Integer,String,String)
+	{POST [/admin/training/tasks]}: createTrainingTask(Map)
+	{GET [/admin/training/tasks/{id}]}: getTrainingTaskDetail(Long)
+	{POST [/admin/training/tasks/{id}/start]}: startTraining(Long)
+	{POST [/admin/training/tasks/{id}/stop]}: stopTraining(Long)
+	{GET [/admin/training/tasks/{id}/progress]}: getTrainingProgress(Long)
+	{POST [/admin/training/datasets]}: uploadDataset(MultipartFile,String,String,String)
+	{GET [/admin/training/datasets]}: getDatasets(Integer,Integer,String)
+	{POST [/admin/training/datasets/{id}/preprocess]}: preprocessData(Long,Map)
+	{GET [/admin/training/tasks/{id}/logs]}: getTrainingLogs(Long,Integer,Integer)
+	{POST [/admin/training/tasks/{id}/evaluate]}: evaluateModel(Long,Map)
+	{POST [/admin/training/tasks/{taskId}/evaluate]}: evaluateModel(Long,Long)
+	{GET [/admin/training/statistics]}: getTrainingStatistics()
+	{POST [/admin/training/tasks/{id}/export]}: exportModel(Long,Map)
+	{POST [/admin/training/tasks/{taskId}/export]}: exportModel(Long,String)
+	{GET [/admin/training/model-types]}: getSupportedModelTypes()
+	{GET [/admin/training/preprocess-options]}: getPreprocessOptions()
+	{POST [/admin/training/tasks/{taskId}/deploy]}: deployModel(Long,String,String)
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.UserController:
+	{POST [/admin/user/add]}: addUser(User)
+	{GET [/admin/user/statistics]}: getUserStatistics()
+	{PUT [/admin/user/batch-toggle-status]}: batchToggleStatus(List)
+	{GET [/admin/user/list]}: getUserList(int,int,String,String)
+	{GET [/admin/user/{id}]}: getUser(Long)
+	{PUT [/admin/user/update]}: updateUser(User)
+	{DELETE [/admin/user/delete/{id}]}: deleteUser(Long)
+	{DELETE [/admin/user/batch-delete]}: batchDeleteUsers(List)
+	{PUT [/admin/user/toggle-status/{id}]}: toggleUserStatus(Long)
+2025-08-20 03:44:28 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ [/error]}: error(HttpServletRequest)
+2025-08-20 03:44:28 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 150 mappings in 'requestMappingHandlerMapping'
+2025-08-20 03:44:28 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /uploads/**, /images/**] in 'resourceHandlerMapping'
+2025-08-20 03:44:28 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-20 03:44:28 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-20 03:44:28 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/admin'
+2025-08-20 03:44:28 [main] INFO  org.example.admin.AdminApplication - Started AdminApplication in 5.652 seconds (JVM running for 6.069)
+2025-08-20 03:44:35 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-20 03:44:35 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@49077b7e
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@b0c0834
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-20 03:44:35 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/training/tasks", parameters={}
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:44:35 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:44:35 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:44:35 CST 2025, status=404, error=Not Found, path=/admin/training/tasks}]
+2025-08-20 03:44:35 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:44:47 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/training/tasks", parameters={}
+2025-08-20 03:44:47 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:44:47 [http-nio-8082-exec-2] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:44:47 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:44:47 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:44:47 [http-nio-8082-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:44:47 [http-nio-8082-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:44:47 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:44:47 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:44:47 CST 2025, status=404, error=Not Found, path=/admin/training/tasks}]
+2025-08-20 03:44:47 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:45:32 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/actuator/mappings", parameters={}
+2025-08-20 03:45:32 [http-nio-8082-exec-3] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:45:32 [http-nio-8082-exec-3] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:45:32 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:45:32 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:45:32 [http-nio-8082-exec-3] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:45:32 [http-nio-8082-exec-3] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:45:32 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:45:32 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:45:32 CST 2025, status=404, error=Not Found, path=/admin/actuator/mappings}]
+2025-08-20 03:45:32 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:46:43 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/actuator/beans", parameters={}
+2025-08-20 03:46:43 [http-nio-8082-exec-5] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:46:43 [http-nio-8082-exec-5] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:46:43 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:46:43 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:46:43 [http-nio-8082-exec-5] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:46:43 [http-nio-8082-exec-5] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:46:43 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:46:43 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:46:43 CST 2025, status=404, error=Not Found, path=/admin/actuator/beans}]
+2025-08-20 03:46:43 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:47:25 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@771a660, started on Wed Aug 20 03:44:24 CST 2025
+2025-08-20 03:47:25 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-20 03:47:25 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-20 03:47:38 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 1.8.0_351 on 192.168.0.14 with PID 81635 (/Users/peng/Downloads/full-goods-parent/full-goods-admin/target/classes started by peng in /Users/peng/Downloads/full-goods-parent/full-goods-admin)
+2025-08-20 03:47:38 [main] DEBUG org.example.admin.AdminApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 03:47:38 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 03:47:38 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@771a660
+2025-08-20 03:47:39 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-20 03:47:39 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-20 03:47:39 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2025-08-20 03:47:40 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:47:40 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:47:40 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.common.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-20 03:47:40 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: /Users/peng/.m2/repository/org/springframework/boot/spring-boot/2.7.5/spring-boot-2.7.5.jar
+2025-08-20 03:47:40 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: /Users/peng/.m2/repository/org/springframework/boot/spring-boot/2.7.5/spring-boot-2.7.5.jar
+2025-08-20 03:47:40 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-08-20 03:47:40 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2025-08-20 03:47:40 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 03:47:40 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 03:47:40 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-20 03:47:40 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2025-08-20 03:47:40 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2087 ms
+2025-08-20 03:47:40 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: filterRegistrationBean urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, hiddenHttpMethodFilter urls=[/*] order=2147483647
+2025-08-20 03:47:40 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], statViewServlet urls=[/druid/*]
+2025-08-20 03:47:40 [main] DEBUG o.s.b.w.servlet.filter.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+2025-08-20 03:47:40 [main] DEBUG o.s.web.filter.HiddenHttpMethodFilter - Filter 'hiddenHttpMethodFilter' configured for use
+2025-08-20 03:47:40 [main] DEBUG o.s.b.w.s.filter.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
+2025-08-20 03:47:40 [main] DEBUG o.s.b.web.servlet.filter.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+2025-08-20 03:47:41 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-20 03:47:42 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-20 03:47:42 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageController:
+	{GET [/admin/message/list]}: getMessageList(int,int,String,String,String)
+	{GET [/admin/message/{id}]}: getMessageDetail(Long)
+	{POST [/admin/message/reply]}: replyMessage(Map)
+	{PUT [/admin/message/read/{id}]}: markMessageRead(Long,Boolean)
+	{PUT [/admin/message/batch-read]}: batchMarkMessageRead(Map)
+	{DELETE [/admin/message/batch]}: batchDeleteMessages(List)
+	{POST [/admin/message/ai-reply]}: aiReply(Map)
+	{GET [/admin/message/statistics]}: getMessageStatistics()
+	{GET [/admin/message/export]}: exportMessages(String,String,String)
+	{POST [/admin/message/send-system]}: sendSystemMessage(Map)
+	{POST [/admin/message/send-batch]}: sendBatchMessage(Map)
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageSendingController:
+	{POST [/admin/message/send/system]}: sendSystemMessage(Map)
+	{POST [/admin/message/send/batch]}: sendBatchMessage(Map)
+	{POST [/admin/message/send/template]}: sendTemplateMessage(Map)
+	{GET [/admin/message/sending/history]}: getSendingHistory(Integer,Integer,String,String,String,String)
+	{GET [/admin/message/sending/{id}]}: getSendingDetail(Long)
+	{POST [/admin/message/sending/{id}/cancel]}: cancelSending(Long)
+	{POST [/admin/message/sending/{id}/resend]}: resendMessage(Long)
+	{GET [/admin/message/sending/statistics]}: getSendingStatistics(String)
+	{POST [/admin/message/template/preview]}: previewTemplateMessage(Map)
+	{POST [/admin/message/validate/userlist]}: validateUserListFile(MultipartFile)
+	{GET [/admin/message/usergroups]}: getUserGroups()
+	{GET [/admin/message/users]}: getUsers(String,Long)
+	{POST [/admin/message/draft]}: saveDraft(Map)
+	{GET [/admin/message/drafts]}: getDrafts()
+	{DELETE [/admin/message/draft/{id}]}: deleteDraft(Long)
+	{POST [/admin/message/draft/{id}/create]}: createFromDraft(Long)
+	{GET [/admin/message/sending/config]}: getSendingConfig()
+	{PUT [/admin/message/sending/config]}: updateSendingConfig(Map)
+	{POST [/admin/message/test]}: testMessageSending(Map)
+	{GET [/admin/message/queue/status]}: getQueueStatus()
+	{POST [/admin/message/queue/clear]}: clearQueue()
+	{POST [/admin/message/sending/pause]}: pauseSending()
+	{POST [/admin/message/sending/resume]}: resumeSending()
+	{GET [/admin/message/sending/export]}: exportSendingHistory(String,String,String,String)
+	{GET [/admin/message/sending/report]}: getSendingReport(String,String,String)
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageTemplateController:
+	{GET [/admin/message-templates/list]}: getTemplateList(Integer,Integer,String,Integer,Integer)
+	{GET [/admin/message-templates/{id}]}: getTemplateById(Long)
+	{POST [/admin/message-templates]}: createTemplate(MessageTemplate)
+	{PUT [/admin/message-templates/{id}]}: updateTemplate(Long,MessageTemplate)
+	{DELETE [/admin/message-templates/{id}]}: deleteTemplate(Long)
+	{DELETE [/admin/message-templates/batch]}: deleteTemplates(List)
+	{PUT [/admin/message-templates/{id}/status]}: updateTemplateStatus(Long,Integer)
+	{PUT [/admin/message-templates/batch/status]}: updateTemplatesStatus(List,Integer)
+	{POST [/admin/message-templates/{id}/copy]}: copyTemplate(Long,String,String)
+	{POST [/admin/message-templates/preview/{code}]}: previewTemplate(String,Map)
+	{POST [/admin/message-templates/validate/{code}]}: validateTemplateParams(String,Map)
+	{GET [/admin/message-templates/statistics]}: getTemplateStatistics()
+	{GET [/admin/message-templates/export]}: exportTemplates(String,Integer,Integer)
+	{GET [/admin/message-templates/enabled]}: getEnabledTemplates()
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AuthController:
+	{POST [/auth/send-code]}: sendVerificationCode(Map)
+	{POST [/auth/login]}: login(Map)
+	{POST [/auth/verify-token]}: verifyToken(String)
+	{POST [/auth/logout]}: logout(String)
+	{GET [/auth/user-info]}: getUserInfo(String)
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.BannerController:
+	{GET [/admin/banner/list]}: getBanners(Integer,Integer,String)
+	{GET [/admin/banner/{id}]}: getBannerDetail(Long)
+	{POST [/admin/banner/add]}: addBanner(Banner)
+	{PUT [/admin/banner/update]}: updateBanner(Banner)
+	{DELETE [/admin/banner/delete/{id}]}: deleteBanner(Long)
+	{DELETE [/admin/banner/batch-delete]}: batchDeleteBanners(List)
+	{PUT [/admin/banner/toggle-status/{id}]}: toggleBannerStatus(Long)
+	{PUT [/admin/banner/batch-toggle-status]}: batchToggleBannerStatus(List)
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.CategoryController:
+	{GET [/admin/category/list]}: getCategories(Integer,Integer,String)
+	{GET [/admin/category/{id}]}: getCategoryDetail(Long)
+	{POST [/admin/category/add]}: addCategory(Map)
+	{PUT [/admin/category/update]}: updateCategory(Map)
+	{DELETE [/admin/category/delete/{id}]}: deleteCategory(Long)
+	{DELETE [/admin/category/batch-delete]}: batchDeleteCategories(List)
+	{PUT [/admin/category/toggle-status/{id}]}: toggleCategoryStatus(Long)
+	{PUT [/admin/category/batch-toggle-status]}: batchToggleCategoryStatus(List)
+	{PUT [/admin/category/enable-all]}: enableAllCategories()
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.DashboardController:
+	{GET [/admin/dashboard/statistics]}: getDashboardStatistics()
+	{GET [/admin/dashboard/sales-trend]}: getSalesTrend(int)
+	{GET [/admin/dashboard/delivery-efficiency]}: getDeliveryEfficiency()
+	{GET [/admin/dashboard/promotion-effect]}: getPromotionEffect()
+	{GET [/admin/dashboard/delay-reasons]}: getDelayReasons()
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.DeliveryController:
+	{GET [/admin/delivery/orders]}: getDeliveryOrders(Integer,Integer,String,String,String,String)
+	{GET [/admin/delivery/orders/{id}]}: getOrderDetail(Long)
+	{POST [/admin/delivery/ship]}: shipOrder(Map)
+	{POST [/admin/delivery/batch-ship]}: batchShipOrders(Map)
+	{DELETE [/admin/delivery/orders/{id}]}: deleteOrder(Long)
+	{DELETE [/admin/delivery/batch-delete]}: batchDeleteOrders(List)
+	{GET [/admin/delivery/express-companies]}: getExpressCompanies()
+	{GET [/admin/delivery/statistics]}: getDeliveryStatistics()
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.ModelController:
+	{GET [/admin/model/list]}: getModelList(Integer,Integer,String,String)
+	{GET [/admin/model/{id}]}: getModelDetail(Long)
+	{POST [/admin/model]}: createModel(Map)
+	{POST [/admin/model/upload]}: uploadModel(MultipartFile,String,String,String)
+	{POST [/admin/model/{id}/test]}: testModel(Long)
+	{PUT [/admin/model/{id}/status]}: updateModelStatus(Long,Map)
+	{PUT [/admin/model/activate/{id}]}: activateModel(Long)
+	{PUT [/admin/model/deactivate/{id}]}: deactivateModel(Long)
+	{PUT [/admin/model/{id}]}: updateModel(Long,Map)
+	{DELETE [/admin/model/{id}]}: deleteModel(Long)
+	{POST [/admin/model/training-data]}: uploadTrainingData(MultipartFile,Long,String)
+	{POST [/admin/model/strategy]}: createStrategy(Map)
+	{GET [/admin/model/statistics]}: getModelStatistics()
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.OrderController:
+	{GET [/admin/order/{id}]}: getOrder(Long)
+	{GET [/admin/order/statistics]}: getOrderStatistics()
+	{PUT [/admin/order/ship]}: shipOrder(Map)
+	{PUT [/admin/order/batch-ship]}: batchShipOrders(List)
+	{DELETE [/admin/order/delete/{id}]}: deleteOrder(Long)
+	{DELETE [/admin/order/batch-delete]}: batchDeleteOrders(List)
+	{GET [/admin/order/list]}: getOrderList(int,int,String,String,String,String)
+	{PUT [/admin/order/mark-paid/{id}]}: markOrderPaid(Long)
+	{PUT [/admin/order/refund/{id}]}: refundOrder(Long)
+	{PUT [/admin/order/batch-refund]}: batchRefundOrders(List)
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.ProductController:
+	{GET [/admin/fruit/categories]}: getCategories()
+	{GET [/admin/fruit/list]}: getProductList(int,int,String,String,String)
+	{GET [/admin/fruit/{id}]}: getProduct(Long)
+	{PUT [/admin/fruit/recommend/{id}]}: setRecommended(Long,Boolean)
+	{PUT [/admin/fruit/recommend/batch]}: batchSetRecommended(Map)
+	{POST [/admin/fruit/flash-sale/{id}]}: setFlashSale(Long,Map)
+	{DELETE [/admin/fruit/flash-sale/{id}]}: cancelFlashSale(Long)
+	{POST [/admin/fruit/add]}: addProduct(Fruit)
+	{PUT [/admin/fruit/update]}: updateProduct(Fruit)
+	{DELETE [/admin/fruit/delete/{id}]}: deleteProduct(Long)
+	{DELETE [/admin/fruit/batch-delete]}: batchDeleteProducts(List)
+	{PUT [/admin/fruit/toggle-status/{id}]}: toggleProductStatus(Long)
+	{PUT [/admin/fruit/batch-toggle-status]}: batchToggleStatus(List)
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.TrainingController:
+	{GET [/admin/training/tasks]}: getTrainingTasks(Integer,Integer,String,String)
+	{POST [/admin/training/tasks]}: createTrainingTask(Map)
+	{GET [/admin/training/tasks/{id}]}: getTrainingTaskDetail(Long)
+	{POST [/admin/training/tasks/{id}/start]}: startTraining(Long)
+	{POST [/admin/training/tasks/{id}/stop]}: stopTraining(Long)
+	{GET [/admin/training/tasks/{id}/progress]}: getTrainingProgress(Long)
+	{POST [/admin/training/datasets]}: uploadDataset(MultipartFile,String,String,String)
+	{GET [/admin/training/datasets]}: getDatasets(Integer,Integer,String)
+	{POST [/admin/training/datasets/{id}/preprocess]}: preprocessData(Long,Map)
+	{GET [/admin/training/tasks/{id}/logs]}: getTrainingLogs(Long,Integer,Integer)
+	{POST [/admin/training/tasks/{id}/evaluate]}: evaluateModel(Long,Map)
+	{POST [/admin/training/tasks/{taskId}/evaluate]}: evaluateModel(Long,Long)
+	{GET [/admin/training/statistics]}: getTrainingStatistics()
+	{POST [/admin/training/tasks/{id}/export]}: exportModel(Long,Map)
+	{POST [/admin/training/tasks/{taskId}/export]}: exportModel(Long,String)
+	{GET [/admin/training/model-types]}: getSupportedModelTypes()
+	{GET [/admin/training/preprocess-options]}: getPreprocessOptions()
+	{POST [/admin/training/tasks/{taskId}/deploy]}: deployModel(Long,String,String)
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.UserController:
+	{GET [/admin/user/statistics]}: getUserStatistics()
+	{PUT [/admin/user/batch-toggle-status]}: batchToggleStatus(List)
+	{GET [/admin/user/list]}: getUserList(int,int,String,String)
+	{GET [/admin/user/{id}]}: getUser(Long)
+	{PUT [/admin/user/update]}: updateUser(User)
+	{DELETE [/admin/user/delete/{id}]}: deleteUser(Long)
+	{DELETE [/admin/user/batch-delete]}: batchDeleteUsers(List)
+	{PUT [/admin/user/toggle-status/{id}]}: toggleUserStatus(Long)
+	{POST [/admin/user/add]}: addUser(User)
+2025-08-20 03:47:42 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ [/error]}: error(HttpServletRequest)
+2025-08-20 03:47:42 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 150 mappings in 'requestMappingHandlerMapping'
+2025-08-20 03:47:43 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /uploads/**, /images/**] in 'resourceHandlerMapping'
+2025-08-20 03:47:43 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-20 03:47:43 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-20 03:47:43 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/admin'
+2025-08-20 03:47:43 [main] INFO  org.example.admin.AdminApplication - Started AdminApplication in 5.395 seconds (JVM running for 5.869)
+2025-08-20 03:47:50 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-20 03:47:50 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@43c5e1e5
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@14f92d62
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-20 03:47:50 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/training/tasks", parameters={}
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:47:50 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:47:50 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:47:50 CST 2025, status=404, error=Not Found, path=/admin/training/tasks}]
+2025-08-20 03:47:50 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:47:55 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/training/tasks", parameters={}
+2025-08-20 03:47:55 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:47:55 [http-nio-8082-exec-2] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:47:55 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:47:55 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:47:55 [http-nio-8082-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:47:55 [http-nio-8082-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:47:55 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:47:55 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:47:55 CST 2025, status=404, error=Not Found, path=/admin/training/tasks}]
+2025-08-20 03:47:55 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:48:01 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/training/tasks", parameters={}
+2025-08-20 03:48:01 [http-nio-8082-exec-3] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:48:01 [http-nio-8082-exec-3] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:48:01 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:48:01 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:48:01 [http-nio-8082-exec-3] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:48:01 [http-nio-8082-exec-3] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:48:01 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:48:01 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:48:01 CST 2025, status=404, error=Not Found, path=/admin/training/tasks}]
+2025-08-20 03:48:01 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:48:12 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/training/tasks", parameters={}
+2025-08-20 03:48:12 [http-nio-8082-exec-5] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:48:12 [http-nio-8082-exec-5] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:48:12 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:48:12 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:48:12 [http-nio-8082-exec-5] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:48:12 [http-nio-8082-exec-5] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:48:12 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:48:12 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:48:12 CST 2025, status=404, error=Not Found, path=/admin/training/tasks}]
+2025-08-20 03:48:12 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:48:18 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/actuator/beans", parameters={}
+2025-08-20 03:48:18 [http-nio-8082-exec-7] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:48:18 [http-nio-8082-exec-7] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:48:18 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:48:18 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:48:18 [http-nio-8082-exec-7] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:48:18 [http-nio-8082-exec-7] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:48:18 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:48:18 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:48:18 CST 2025, status=404, error=Not Found, path=/admin/actuator/beans}]
+2025-08-20 03:48:18 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:49:20 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/training/model-types", parameters={}
+2025-08-20 03:49:20 [http-nio-8082-exec-9] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:49:20 [http-nio-8082-exec-9] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:49:20 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:49:20 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:49:20 [http-nio-8082-exec-9] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:49:20 [http-nio-8082-exec-9] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:49:20 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:49:20 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:49:20 CST 2025, status=404, error=Not Found, path=/admin/training/model-typ (truncated)...]
+2025-08-20 03:49:20 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:49:26 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/user/list", parameters={}
+2025-08-20 03:49:26 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:49:26 [http-nio-8082-exec-1] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:49:26 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:49:26 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:49:26 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:49:26 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:49:26 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:49:26 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:49:26 CST 2025, status=404, error=Not Found, path=/admin/user/list}]
+2025-08-20 03:49:26 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:49:31 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/actuator/health", parameters={}
+2025-08-20 03:49:31 [http-nio-8082-exec-3] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:49:31 [http-nio-8082-exec-3] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:49:31 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:49:31 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:49:31 [http-nio-8082-exec-3] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:49:31 [http-nio-8082-exec-3] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:49:31 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:49:31 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:49:31 CST 2025, status=404, error=Not Found, path=/admin/actuator/health}]
+2025-08-20 03:49:31 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:50:01 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@771a660, started on Wed Aug 20 03:47:38 CST 2025
+2025-08-20 03:50:02 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-20 03:50:02 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-20 03:50:15 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 1.8.0_351 on 192.168.0.14 with PID 84858 (/Users/peng/Downloads/full-goods-parent/full-goods-admin/target/classes started by peng in /Users/peng/Downloads/full-goods-parent/full-goods-admin)
+2025-08-20 03:50:15 [main] DEBUG org.example.admin.AdminApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 03:50:15 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 03:50:15 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@771a660
+2025-08-20 03:50:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-20 03:50:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-20 03:50:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2025-08-20 03:50:17 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:50:17 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 03:50:17 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.common.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-20 03:50:18 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: /Users/peng/.m2/repository/org/springframework/boot/spring-boot/2.7.5/spring-boot-2.7.5.jar
+2025-08-20 03:50:18 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: /Users/peng/.m2/repository/org/springframework/boot/spring-boot/2.7.5/spring-boot-2.7.5.jar
+2025-08-20 03:50:18 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-08-20 03:50:18 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2025-08-20 03:50:18 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 03:50:18 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 03:50:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-20 03:50:18 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2025-08-20 03:50:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2491 ms
+2025-08-20 03:50:18 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: filterRegistrationBean urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, hiddenHttpMethodFilter urls=[/*] order=2147483647
+2025-08-20 03:50:18 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], statViewServlet urls=[/druid/*]
+2025-08-20 03:50:18 [main] DEBUG o.s.b.w.servlet.filter.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+2025-08-20 03:50:18 [main] DEBUG o.s.web.filter.HiddenHttpMethodFilter - Filter 'hiddenHttpMethodFilter' configured for use
+2025-08-20 03:50:18 [main] DEBUG o.s.b.w.s.filter.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
+2025-08-20 03:50:18 [main] DEBUG o.s.b.web.servlet.filter.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+2025-08-20 03:50:18 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-20 03:50:19 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-20 03:50:20 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageController:
+	{POST [/admin/message/ai-reply]}: aiReply(Map)
+	{GET [/admin/message/list]}: getMessageList(int,int,String,String,String)
+	{GET [/admin/message/{id}]}: getMessageDetail(Long)
+	{POST [/admin/message/reply]}: replyMessage(Map)
+	{PUT [/admin/message/read/{id}]}: markMessageRead(Long,Boolean)
+	{PUT [/admin/message/batch-read]}: batchMarkMessageRead(Map)
+	{DELETE [/admin/message/batch]}: batchDeleteMessages(List)
+	{GET [/admin/message/statistics]}: getMessageStatistics()
+	{GET [/admin/message/export]}: exportMessages(String,String,String)
+	{POST [/admin/message/send-system]}: sendSystemMessage(Map)
+	{POST [/admin/message/send-batch]}: sendBatchMessage(Map)
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageSendingController:
+	{POST [/admin/message/send/system]}: sendSystemMessage(Map)
+	{POST [/admin/message/send/batch]}: sendBatchMessage(Map)
+	{POST [/admin/message/send/template]}: sendTemplateMessage(Map)
+	{GET [/admin/message/sending/history]}: getSendingHistory(Integer,Integer,String,String,String,String)
+	{GET [/admin/message/sending/{id}]}: getSendingDetail(Long)
+	{POST [/admin/message/sending/{id}/cancel]}: cancelSending(Long)
+	{POST [/admin/message/sending/{id}/resend]}: resendMessage(Long)
+	{GET [/admin/message/sending/statistics]}: getSendingStatistics(String)
+	{POST [/admin/message/template/preview]}: previewTemplateMessage(Map)
+	{POST [/admin/message/validate/userlist]}: validateUserListFile(MultipartFile)
+	{GET [/admin/message/usergroups]}: getUserGroups()
+	{GET [/admin/message/users]}: getUsers(String,Long)
+	{POST [/admin/message/draft]}: saveDraft(Map)
+	{GET [/admin/message/drafts]}: getDrafts()
+	{DELETE [/admin/message/draft/{id}]}: deleteDraft(Long)
+	{POST [/admin/message/draft/{id}/create]}: createFromDraft(Long)
+	{GET [/admin/message/sending/config]}: getSendingConfig()
+	{PUT [/admin/message/sending/config]}: updateSendingConfig(Map)
+	{POST [/admin/message/test]}: testMessageSending(Map)
+	{GET [/admin/message/queue/status]}: getQueueStatus()
+	{POST [/admin/message/queue/clear]}: clearQueue()
+	{POST [/admin/message/sending/pause]}: pauseSending()
+	{POST [/admin/message/sending/resume]}: resumeSending()
+	{GET [/admin/message/sending/export]}: exportSendingHistory(String,String,String,String)
+	{GET [/admin/message/sending/report]}: getSendingReport(String,String,String)
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageTemplateController:
+	{GET [/admin/message-templates/list]}: getTemplateList(Integer,Integer,String,Integer,Integer)
+	{GET [/admin/message-templates/{id}]}: getTemplateById(Long)
+	{POST [/admin/message-templates]}: createTemplate(MessageTemplate)
+	{PUT [/admin/message-templates/{id}]}: updateTemplate(Long,MessageTemplate)
+	{DELETE [/admin/message-templates/{id}]}: deleteTemplate(Long)
+	{DELETE [/admin/message-templates/batch]}: deleteTemplates(List)
+	{PUT [/admin/message-templates/{id}/status]}: updateTemplateStatus(Long,Integer)
+	{PUT [/admin/message-templates/batch/status]}: updateTemplatesStatus(List,Integer)
+	{POST [/admin/message-templates/{id}/copy]}: copyTemplate(Long,String,String)
+	{POST [/admin/message-templates/preview/{code}]}: previewTemplate(String,Map)
+	{POST [/admin/message-templates/validate/{code}]}: validateTemplateParams(String,Map)
+	{GET [/admin/message-templates/statistics]}: getTemplateStatistics()
+	{GET [/admin/message-templates/export]}: exportTemplates(String,Integer,Integer)
+	{GET [/admin/message-templates/enabled]}: getEnabledTemplates()
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AuthController:
+	{GET [/auth/user-info]}: getUserInfo(String)
+	{POST [/auth/send-code]}: sendVerificationCode(Map)
+	{POST [/auth/login]}: login(Map)
+	{POST [/auth/verify-token]}: verifyToken(String)
+	{POST [/auth/logout]}: logout(String)
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.BannerController:
+	{GET [/admin/banner/list]}: getBanners(Integer,Integer,String)
+	{GET [/admin/banner/{id}]}: getBannerDetail(Long)
+	{POST [/admin/banner/add]}: addBanner(Banner)
+	{PUT [/admin/banner/update]}: updateBanner(Banner)
+	{DELETE [/admin/banner/delete/{id}]}: deleteBanner(Long)
+	{DELETE [/admin/banner/batch-delete]}: batchDeleteBanners(List)
+	{PUT [/admin/banner/toggle-status/{id}]}: toggleBannerStatus(Long)
+	{PUT [/admin/banner/batch-toggle-status]}: batchToggleBannerStatus(List)
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.CategoryController:
+	{GET [/admin/category/list]}: getCategories(Integer,Integer,String)
+	{GET [/admin/category/{id}]}: getCategoryDetail(Long)
+	{POST [/admin/category/add]}: addCategory(Map)
+	{PUT [/admin/category/update]}: updateCategory(Map)
+	{DELETE [/admin/category/delete/{id}]}: deleteCategory(Long)
+	{DELETE [/admin/category/batch-delete]}: batchDeleteCategories(List)
+	{PUT [/admin/category/toggle-status/{id}]}: toggleCategoryStatus(Long)
+	{PUT [/admin/category/batch-toggle-status]}: batchToggleCategoryStatus(List)
+	{PUT [/admin/category/enable-all]}: enableAllCategories()
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.DashboardController:
+	{GET [/admin/dashboard/statistics]}: getDashboardStatistics()
+	{GET [/admin/dashboard/sales-trend]}: getSalesTrend(int)
+	{GET [/admin/dashboard/delivery-efficiency]}: getDeliveryEfficiency()
+	{GET [/admin/dashboard/promotion-effect]}: getPromotionEffect()
+	{GET [/admin/dashboard/delay-reasons]}: getDelayReasons()
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.DeliveryController:
+	{GET [/admin/delivery/orders]}: getDeliveryOrders(Integer,Integer,String,String,String,String)
+	{GET [/admin/delivery/orders/{id}]}: getOrderDetail(Long)
+	{POST [/admin/delivery/ship]}: shipOrder(Map)
+	{POST [/admin/delivery/batch-ship]}: batchShipOrders(Map)
+	{DELETE [/admin/delivery/orders/{id}]}: deleteOrder(Long)
+	{DELETE [/admin/delivery/batch-delete]}: batchDeleteOrders(List)
+	{GET [/admin/delivery/express-companies]}: getExpressCompanies()
+	{GET [/admin/delivery/statistics]}: getDeliveryStatistics()
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.ModelController:
+	{GET [/admin/model/list]}: getModelList(Integer,Integer,String,String)
+	{GET [/admin/model/{id}]}: getModelDetail(Long)
+	{POST [/admin/model]}: createModel(Map)
+	{POST [/admin/model/upload]}: uploadModel(MultipartFile,String,String,String)
+	{POST [/admin/model/{id}/test]}: testModel(Long)
+	{PUT [/admin/model/{id}/status]}: updateModelStatus(Long,Map)
+	{PUT [/admin/model/activate/{id}]}: activateModel(Long)
+	{PUT [/admin/model/deactivate/{id}]}: deactivateModel(Long)
+	{PUT [/admin/model/{id}]}: updateModel(Long,Map)
+	{DELETE [/admin/model/{id}]}: deleteModel(Long)
+	{POST [/admin/model/training-data]}: uploadTrainingData(MultipartFile,Long,String)
+	{POST [/admin/model/strategy]}: createStrategy(Map)
+	{GET [/admin/model/statistics]}: getModelStatistics()
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.OrderController:
+	{GET [/admin/order/statistics]}: getOrderStatistics()
+	{PUT [/admin/order/ship]}: shipOrder(Map)
+	{PUT [/admin/order/batch-ship]}: batchShipOrders(List)
+	{DELETE [/admin/order/delete/{id}]}: deleteOrder(Long)
+	{DELETE [/admin/order/batch-delete]}: batchDeleteOrders(List)
+	{GET [/admin/order/list]}: getOrderList(int,int,String,String,String,String)
+	{PUT [/admin/order/mark-paid/{id}]}: markOrderPaid(Long)
+	{PUT [/admin/order/refund/{id}]}: refundOrder(Long)
+	{PUT [/admin/order/batch-refund]}: batchRefundOrders(List)
+	{GET [/admin/order/{id}]}: getOrder(Long)
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.ProductController:
+	{GET [/admin/fruit/categories]}: getCategories()
+	{GET [/admin/fruit/list]}: getProductList(int,int,String,String,String)
+	{GET [/admin/fruit/{id}]}: getProduct(Long)
+	{PUT [/admin/fruit/recommend/{id}]}: setRecommended(Long,Boolean)
+	{PUT [/admin/fruit/recommend/batch]}: batchSetRecommended(Map)
+	{POST [/admin/fruit/flash-sale/{id}]}: setFlashSale(Long,Map)
+	{DELETE [/admin/fruit/flash-sale/{id}]}: cancelFlashSale(Long)
+	{POST [/admin/fruit/add]}: addProduct(Fruit)
+	{PUT [/admin/fruit/update]}: updateProduct(Fruit)
+	{DELETE [/admin/fruit/delete/{id}]}: deleteProduct(Long)
+	{DELETE [/admin/fruit/batch-delete]}: batchDeleteProducts(List)
+	{PUT [/admin/fruit/toggle-status/{id}]}: toggleProductStatus(Long)
+	{PUT [/admin/fruit/batch-toggle-status]}: batchToggleStatus(List)
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.TrainingController:
+	{GET [/admin/training/tasks]}: getTrainingTasks(Integer,Integer,String,String)
+	{POST [/admin/training/tasks]}: createTrainingTask(Map)
+	{GET [/admin/training/tasks/{id}]}: getTrainingTaskDetail(Long)
+	{POST [/admin/training/tasks/{id}/start]}: startTraining(Long)
+	{POST [/admin/training/tasks/{id}/stop]}: stopTraining(Long)
+	{GET [/admin/training/tasks/{id}/progress]}: getTrainingProgress(Long)
+	{POST [/admin/training/datasets]}: uploadDataset(MultipartFile,String,String,String)
+	{GET [/admin/training/datasets]}: getDatasets(Integer,Integer,String)
+	{POST [/admin/training/datasets/{id}/preprocess]}: preprocessData(Long,Map)
+	{GET [/admin/training/tasks/{id}/logs]}: getTrainingLogs(Long,Integer,Integer)
+	{POST [/admin/training/tasks/{id}/evaluate]}: evaluateModel(Long,Map)
+	{POST [/admin/training/tasks/{taskId}/evaluate]}: evaluateModel(Long,Long)
+	{GET [/admin/training/statistics]}: getTrainingStatistics()
+	{POST [/admin/training/tasks/{taskId}/export]}: exportModel(Long,String)
+	{POST [/admin/training/tasks/{id}/export]}: exportModel(Long,Map)
+	{GET [/admin/training/model-types]}: getSupportedModelTypes()
+	{GET [/admin/training/preprocess-options]}: getPreprocessOptions()
+	{POST [/admin/training/tasks/{taskId}/deploy]}: deployModel(Long,String,String)
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.UserController:
+	{GET [/admin/user/statistics]}: getUserStatistics()
+	{PUT [/admin/user/batch-toggle-status]}: batchToggleStatus(List)
+	{GET [/admin/user/list]}: getUserList(int,int,String,String)
+	{GET [/admin/user/{id}]}: getUser(Long)
+	{PUT [/admin/user/update]}: updateUser(User)
+	{DELETE [/admin/user/delete/{id}]}: deleteUser(Long)
+	{DELETE [/admin/user/batch-delete]}: batchDeleteUsers(List)
+	{PUT [/admin/user/toggle-status/{id}]}: toggleUserStatus(Long)
+	{POST [/admin/user/add]}: addUser(User)
+2025-08-20 03:50:20 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ [/error]}: error(HttpServletRequest)
+2025-08-20 03:50:20 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 150 mappings in 'requestMappingHandlerMapping'
+2025-08-20 03:50:20 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /uploads/**, /images/**] in 'resourceHandlerMapping'
+2025-08-20 03:50:20 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-20 03:50:20 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-20 03:50:21 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/admin'
+2025-08-20 03:50:21 [main] INFO  org.example.admin.AdminApplication - Started AdminApplication in 5.716 seconds (JVM running for 6.114)
+2025-08-20 03:50:34 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-20 03:50:34 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-20 03:50:34 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-08-20 03:50:34 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-08-20 03:50:34 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-08-20 03:50:34 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5eb727c8
+2025-08-20 03:50:34 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@22f48ffc
+2025-08-20 03:50:34 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-20 03:50:34 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-08-20 03:50:34 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/training/tasks", parameters={}
+2025-08-20 03:50:34 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2025-08-20 03:50:34 [http-nio-8082-exec-1] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2025-08-20 03:50:34 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-08-20 03:50:34 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/admin/error", parameters={}
+2025-08-20 03:50:34 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2025-08-20 03:50:34 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-20 03:50:35 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:50:35 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 20 03:50:35 CST 2025, status=404, error=Not Found, path=/admin/training/tasks}]
+2025-08-20 03:50:35 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-08-20 03:51:19 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/tasks", parameters={}
+2025-08-20 03:51:19 [http-nio-8082-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getTrainingTasks(Integer, Integer, String, String)
+2025-08-20 03:51:19 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/training/tasks, RemoteAddr: 0:0:0:0:0:0:0:1, UserAgent: curl/8.7.1
+2025-08-20 03:51:19 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:51:19 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=0, size=10, page=1, tasks=[]})]
+2025-08-20 03:51:19 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/training/tasks, Status: 200, ExecuteTime: 123ms
+2025-08-20 03:51:19 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 03:51:25 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/tasks", parameters={}
+2025-08-20 03:51:25 [http-nio-8082-exec-7] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getTrainingTasks(Integer, Integer, String, String)
+2025-08-20 03:51:25 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/training/tasks, RemoteAddr: 0:0:0:0:0:0:0:1, UserAgent: curl/8.7.1
+2025-08-20 03:51:25 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:51:25 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=0, size=10, page=1, tasks=[]})]
+2025-08-20 03:51:25 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/training/tasks, Status: 200, ExecuteTime: 29ms
+2025-08-20 03:51:25 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 03:51:31 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/model-types", parameters={}
+2025-08-20 03:51:31 [http-nio-8082-exec-8] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getSupportedModelTypes()
+2025-08-20 03:51:31 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/training/model-types, RemoteAddr: 0:0:0:0:0:0:0:1, UserAgent: curl/8.7.1
+2025-08-20 03:51:31 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:51:31 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={types=[{name=文本分类, description=对文本进行分类，如情感分析、主题分类等, id=text_cla (truncated)...]
+2025-08-20 03:51:31 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/training/model-types, Status: 200, ExecuteTime: 36ms
+2025-08-20 03:51:31 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 03:51:36 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/datasets", parameters={}
+2025-08-20 03:51:36 [http-nio-8082-exec-10] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getDatasets(Integer, Integer, String)
+2025-08-20 03:51:36 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/training/datasets, RemoteAddr: 0:0:0:0:0:0:0:1, UserAgent: curl/8.7.1
+2025-08-20 03:51:36 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:51:36 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=0, size=10, datasets=[], page=1})]
+2025-08-20 03:51:36 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/training/datasets, Status: 200, ExecuteTime: 23ms
+2025-08-20 03:51:36 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 03:51:40 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/statistics", parameters={}
+2025-08-20 03:51:40 [http-nio-8082-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getTrainingStatistics()
+2025-08-20 03:51:40 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/training/statistics, RemoteAddr: 0:0:0:0:0:0:0:1, UserAgent: curl/8.7.1
+2025-08-20 03:51:40 [http-nio-8082-exec-2] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/training/statistics
+2025-08-20 03:51:40 [http-nio-8082-exec-2] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-20 03:51:41 [http-nio-8082-exec-2] DEBUG org.springframework.web.client.RestTemplate - Response 404 NOT_FOUND
+2025-08-20 03:51:41 [http-nio-8082-exec-2] ERROR org.example.admin.service.impl.TrainingServiceImpl - 获取训练统计信息失败
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2025-08-19T19:51:41.022+00:00","status":404,"error":"Not Found","message":"No message available","path":"/api/training/statistics"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:631)
+	at org.example.admin.service.impl.TrainingServiceImpl.getTrainingStatistics(TrainingServiceImpl.java:413)
+	at org.example.admin.controller.TrainingController.getTrainingStatistics(TrainingController.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:114)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-08-20 03:51:41 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 03:51:41 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={completedTasks=10, totalTrainingTime=48小时, failedTasks=2, total (truncated)...]
+2025-08-20 03:51:41 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/training/statistics, Status: 200, ExecuteTime: 339ms
+2025-08-20 03:51:41 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:40:34 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/model/list", parameters={}
+2025-08-20 13:40:34 [http-nio-8082-exec-7] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.ModelController#getModelList(Integer, Integer, String, String)
+2025-08-20 13:40:34 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/model/list, RemoteAddr: 0:0:0:0:0:0:0:1, UserAgent: curl/8.7.1
+2025-08-20 13:40:34 [http-nio-8082-exec-7] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/model/list?page=1&size=10
+2025-08-20 13:40:34 [http-nio-8082-exec-7] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-20 13:40:34 [http-nio-8082-exec-7] DEBUG org.springframework.web.client.RestTemplate - Response 404 NOT_FOUND
+2025-08-20 13:40:34 [http-nio-8082-exec-7] ERROR o.example.admin.service.impl.AdminModelServiceImpl - 获取模型列表失败
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2025-08-20T05:40:34.747+00:00","status":404,"error":"Not Found","message":"No message available","path":"/api/model/list"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:631)
+	at org.example.admin.service.impl.AdminModelServiceImpl.getModelList(AdminModelServiceImpl.java:41)
+	at org.example.admin.controller.ModelController.getModelList(ModelController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:114)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-08-20 13:40:34 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler org.example.common.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException, HttpServletRequest)
+2025-08-20 13:40:34 [http-nio-8082-exec-7] ERROR o.example.common.exception.GlobalExceptionHandler - 运行时异常: /admin/admin/model/list - 获取模型列表失败: 404 : "{"timestamp":"2025-08-20T05:40:34.747+00:00","status":404,"error":"Not Found","message":"No message available","path":"/api/model/list"}"
+java.lang.RuntimeException: 获取模型列表失败: 404 : "{"timestamp":"2025-08-20T05:40:34.747+00:00","status":404,"error":"Not Found","message":"No message available","path":"/api/model/list"}"
+	at org.example.admin.service.impl.AdminModelServiceImpl.getModelList(AdminModelServiceImpl.java:56)
+	at org.example.admin.controller.ModelController.getModelList(ModelController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:114)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2025-08-20T05:40:34.747+00:00","status":404,"error":"Not Found","message":"No message available","path":"/api/model/list"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:631)
+	at org.example.admin.service.impl.AdminModelServiceImpl.getModelList(AdminModelServiceImpl.java:41)
+	... 58 common frames omitted
+2025-08-20 13:40:34 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:40:34 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=500, message=系统内部错误: 获取模型列表失败: 404 : "{"timestamp":"2025-08-20T05:40:34.747+00:00","stat (truncated)...]
+2025-08-20 13:40:34 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: 获取模型列表失败: 404 : "{"timestamp":"2025-08-20T05:40:34.747+00:00","status":404,"error":"Not Found","message":"No message available","path":"/api/model/list"}"]
+2025-08-20 13:40:34 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/model/list, Status: 500, ExecuteTime: 123ms
+2025-08-20 13:40:34 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2025-08-20 13:43:15 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@771a660, started on Wed Aug 20 03:50:15 CST 2025
+2025-08-20 13:43:16 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-20 13:43:16 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-08-20 13:43:30 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 1.8.0_351 on 192.168.2.7 with PID 88690 (/Users/peng/Downloads/full-goods-parent/full-goods-admin/target/classes started by peng in /Users/peng/Downloads/full-goods-parent/full-goods-admin)
+2025-08-20 13:43:30 [main] DEBUG org.example.admin.AdminApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 13:43:30 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 13:43:30 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@771a660
+2025-08-20 13:43:31 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-20 13:43:31 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-20 13:43:31 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2025-08-20 13:43:31 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 13:43:31 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 13:43:31 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.common.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-20 13:43:32 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: /Users/peng/.m2/repository/org/springframework/boot/spring-boot/2.7.5/spring-boot-2.7.5.jar
+2025-08-20 13:43:32 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - Code archive: /Users/peng/.m2/repository/org/springframework/boot/spring-boot/2.7.5/spring-boot-2.7.5.jar
+2025-08-20 13:43:32 [main] DEBUG o.s.b.w.e.tomcat.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-08-20 13:43:32 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2025-08-20 13:43:32 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 13:43:32 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 13:43:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-20 13:43:32 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2025-08-20 13:43:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2518 ms
+2025-08-20 13:43:32 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: filterRegistrationBean urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, hiddenHttpMethodFilter urls=[/*] order=2147483647
+2025-08-20 13:43:32 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], statViewServlet urls=[/druid/*]
+2025-08-20 13:43:32 [main] DEBUG o.s.b.w.servlet.filter.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+2025-08-20 13:43:32 [main] DEBUG o.s.web.filter.HiddenHttpMethodFilter - Filter 'hiddenHttpMethodFilter' configured for use
+2025-08-20 13:43:32 [main] DEBUG o.s.b.w.s.filter.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
+2025-08-20 13:43:32 [main] DEBUG o.s.b.web.servlet.filter.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+2025-08-20 13:43:32 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-20 13:43:34 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-20 13:43:34 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-20 13:43:34 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageController:
+	{POST [/admin/message/ai-reply]}: aiReply(Map)
+	{GET [/admin/message/list]}: getMessageList(int,int,String,String,String)
+	{GET [/admin/message/{id}]}: getMessageDetail(Long)
+	{POST [/admin/message/reply]}: replyMessage(Map)
+	{PUT [/admin/message/read/{id}]}: markMessageRead(Long,Boolean)
+	{PUT [/admin/message/batch-read]}: batchMarkMessageRead(Map)
+	{DELETE [/admin/message/batch]}: batchDeleteMessages(List)
+	{GET [/admin/message/statistics]}: getMessageStatistics()
+	{GET [/admin/message/export]}: exportMessages(String,String,String)
+	{POST [/admin/message/send-system]}: sendSystemMessage(Map)
+	{POST [/admin/message/send-batch]}: sendBatchMessage(Map)
+2025-08-20 13:43:34 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageSendingController:
+	{POST [/admin/message/send/system]}: sendSystemMessage(Map)
+	{POST [/admin/message/send/batch]}: sendBatchMessage(Map)
+	{POST [/admin/message/send/template]}: sendTemplateMessage(Map)
+	{GET [/admin/message/sending/history]}: getSendingHistory(Integer,Integer,String,String,String,String)
+	{GET [/admin/message/sending/{id}]}: getSendingDetail(Long)
+	{POST [/admin/message/sending/{id}/cancel]}: cancelSending(Long)
+	{POST [/admin/message/sending/{id}/resend]}: resendMessage(Long)
+	{GET [/admin/message/sending/statistics]}: getSendingStatistics(String)
+	{POST [/admin/message/template/preview]}: previewTemplateMessage(Map)
+	{POST [/admin/message/validate/userlist]}: validateUserListFile(MultipartFile)
+	{GET [/admin/message/usergroups]}: getUserGroups()
+	{GET [/admin/message/users]}: getUsers(String,Long)
+	{POST [/admin/message/draft]}: saveDraft(Map)
+	{GET [/admin/message/drafts]}: getDrafts()
+	{DELETE [/admin/message/draft/{id}]}: deleteDraft(Long)
+	{POST [/admin/message/draft/{id}/create]}: createFromDraft(Long)
+	{GET [/admin/message/sending/config]}: getSendingConfig()
+	{PUT [/admin/message/sending/config]}: updateSendingConfig(Map)
+	{POST [/admin/message/test]}: testMessageSending(Map)
+	{GET [/admin/message/queue/status]}: getQueueStatus()
+	{POST [/admin/message/queue/clear]}: clearQueue()
+	{POST [/admin/message/sending/pause]}: pauseSending()
+	{POST [/admin/message/sending/resume]}: resumeSending()
+	{GET [/admin/message/sending/export]}: exportSendingHistory(String,String,String,String)
+	{GET [/admin/message/sending/report]}: getSendingReport(String,String,String)
+2025-08-20 13:43:34 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AdminMessageTemplateController:
+	{GET [/admin/message-templates/list]}: getTemplateList(Integer,Integer,String,Integer,Integer)
+	{GET [/admin/message-templates/{id}]}: getTemplateById(Long)
+	{POST [/admin/message-templates]}: createTemplate(MessageTemplate)
+	{PUT [/admin/message-templates/{id}]}: updateTemplate(Long,MessageTemplate)
+	{DELETE [/admin/message-templates/{id}]}: deleteTemplate(Long)
+	{DELETE [/admin/message-templates/batch]}: deleteTemplates(List)
+	{PUT [/admin/message-templates/{id}/status]}: updateTemplateStatus(Long,Integer)
+	{PUT [/admin/message-templates/batch/status]}: updateTemplatesStatus(List,Integer)
+	{POST [/admin/message-templates/{id}/copy]}: copyTemplate(Long,String,String)
+	{POST [/admin/message-templates/preview/{code}]}: previewTemplate(String,Map)
+	{POST [/admin/message-templates/validate/{code}]}: validateTemplateParams(String,Map)
+	{GET [/admin/message-templates/statistics]}: getTemplateStatistics()
+	{GET [/admin/message-templates/export]}: exportTemplates(String,Integer,Integer)
+	{GET [/admin/message-templates/enabled]}: getEnabledTemplates()
+2025-08-20 13:43:34 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.AuthController:
+	{POST [/auth/send-code]}: sendVerificationCode(Map)
+	{POST [/auth/login]}: login(Map)
+	{POST [/auth/verify-token]}: verifyToken(String)
+	{POST [/auth/logout]}: logout(String)
+	{GET [/auth/user-info]}: getUserInfo(String)
+2025-08-20 13:43:34 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.BannerController:
+	{GET [/admin/banner/list]}: getBanners(Integer,Integer,String)
+	{GET [/admin/banner/{id}]}: getBannerDetail(Long)
+	{POST [/admin/banner/add]}: addBanner(Banner)
+	{PUT [/admin/banner/update]}: updateBanner(Banner)
+	{DELETE [/admin/banner/delete/{id}]}: deleteBanner(Long)
+	{DELETE [/admin/banner/batch-delete]}: batchDeleteBanners(List)
+	{PUT [/admin/banner/toggle-status/{id}]}: toggleBannerStatus(Long)
+	{PUT [/admin/banner/batch-toggle-status]}: batchToggleBannerStatus(List)
+2025-08-20 13:43:34 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.CategoryController:
+	{GET [/admin/category/list]}: getCategories(Integer,Integer,String)
+	{GET [/admin/category/{id}]}: getCategoryDetail(Long)
+	{POST [/admin/category/add]}: addCategory(Map)
+	{PUT [/admin/category/update]}: updateCategory(Map)
+	{DELETE [/admin/category/delete/{id}]}: deleteCategory(Long)
+	{DELETE [/admin/category/batch-delete]}: batchDeleteCategories(List)
+	{PUT [/admin/category/toggle-status/{id}]}: toggleCategoryStatus(Long)
+	{PUT [/admin/category/batch-toggle-status]}: batchToggleCategoryStatus(List)
+	{PUT [/admin/category/enable-all]}: enableAllCategories()
+2025-08-20 13:43:34 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.DashboardController:
+	{GET [/admin/dashboard/statistics]}: getDashboardStatistics()
+	{GET [/admin/dashboard/sales-trend]}: getSalesTrend(int)
+	{GET [/admin/dashboard/delivery-efficiency]}: getDeliveryEfficiency()
+	{GET [/admin/dashboard/promotion-effect]}: getPromotionEffect()
+	{GET [/admin/dashboard/delay-reasons]}: getDelayReasons()
+2025-08-20 13:43:34 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.DeliveryController:
+	{GET [/admin/delivery/orders]}: getDeliveryOrders(Integer,Integer,String,String,String,String)
+	{GET [/admin/delivery/orders/{id}]}: getOrderDetail(Long)
+	{POST [/admin/delivery/ship]}: shipOrder(Map)
+	{POST [/admin/delivery/batch-ship]}: batchShipOrders(Map)
+	{DELETE [/admin/delivery/orders/{id}]}: deleteOrder(Long)
+	{DELETE [/admin/delivery/batch-delete]}: batchDeleteOrders(List)
+	{GET [/admin/delivery/express-companies]}: getExpressCompanies()
+	{GET [/admin/delivery/statistics]}: getDeliveryStatistics()
+2025-08-20 13:43:34 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.ModelController:
+	{GET [/admin/model/list]}: getModelList(Integer,Integer,String,String)
+	{GET [/admin/model/{id}]}: getModelDetail(Long)
+	{POST [/admin/model]}: createModel(Map)
+	{POST [/admin/model/upload]}: uploadModel(MultipartFile,String,String,String)
+	{POST [/admin/model/{id}/test]}: testModel(Long)
+	{PUT [/admin/model/{id}/status]}: updateModelStatus(Long,Map)
+	{PUT [/admin/model/activate/{id}]}: activateModel(Long)
+	{PUT [/admin/model/deactivate/{id}]}: deactivateModel(Long)
+	{PUT [/admin/model/{id}]}: updateModel(Long,Map)
+	{DELETE [/admin/model/{id}]}: deleteModel(Long)
+	{POST [/admin/model/training-data]}: uploadTrainingData(MultipartFile,Long,String)
+	{POST [/admin/model/strategy]}: createStrategy(Map)
+	{GET [/admin/model/statistics]}: getModelStatistics()
+2025-08-20 13:43:34 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.OrderController:
+	{GET [/admin/order/statistics]}: getOrderStatistics()
+	{PUT [/admin/order/ship]}: shipOrder(Map)
+	{PUT [/admin/order/batch-ship]}: batchShipOrders(List)
+	{DELETE [/admin/order/delete/{id}]}: deleteOrder(Long)
+	{DELETE [/admin/order/batch-delete]}: batchDeleteOrders(List)
+	{GET [/admin/order/list]}: getOrderList(int,int,String,String,String,String)
+	{PUT [/admin/order/mark-paid/{id}]}: markOrderPaid(Long)
+	{PUT [/admin/order/refund/{id}]}: refundOrder(Long)
+	{PUT [/admin/order/batch-refund]}: batchRefundOrders(List)
+	{GET [/admin/order/{id}]}: getOrder(Long)
+2025-08-20 13:43:34 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.ProductController:
+	{GET [/admin/fruit/categories]}: getCategories()
+	{GET [/admin/fruit/list]}: getProductList(int,int,String,String,String)
+	{GET [/admin/fruit/{id}]}: getProduct(Long)
+	{PUT [/admin/fruit/recommend/{id}]}: setRecommended(Long,Boolean)
+	{PUT [/admin/fruit/recommend/batch]}: batchSetRecommended(Map)
+	{POST [/admin/fruit/flash-sale/{id}]}: setFlashSale(Long,Map)
+	{DELETE [/admin/fruit/flash-sale/{id}]}: cancelFlashSale(Long)
+	{POST [/admin/fruit/add]}: addProduct(Fruit)
+	{PUT [/admin/fruit/update]}: updateProduct(Fruit)
+	{DELETE [/admin/fruit/delete/{id}]}: deleteProduct(Long)
+	{DELETE [/admin/fruit/batch-delete]}: batchDeleteProducts(List)
+	{PUT [/admin/fruit/toggle-status/{id}]}: toggleProductStatus(Long)
+	{PUT [/admin/fruit/batch-toggle-status]}: batchToggleStatus(List)
+2025-08-20 13:43:35 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.TrainingController:
+	{GET [/admin/training/tasks]}: getTrainingTasks(Integer,Integer,String,String)
+	{POST [/admin/training/tasks]}: createTrainingTask(Map)
+	{GET [/admin/training/tasks/{id}]}: getTrainingTaskDetail(Long)
+	{POST [/admin/training/tasks/{id}/start]}: startTraining(Long)
+	{POST [/admin/training/tasks/{id}/stop]}: stopTraining(Long)
+	{GET [/admin/training/tasks/{id}/progress]}: getTrainingProgress(Long)
+	{POST [/admin/training/datasets]}: uploadDataset(MultipartFile,String,String,String)
+	{GET [/admin/training/datasets]}: getDatasets(Integer,Integer,String)
+	{POST [/admin/training/datasets/{id}/preprocess]}: preprocessData(Long,Map)
+	{GET [/admin/training/tasks/{id}/logs]}: getTrainingLogs(Long,Integer,Integer)
+	{POST [/admin/training/tasks/{id}/evaluate]}: evaluateModel(Long,Map)
+	{POST [/admin/training/tasks/{taskId}/evaluate]}: evaluateModel(Long,Long)
+	{GET [/admin/training/statistics]}: getTrainingStatistics()
+	{POST [/admin/training/tasks/{id}/export]}: exportModel(Long,Map)
+	{POST [/admin/training/tasks/{taskId}/export]}: exportModel(Long,String)
+	{GET [/admin/training/model-types]}: getSupportedModelTypes()
+	{GET [/admin/training/preprocess-options]}: getPreprocessOptions()
+	{POST [/admin/training/tasks/{taskId}/deploy]}: deployModel(Long,String,String)
+2025-08-20 13:43:35 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.e.a.c.UserController:
+	{GET [/admin/user/statistics]}: getUserStatistics()
+	{PUT [/admin/user/batch-toggle-status]}: batchToggleStatus(List)
+	{GET [/admin/user/list]}: getUserList(int,int,String,String)
+	{GET [/admin/user/{id}]}: getUser(Long)
+	{PUT [/admin/user/update]}: updateUser(User)
+	{DELETE [/admin/user/delete/{id}]}: deleteUser(Long)
+	{DELETE [/admin/user/batch-delete]}: batchDeleteUsers(List)
+	{PUT [/admin/user/toggle-status/{id}]}: toggleUserStatus(Long)
+	{POST [/admin/user/add]}: addUser(User)
+2025-08-20 13:43:35 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ [/error]}: error(HttpServletRequest)
+2025-08-20 13:43:35 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 150 mappings in 'requestMappingHandlerMapping'
+2025-08-20 13:43:35 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /uploads/**, /images/**] in 'resourceHandlerMapping'
+2025-08-20 13:43:35 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-20 13:43:35 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-20 13:43:35 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/admin'
+2025-08-20 13:43:35 [main] INFO  org.example.admin.AdminApplication - Started AdminApplication in 6.102 seconds (JVM running for 6.548)
+2025-08-20 13:43:54 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-20 13:43:54 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-20 13:43:54 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-08-20 13:43:54 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-08-20 13:43:54 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-08-20 13:43:54 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1603c67b
+2025-08-20 13:43:54 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@13ab36f9
+2025-08-20 13:43:54 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-20 13:43:54 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-08-20 13:43:54 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/model/list", parameters={}
+2025-08-20 13:43:54 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.ModelController#getModelList(Integer, Integer, String, String)
+2025-08-20 13:43:54 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/model/list, RemoteAddr: 0:0:0:0:0:0:0:1, UserAgent: curl/8.7.1
+2025-08-20 13:43:54 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:43:54 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=3, size=10, page=1, list=[{provider=OpenAI, createTime=20 (truncated)...]
+2025-08-20 13:43:54 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/model/list, Status: 200, ExecuteTime: 135ms
+2025-08-20 13:43:54 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:44:00 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/model/1", parameters={}
+2025-08-20 13:44:00 [http-nio-8082-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.ModelController#getModelDetail(Long)
+2025-08-20 13:44:00 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/model/1, RemoteAddr: 0:0:0:0:0:0:0:1, UserAgent: curl/8.7.1
+2025-08-20 13:44:00 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:44:00 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={apiKey=sk-*********************, apiUrl=https://api.openai.com/ (truncated)...]
+2025-08-20 13:44:00 [http-nio-8082-exec-2] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/model/1, Status: 200, ExecuteTime: 18ms
+2025-08-20 13:44:00 [http-nio-8082-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:44:06 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/model/statistics", parameters={}
+2025-08-20 13:44:06 [http-nio-8082-exec-4] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.ModelController#getModelStatistics()
+2025-08-20 13:44:06 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/model/statistics, RemoteAddr: 0:0:0:0:0:0:0:1, UserAgent: curl/8.7.1
+2025-08-20 13:44:06 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:44:06 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={totalModels=3, averageResponseTime=1.2, disabledModels=1, enabl (truncated)...]
+2025-08-20 13:44:06 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/model/statistics, Status: 200, ExecuteTime: 56ms
+2025-08-20 13:44:06 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:44:13 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/admin/admin/model", parameters={}
+2025-08-20 13:44:13 [http-nio-8082-exec-9] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.ModelController#createModel(Map)
+2025-08-20 13:44:13 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: POST, URI: /admin/admin/model, RemoteAddr: 0:0:0:0:0:0:0:1, UserAgent: curl/8.7.1
+2025-08-20 13:44:13 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [{name=测试模型, provider=测试提供商, description=这是一个测试模型}]
+2025-08-20 13:44:13 [http-nio-8082-exec-9] INFO  o.example.admin.service.impl.AdminModelServiceImpl - 模拟创建模型: {name=测试模型, provider=测试提供商, description=这是一个测试模型}
+2025-08-20 13:44:13 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:44:13 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=true)]
+2025-08-20 13:44:13 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: POST, URI: /admin/admin/model, Status: 200, ExecuteTime: 71ms
+2025-08-20 13:44:13 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:44:19 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - PUT "/admin/admin/model/activate/3", parameters={}
+2025-08-20 13:44:19 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.ModelController#activateModel(Long)
+2025-08-20 13:44:19 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: PUT, URI: /admin/admin/model/activate/3, RemoteAddr: 0:0:0:0:0:0:0:1, UserAgent: curl/8.7.1
+2025-08-20 13:44:19 [http-nio-8082-exec-1] INFO  o.example.admin.service.impl.AdminModelServiceImpl - 模拟激活模型ID: 3
+2025-08-20 13:44:19 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:44:19 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=true)]
+2025-08-20 13:44:19 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: PUT, URI: /admin/admin/model/activate/3, Status: 200, ExecuteTime: 6ms
+2025-08-20 13:44:19 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:52:33 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/statistics", parameters={}
+2025-08-20 13:52:33 [http-nio-8082-exec-3] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getTrainingStatistics()
+2025-08-20 13:52:33 [http-nio-8082-exec-3] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/training/statistics, RemoteAddr: 127.0.0.1, UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-20 13:52:33 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/training/statistics
+2025-08-20 13:52:33 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-20 13:52:33 [http-nio-8082-exec-3] DEBUG org.springframework.web.client.RestTemplate - Response 404 NOT_FOUND
+2025-08-20 13:52:33 [http-nio-8082-exec-3] ERROR org.example.admin.service.impl.TrainingServiceImpl - 获取训练统计信息失败
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2025-08-20T05:52:33.202+00:00","status":404,"error":"Not Found","message":"No message available","path":"/api/training/statistics"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:631)
+	at org.example.admin.service.impl.TrainingServiceImpl.getTrainingStatistics(TrainingServiceImpl.java:413)
+	at org.example.admin.controller.TrainingController.getTrainingStatistics(TrainingController.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:114)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-08-20 13:52:33 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:52:33 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={completedTasks=10, totalTrainingTime=48小时, failedTasks=2, total (truncated)...]
+2025-08-20 13:52:33 [http-nio-8082-exec-3] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/training/statistics, Status: 200, ExecuteTime: 221ms
+2025-08-20 13:52:33 [http-nio-8082-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:52:33 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/model-types", parameters={}
+2025-08-20 13:52:33 [http-nio-8082-exec-5] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getSupportedModelTypes()
+2025-08-20 13:52:33 [http-nio-8082-exec-5] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/training/model-types, RemoteAddr: 127.0.0.1, UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-20 13:52:33 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:52:33 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={types=[{name=文本分类, description=对文本进行分类，如情感分析、主题分类等, id=text_cla (truncated)...]
+2025-08-20 13:52:33 [http-nio-8082-exec-5] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/training/model-types, Status: 200, ExecuteTime: 4ms
+2025-08-20 13:52:33 [http-nio-8082-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:52:33 [http-nio-8082-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/datasets?page=1&size=100&dataType=", parameters={masked}
+2025-08-20 13:52:33 [http-nio-8082-exec-6] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getDatasets(Integer, Integer, String)
+2025-08-20 13:52:33 [http-nio-8082-exec-6] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/training/datasets, RemoteAddr: 127.0.0.1, UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-20 13:52:33 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:52:33 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=0, size=100, datasets=[], page=1})]
+2025-08-20 13:52:33 [http-nio-8082-exec-6] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/training/datasets, Status: 200, ExecuteTime: 40ms
+2025-08-20 13:52:33 [http-nio-8082-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:52:33 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/training/tasks?page=1&size=10&status=&modelType=", parameters={masked}
+2025-08-20 13:52:33 [http-nio-8082-exec-4] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.TrainingController#getTrainingTasks(Integer, Integer, String, String)
+2025-08-20 13:52:33 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/training/tasks, RemoteAddr: 127.0.0.1, UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-20 13:52:33 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:52:33 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={total=0, size=10, page=1, tasks=[]})]
+2025-08-20 13:52:33 [http-nio-8082-exec-4] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/training/tasks, Status: 200, ExecuteTime: 18ms
+2025-08-20 13:52:33 [http-nio-8082-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:52:57 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/dashboard/delay-reasons", parameters={}
+2025-08-20 13:52:57 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/dashboard/sales-trend?days=7", parameters={masked}
+2025-08-20 13:52:57 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/dashboard/promotion-effect", parameters={}
+2025-08-20 13:52:57 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/order/statistics", parameters={}
+2025-08-20 13:52:57 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/admin/admin/dashboard/delivery-efficiency", parameters={}
+2025-08-20 13:52:57 [http-nio-8082-exec-7] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.OrderController#getOrderStatistics()
+2025-08-20 13:52:57 [http-nio-8082-exec-9] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DashboardController#getPromotionEffect()
+2025-08-20 13:52:57 [http-nio-8082-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DashboardController#getDelayReasons()
+2025-08-20 13:52:57 [http-nio-8082-exec-10] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DashboardController#getDeliveryEfficiency()
+2025-08-20 13:52:57 [http-nio-8082-exec-8] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.example.admin.controller.DashboardController#getSalesTrend(int)
+2025-08-20 13:52:57 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/order/statistics, RemoteAddr: 127.0.0.1, UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-20 13:52:57 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/dashboard/promotion-effect, RemoteAddr: 127.0.0.1, UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-20 13:52:57 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/dashboard/delay-reasons, RemoteAddr: 127.0.0.1, UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-20 13:52:57 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/dashboard/delivery-efficiency, RemoteAddr: 127.0.0.1, UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-20 13:52:57 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求开始 - Method: GET, URI: /admin/admin/dashboard/sales-trend, RemoteAddr: 127.0.0.1, UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-08-20 13:52:57 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:52:57 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:52:57 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:52:57 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={revenue=[45000, 32000, 28000, 20000], channels=[微信小程序, APP, H5, (truncated)...]
+2025-08-20 13:52:57 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={values=[65, 25, 8, 2], categories=[当日发货, 次日发货, 2-3天发货, 3天以上]})]
+2025-08-20 13:52:57 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data=[{reason=库存不足, impact=高, count=15}, {reason=商品缺货, impact=中, coun (truncated)...]
+2025-08-20 13:52:57 [http-nio-8082-exec-7] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/admin/statistics
+2025-08-20 13:52:57 [http-nio-8082-exec-1] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/dashboard/delay-reasons, Status: 200, ExecuteTime: 61ms
+2025-08-20 13:52:57 [http-nio-8082-exec-10] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/dashboard/delivery-efficiency, Status: 200, ExecuteTime: 58ms
+2025-08-20 13:52:57 [http-nio-8082-exec-7] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-20 13:52:57 [http-nio-8082-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:52:57 [http-nio-8082-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:52:57 [http-nio-8082-exec-8] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8080/api/order/sales-trend?days=7
+2025-08-20 13:52:57 [http-nio-8082-exec-8] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-08-20 13:52:57 [http-nio-8082-exec-9] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/dashboard/promotion-effect, Status: 200, ExecuteTime: 118ms
+2025-08-20 13:52:57 [http-nio-8082-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:52:57 [http-nio-8082-exec-8] DEBUG org.springframework.web.client.RestTemplate - Response 404 NOT_FOUND
+2025-08-20 13:52:57 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:52:57 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={dates=[2024-01-21, 2024-01-20, 2024-01-19, 2024-01-18, 2024-01- (truncated)...]
+2025-08-20 13:52:57 [http-nio-8082-exec-8] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/dashboard/sales-trend, Status: 200, ExecuteTime: 134ms
+2025-08-20 13:52:57 [http-nio-8082-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 13:52:57 [http-nio-8082-exec-7] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+2025-08-20 13:52:57 [http-nio-8082-exec-7] DEBUG org.springframework.web.client.RestTemplate - Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2025-08-20 13:52:57 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-20 13:52:57 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Result(code=200, message=操作成功, data={code=200, message=操作成功, data={cancelledOrders=1, shippedOrders= (truncated)...]
+2025-08-20 13:52:57 [http-nio-8082-exec-7] INFO  org.example.common.interceptor.LoggingInterceptor - 请求完成 - Method: GET, URI: /admin/admin/order/statistics, Status: 200, ExecuteTime: 253ms
+2025-08-20 13:52:57 [http-nio-8082-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-08-20 14:08:52 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@771a660, started on Wed Aug 20 13:43:30 CST 2025
+2025-08-20 14:08:52 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-20 14:08:52 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

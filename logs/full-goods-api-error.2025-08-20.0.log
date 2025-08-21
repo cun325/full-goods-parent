@@ -1,0 +1,72 @@
+2025-08-20 00:33:40.983 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field webSocketMessageService in org.example.api.service.impl.MessageServiceImpl required a bean of type 'org.example.api.service.WebSocketMessageService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.example.api.service.WebSocketMessageService' in your configuration.
+
+2025-08-20 00:37:34.721 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field webSocketMessageService in org.example.api.service.impl.MessageServiceImpl required a bean of type 'org.example.api.service.WebSocketMessageService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.example.api.service.WebSocketMessageService' in your configuration.
+
+2025-08-20 00:37:53.655 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field webSocketMessageService in org.example.api.service.impl.MessageServiceImpl required a bean of type 'org.example.api.service.WebSocketMessageService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.example.api.service.WebSocketMessageService' in your configuration.
+
+2025-08-20 00:39:54.330 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field webSocketMessageService in org.example.api.service.impl.MessageServiceImpl required a bean of type 'org.example.api.service.WebSocketMessageService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.example.api.service.WebSocketMessageService' in your configuration.
+

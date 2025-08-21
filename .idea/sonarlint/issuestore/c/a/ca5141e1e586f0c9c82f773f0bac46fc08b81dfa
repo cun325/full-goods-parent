@@ -1,0 +1,12 @@
+
+g	java:S112="FDefine and throw a dedicated exception instead of using a generic one.(âá‡ğÿÿÿÿÿ8†Œ„•‹3
+g	java:S112Z"FDefine and throw a dedicated exception instead of using a generic one.(€ïşŞøÿÿÿÿ8ÉÙô‹3
+b	java:S112e"FDefine and throw a dedicated exception instead of using a generic one.(½Œ¹í8ÉÙô‹3
+g	java:S112p"FDefine and throw a dedicated exception instead of using a generic one.(ªÀÄûÿÿÿÿ8ÉÙô‹3
+h	java:S112‚"FDefine and throw a dedicated exception instead of using a generic one.(ÉŞ‘üùÿÿÿÿ8ÉÙô‹3
+c
+java:S11928"FDefine a constant instead of duplicating this literal "total" 3 times.(âÆî™8ŠŒ„•‹3
+p
+java:S3776õ"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(¼ÆÊÌ8îÙô‹3
+T
+java:S1612¦"6Replace this lambda with method reference 'List::add'.(üìàÁ8ñÙô‹3

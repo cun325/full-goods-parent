@@ -1,0 +1,862 @@
+2025-08-20 00:33:23.844 [restartedMain] INFO  org.example.api.ApiApplication - Starting ApiApplication using Java 17.0.10 on 192.168.0.14 with PID 62702 (/Users/peng/Downloads/full-goods-parent/full-goods-api/target/classes started by peng in /Users/peng/Downloads/full-goods-parent)
+2025-08-20 00:33:23.845 [restartedMain] DEBUG org.example.api.ApiApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 00:33:23.845 [restartedMain] INFO  org.example.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 00:33:24.400 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:24.401 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.api.mapper, org.example.common.mapper]' package. Please check your configuration.
+2025-08-20 00:33:24.796 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:33:24.796 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 00:33:24.796 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 00:33:24.828 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-08-20 00:33:26.230 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:33:26.702 [restartedMain] INFO  org.example.api.ApiApplication - Started ApiApplication in 3.112 seconds (JVM running for 3.347)
+2025-08-20 00:33:39.467 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 17.0.10 on 192.168.0.14 with PID 62806 (/Users/peng/Downloads/full-goods-parent/full-goods-admin/target/classes started by peng in /Users/peng/Downloads/full-goods-parent)
+2025-08-20 00:33:39.468 [main] DEBUG org.example.admin.AdminApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 00:33:39.469 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 00:33:39.885 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:39.885 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:33:39.886 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.common.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-20 00:33:40.160 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-08-20 00:33:40.161 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 00:33:40.161 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 00:33:40.202 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-20 00:33:40.953 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'messageServiceImpl': Unsatisfied dependency expressed through field 'webSocketMessageService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.example.api.service.WebSocketMessageService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-08-20 00:33:40.966 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-08-20 00:33:40.983 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field webSocketMessageService in org.example.api.service.impl.MessageServiceImpl required a bean of type 'org.example.api.service.WebSocketMessageService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.example.api.service.WebSocketMessageService' in your configuration.
+
+2025-08-20 00:34:47.304 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-20 00:34:47.562 [http-nio-8080-exec-1] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_16621700221_1755288051101_29f9da75e797427a84f58cb008431844
+2025-08-20 00:34:47.729 [http-nio-8080-exec-1] ERROR org.example.api.service.impl.MessageServiceImpl - 获取用户聊天列表失败
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'goods_shop.message' doesn't exist
+### The error may exist in file [/Users/peng/Downloads/full-goods-parent/full-goods-api/target/classes/mapper/MessageMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT              u.id as userId,             u.username,             u.nickname,             u.avatar,             COUNT(m.id) as messageCount,             SUM(CASE WHEN m.status = 0 THEN 1 ELSE 0 END) as unreadCount,             MAX(m.create_time) as lastMessageTime,             (                 SELECT content                  FROM message m2                  WHERE m2.user_id = u.id                  ORDER BY m2.create_time DESC                  LIMIT 1             ) as lastMessageContent         FROM t_user u         LEFT JOIN t_message m ON u.id = m.user_id                    GROUP BY u.id, u.username, u.nickname, u.avatar         HAVING messageCount > 0         ORDER BY lastMessageTime DESC         LIMIT ? OFFSET ?
+### Cause: java.sql.SQLSyntaxErrorException: Table 'goods_shop.message' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'goods_shop.message' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy97.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy125.selectUserChatList(Unknown Source)
+	at org.example.api.service.impl.MessageServiceImpl.getUserChatList(MessageServiceImpl.java:768)
+	at org.example.api.service.impl.MessageServiceImpl$$FastClassBySpringCGLIB$$45b4ec01.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.example.api.service.impl.MessageServiceImpl$$EnhancerBySpringCGLIB$$6500e494.getUserChatList(<generated>)
+	at org.example.api.controller.MessageController.getUserChatList(MessageController.java:513)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'goods_shop.message' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3446)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:638)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3444)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:434)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3444)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:152)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:483)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at jdk.proxy4/jdk.proxy4.$Proxy179.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at jdk.proxy2/jdk.proxy2.$Proxy177.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 73 common frames omitted
+2025-08-20 00:37:33.174 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 17.0.10 on 192.168.0.14 with PID 64341 (/Users/peng/Downloads/full-goods-parent/full-goods-admin/target/classes started by peng in /Users/peng/Downloads/full-goods-parent)
+2025-08-20 00:37:33.175 [main] DEBUG org.example.admin.AdminApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 00:37:33.176 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 00:37:33.595 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:37:33.595 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:37:33.595 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.common.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-20 00:37:33.870 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-08-20 00:37:33.870 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 00:37:33.870 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 00:37:33.917 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-20 00:37:34.689 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'messageServiceImpl': Unsatisfied dependency expressed through field 'webSocketMessageService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.example.api.service.WebSocketMessageService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-08-20 00:37:34.703 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-08-20 00:37:34.721 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field webSocketMessageService in org.example.api.service.impl.MessageServiceImpl required a bean of type 'org.example.api.service.WebSocketMessageService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.example.api.service.WebSocketMessageService' in your configuration.
+
+2025-08-20 00:37:52.146 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 17.0.10 on 192.168.0.14 with PID 64469 (/Users/peng/Downloads/full-goods-parent/full-goods-admin/target/classes started by peng in /Users/peng/Downloads/full-goods-parent)
+2025-08-20 00:37:52.147 [main] DEBUG org.example.admin.AdminApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 00:37:52.147 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 00:37:52.567 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:37:52.567 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:37:52.567 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.common.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-20 00:37:52.840 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-08-20 00:37:52.840 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 00:37:52.840 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 00:37:52.883 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-20 00:37:53.625 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'messageServiceImpl': Unsatisfied dependency expressed through field 'webSocketMessageService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.example.api.service.WebSocketMessageService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-08-20 00:37:53.638 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-08-20 00:37:53.655 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field webSocketMessageService in org.example.api.service.impl.MessageServiceImpl required a bean of type 'org.example.api.service.WebSocketMessageService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.example.api.service.WebSocketMessageService' in your configuration.
+
+2025-08-20 00:38:45.771 [Thread-6] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:38:45.771 [Thread-6] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-08-20 00:38:45.772 [Thread-6] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-08-20 00:38:45.780 [Thread-6] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:840)
+2025-08-20 00:38:45.780 [Thread-6] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.10/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+ java.base@17.0.10/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.10/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:840)
+2025-08-20 00:38:45.781 [Thread-6] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.10/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+ java.base@17.0.10/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.10/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:840)
+2025-08-20 00:38:45.781 [Thread-6] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [api] appears to have started a thread named [lettuce-eventExecutorLoop-1-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.10/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+ java.base@17.0.10/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.10/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:840)
+2025-08-20 00:38:45.782 [Thread-6] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:38:45.784 [Thread-6] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:38:45.994 [restartedMain] INFO  org.example.api.ApiApplication - Starting ApiApplication using Java 17.0.10 on 192.168.0.14 with PID 62702 (/Users/peng/Downloads/full-goods-parent/full-goods-api/target/classes started by peng in /Users/peng/Downloads/full-goods-parent)
+2025-08-20 00:38:45.995 [restartedMain] DEBUG org.example.api.ApiApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 00:38:45.995 [restartedMain] INFO  org.example.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.160 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:46.161 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.api.mapper, org.example.common.mapper]' package. Please check your configuration.
+2025-08-20 00:38:46.205 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:38:46.205 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 00:38:46.205 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 00:38:46.212 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-08-20 00:38:46.584 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:38:46.828 [restartedMain] INFO  org.example.api.ApiApplication - Started ApiApplication in 0.856 seconds (JVM running for 323.471)
+2025-08-20 00:38:51.064 [Thread-9] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:38:51.064 [Thread-9] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-08-20 00:38:51.066 [Thread-9] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:38:51.066 [Thread-9] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:38:51.124 [restartedMain] INFO  org.example.api.ApiApplication - Starting ApiApplication using Java 17.0.10 on 192.168.0.14 with PID 62702 (/Users/peng/Downloads/full-goods-parent/full-goods-api/target/classes started by peng in /Users/peng/Downloads/full-goods-parent)
+2025-08-20 00:38:51.124 [restartedMain] DEBUG org.example.api.ApiApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 00:38:51.124 [restartedMain] INFO  org.example.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.247 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:38:51.248 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.api.mapper, org.example.common.mapper]' package. Please check your configuration.
+2025-08-20 00:38:51.279 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:38:51.279 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 00:38:51.279 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 00:38:51.285 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-08-20 00:38:51.607 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:38:51.817 [restartedMain] INFO  org.example.api.ApiApplication - Started ApiApplication in 0.709 seconds (JVM running for 328.461)
+2025-08-20 00:39:52.673 [main] INFO  org.example.admin.AdminApplication - Starting AdminApplication using Java 17.0.10 on 192.168.0.14 with PID 65241 (/Users/peng/Downloads/full-goods-parent/full-goods-admin/target/classes started by peng in /Users/peng/Downloads/full-goods-parent)
+2025-08-20 00:39:52.674 [main] DEBUG org.example.admin.AdminApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 00:39:52.675 [main] INFO  org.example.admin.AdminApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 00:39:52.970 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:39:52.971 [Thread-15] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-08-20 00:39:52.973 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:39:52.974 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:39:53.039 [restartedMain] INFO  org.example.api.ApiApplication - Starting ApiApplication using Java 17.0.10 on 192.168.0.14 with PID 62702 (/Users/peng/Downloads/full-goods-parent/full-goods-api/target/classes started by peng in /Users/peng/Downloads/full-goods-parent)
+2025-08-20 00:39:53.039 [restartedMain] DEBUG org.example.api.ApiApplication - Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-20 00:39:53.039 [restartedMain] INFO  org.example.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 00:39:53.145 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'adminBannerMapper' and 'org.example.admin.mapper.AdminBannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.145 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'categoryMapper' and 'org.example.admin.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.145 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.common.mapper, org.example.admin.mapper]' package. Please check your configuration.
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 00:39:53.192 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.api.mapper, org.example.common.mapper]' package. Please check your configuration.
+2025-08-20 00:39:53.226 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:39:53.226 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 00:39:53.226 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 00:39:53.232 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-08-20 00:39:53.446 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-08-20 00:39:53.447 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 00:39:53.447 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 00:39:53.493 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/admin] - Initializing Spring embedded WebApplicationContext
+2025-08-20 00:39:53.562 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-20 00:39:53.757 [restartedMain] INFO  org.example.api.ApiApplication - Started ApiApplication in 0.735 seconds (JVM running for 390.4)
+2025-08-20 00:39:54.303 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'messageServiceImpl': Unsatisfied dependency expressed through field 'webSocketMessageService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.example.api.service.WebSocketMessageService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-08-20 00:39:54.313 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-08-20 00:39:54.330 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field webSocketMessageService in org.example.api.service.impl.MessageServiceImpl required a bean of type 'org.example.api.service.WebSocketMessageService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.example.api.service.WebSocketMessageService' in your configuration.
+
+2025-08-20 00:40:30.779 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-20 00:40:30.823 [http-nio-8080-exec-1] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_16621700221_1755288051101_29f9da75e797427a84f58cb008431844
+2025-08-20 00:43:35.487 [http-nio-8080-exec-4] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_16621700221_1755288051101_29f9da75e797427a84f58cb008431844
+2025-08-20 00:45:19.433 [http-nio-8080-exec-10] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_16621700221_1755288051101_29f9da75e797427a84f58cb008431844
+2025-08-20 00:46:04.417 [http-nio-8080-exec-2] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_16621700221_1755288051101_29f9da75e797427a84f58cb008431844
+2025-08-20 00:47:08.698 [http-nio-8080-exec-5] INFO  o.example.api.controller.MessageTemplateController - 获取启用状态的模板列表请求
+2025-08-20 00:47:17.559 [http-nio-8080-exec-10] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_16621700221_1755288051101_29f9da75e797427a84f58cb008431844
+2025-08-20 00:47:18.983 [http-nio-8080-exec-1] INFO  o.example.api.controller.MessageTemplateController - 获取模板统计信息请求
+2025-08-20 00:47:18.997 [http-nio-8080-exec-3] INFO  o.example.api.controller.MessageTemplateController - 分页查询模板列表请求，页码：1，大小：10，模板名称：null，类型：null，状态：null
+2025-08-20 00:47:20.746 [http-nio-8080-exec-2] INFO  o.example.api.controller.MessageTemplateController - 获取启用状态的模板列表请求
+2025-08-20 00:47:21.689 [http-nio-8080-exec-4] INFO  o.example.api.controller.MessageTemplateController - 获取模板统计信息请求
+2025-08-20 00:47:21.711 [http-nio-8080-exec-5] INFO  o.example.api.controller.MessageTemplateController - 分页查询模板列表请求，页码：1，大小：10，模板名称：null，类型：null，状态：null
+2025-08-20 00:47:22.303 [http-nio-8080-exec-6] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_16621700221_1755288051101_29f9da75e797427a84f58cb008431844
+2025-08-20 00:51:01.459 [http-nio-8080-exec-7] INFO  o.example.api.controller.MessageTemplateController - 分页查询模板列表请求，页码：1，大小：10，模板名称：null，类型：null，状态：null
+2025-08-20 00:51:01.455 [http-nio-8080-exec-8] INFO  o.example.api.controller.MessageTemplateController - 获取模板统计信息请求
+2025-08-20 00:51:03.825 [http-nio-8080-exec-9] INFO  o.example.api.controller.MessageTemplateController - 获取启用状态的模板列表请求
+2025-08-20 00:51:05.065 [http-nio-8080-exec-10] INFO  o.example.api.controller.MessageTemplateController - 获取模板统计信息请求
+2025-08-20 00:51:05.071 [http-nio-8080-exec-3] INFO  o.example.api.controller.MessageTemplateController - 分页查询模板列表请求，页码：1，大小：10，模板名称：null，类型：null，状态：null
+2025-08-20 00:51:23.248 [http-nio-8080-exec-6] INFO  o.example.api.controller.MessageTemplateController - 获取启用状态的模板列表请求
+2025-08-20 00:54:19.787 [http-nio-8080-exec-9] INFO  o.example.api.controller.MessageTemplateController - 获取模板统计信息请求
+2025-08-20 00:54:19.792 [http-nio-8080-exec-10] INFO  o.example.api.controller.MessageTemplateController - 分页查询模板列表请求，页码：1，大小：10，模板名称：null，类型：null，状态：null
+2025-08-20 00:57:59.888 [http-nio-8080-exec-5] INFO  o.example.api.controller.MessageTemplateController - 获取模板统计信息请求
+2025-08-20 00:57:59.894 [http-nio-8080-exec-8] INFO  o.example.api.controller.MessageTemplateController - 分页查询模板列表请求，页码：1，大小：10，模板名称：null，类型：null，状态：null
+2025-08-20 01:10:29.280 [http-nio-8080-exec-2] INFO  o.example.api.controller.MessageTemplateController - 获取启用状态的模板列表请求
+2025-08-20 01:12:39.272 [http-nio-8080-exec-6] INFO  o.example.api.controller.MessageTemplateController - 获取启用状态的模板列表请求
+2025-08-20 01:12:40.874 [http-nio-8080-exec-5] INFO  o.example.api.controller.MessageTemplateController - 获取模板统计信息请求
+2025-08-20 01:12:40.877 [http-nio-8080-exec-8] INFO  o.example.api.controller.MessageTemplateController - 分页查询模板列表请求，页码：1，大小：10，模板名称：null，类型：null，状态：null
+2025-08-20 01:19:13.661 [http-nio-8080-exec-9] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_16621700221_1755288051101_29f9da75e797427a84f58cb008431844
+2025-08-20 01:19:13.680 [http-nio-8080-exec-9] ERROR o.example.common.exception.GlobalExceptionHandler - 运行时异常: /api/messages/list - Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.NumberFormatException: For input string: "list"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Long.parseLong(Long.java:711)
+	at java.base/java.lang.Long.valueOf(Long.java:1163)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125)
+	... 55 common frames omitted
+2025-08-20 01:19:13.685 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"]
+2025-08-20 01:19:17.464 [http-nio-8080-exec-10] INFO  o.example.api.controller.MessageTemplateController - 获取模板统计信息请求
+2025-08-20 01:19:17.474 [http-nio-8080-exec-3] INFO  o.example.api.controller.MessageTemplateController - 分页查询模板列表请求，页码：1，大小：10，模板名称：null，类型：null，状态：null
+2025-08-20 01:19:19.139 [http-nio-8080-exec-2] INFO  o.example.api.controller.MessageTemplateController - 获取启用状态的模板列表请求
+2025-08-20 01:19:20.678 [http-nio-8080-exec-1] WARN  org.example.api.interceptor.AuthInterceptor - Token无效或已过期: admin_16621700221_1755288051101_29f9da75e797427a84f58cb008431844
+2025-08-20 01:19:20.680 [http-nio-8080-exec-1] ERROR o.example.common.exception.GlobalExceptionHandler - 运行时异常: /api/messages/list - Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.NumberFormatException: For input string: "list"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Long.parseLong(Long.java:711)
+	at java.base/java.lang.Long.valueOf(Long.java:1163)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125)
+	... 55 common frames omitted
+2025-08-20 01:19:20.681 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"]
+2025-08-20 01:26:27.552 [http-nio-8080-exec-3] INFO  o.example.api.controller.MessageTemplateController - 获取启用状态的模板列表请求
+2025-08-20 01:27:46.941 [http-nio-8080-exec-6] INFO  o.example.api.controller.MessageTemplateController - 获取启用状态的模板列表请求
+2025-08-20 01:37:18.798 [http-nio-8080-exec-8] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 2
+2025-08-20 01:37:18.834 [http-nio-8080-exec-7] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 2
+2025-08-20 01:37:36.296 [http-nio-8080-exec-1] INFO  org.example.api.service.impl.UserServiceImpl - 用户登录成功，用户ID: 3, 生成token: 4181928a6d764ae9bb787b4e15adb9e91755625056292
+2025-08-20 01:37:59.335 [http-nio-8080-exec-4] ERROR o.example.common.exception.GlobalExceptionHandler - 运行时异常: /api/fruit/recommend-list - Could not read JSON: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found
+ at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found
+ at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]
+org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found
+ at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found
+ at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]
+	at org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer.deserialize(GenericJackson2JsonRedisSerializer.java:165)
+	at org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer.deserialize(GenericJackson2JsonRedisSerializer.java:143)
+	at org.springframework.data.redis.serializer.DefaultRedisElementReader.read(DefaultRedisElementReader.java:49)
+	at org.springframework.data.redis.serializer.RedisSerializationContext$SerializationPair.read(RedisSerializationContext.java:272)
+	at org.springframework.data.redis.cache.RedisCache.deserializeCacheValue(RedisCache.java:298)
+	at org.springframework.data.redis.cache.RedisCache.lookup(RedisCache.java:95)
+	at org.springframework.cache.support.AbstractValueAdaptingCache.get(AbstractValueAdaptingCache.java:58)
+	at org.springframework.cache.interceptor.AbstractCacheInvoker.doGet(AbstractCacheInvoker.java:73)
+	at org.springframework.cache.interceptor.CacheAspectSupport.findInCaches(CacheAspectSupport.java:571)
+	at org.springframework.cache.interceptor.CacheAspectSupport.findCachedItem(CacheAspectSupport.java:536)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:402)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.example.api.service.impl.FruitServiceImpl$$EnhancerBySpringCGLIB$$65f61db7.getRecommendFruits(<generated>)
+	at org.example.api.controller.FruitController.getRecommendFruits(FruitController.java:210)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found
+ at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1904)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1349)
+	at com.fasterxml.jackson.databind.deser.ValueInstantiator.createUsingDefault(ValueInstantiator.java:248)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createUsingDefault(StdValueInstantiator.java:275)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.createDefaultInstance(CollectionDeserializer.java:262)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromArray(AsArrayTypeDeserializer.java:53)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer.deserializeTypedFromAny(AsPropertyTypeDeserializer.java:211)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer$Vanilla.deserializeWithType(UntypedObjectDeserializer.java:781)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:74)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3690)
+	at org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer.deserialize(GenericJackson2JsonRedisSerializer.java:163)
+	... 75 common frames omitted
+2025-08-20 01:37:59.338 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found<EOL> at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found<EOL> at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]]
+2025-08-20 01:38:00.184 [http-nio-8080-exec-5] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:38:00.184 [http-nio-8080-exec-6] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:38:29.190 [http-nio-8080-exec-6] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:38:59.170 [http-nio-8080-exec-8] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:39:29.203 [http-nio-8080-exec-2] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:39:59.187 [http-nio-8080-exec-5] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:40:29.192 [http-nio-8080-exec-9] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:40:59.201 [http-nio-8080-exec-4] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:41:29.326 [http-nio-8080-exec-10] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:41:59.191 [http-nio-8080-exec-1] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:42:29.228 [http-nio-8080-exec-3] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:42:59.300 [http-nio-8080-exec-5] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:43:29.305 [http-nio-8080-exec-9] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:44:04.329 [http-nio-8080-exec-2] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:44:29.195 [http-nio-8080-exec-5] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:44:44.476 [http-nio-8080-exec-1] ERROR o.example.common.exception.GlobalExceptionHandler - 运行时异常: /api/fruit/recommend-list - Could not read JSON: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found
+ at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found
+ at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]
+org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found
+ at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found
+ at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]
+	at org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer.deserialize(GenericJackson2JsonRedisSerializer.java:165)
+	at org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer.deserialize(GenericJackson2JsonRedisSerializer.java:143)
+	at org.springframework.data.redis.serializer.DefaultRedisElementReader.read(DefaultRedisElementReader.java:49)
+	at org.springframework.data.redis.serializer.RedisSerializationContext$SerializationPair.read(RedisSerializationContext.java:272)
+	at org.springframework.data.redis.cache.RedisCache.deserializeCacheValue(RedisCache.java:298)
+	at org.springframework.data.redis.cache.RedisCache.lookup(RedisCache.java:95)
+	at org.springframework.cache.support.AbstractValueAdaptingCache.get(AbstractValueAdaptingCache.java:58)
+	at org.springframework.cache.interceptor.AbstractCacheInvoker.doGet(AbstractCacheInvoker.java:73)
+	at org.springframework.cache.interceptor.CacheAspectSupport.findInCaches(CacheAspectSupport.java:571)
+	at org.springframework.cache.interceptor.CacheAspectSupport.findCachedItem(CacheAspectSupport.java:536)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:402)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.example.api.service.impl.FruitServiceImpl$$EnhancerBySpringCGLIB$$65f61db7.getRecommendFruits(<generated>)
+	at org.example.api.controller.FruitController.getRecommendFruits(FruitController.java:210)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found
+ at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1904)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1349)
+	at com.fasterxml.jackson.databind.deser.ValueInstantiator.createUsingDefault(ValueInstantiator.java:248)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createUsingDefault(StdValueInstantiator.java:275)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.createDefaultInstance(CollectionDeserializer.java:262)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromArray(AsArrayTypeDeserializer.java:53)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer.deserializeTypedFromAny(AsPropertyTypeDeserializer.java:211)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer$Vanilla.deserializeWithType(UntypedObjectDeserializer.java:781)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:74)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3690)
+	at org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer.deserialize(GenericJackson2JsonRedisSerializer.java:163)
+	... 75 common frames omitted
+2025-08-20 01:44:44.483 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.serializer.SerializationException: Could not read JSON: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found<EOL> at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `java.util.ArrayList$SubList` (no Creators, like default constructor, exist): no default no-arguments constructor found<EOL> at [Source: (byte[])"["java.util.ArrayList$SubList",[{"@class":"org.example.common.entity.Fruit","createTime":["java.util.Date",1754816097000],"updateTime":["java.util.Date",1755503434000],"createBy":null,"updateBy":null,"remark":null,"id":2,"name":"山东大樱桃","description":"个大饱满，色泽鲜艳","origin":"山东烟台","price":["java.math.BigDecimal",59.90],"unit":"500g/盒","stock":80,"imageUrl":"/images?url=/uploads/images/2025/08/17/abf33914-4696-4696-91ab-921563df4b68.jpg","category":"应季水果""[truncated 4386 bytes]; line: 1, column: 32]]
+2025-08-20 01:44:59.216 [http-nio-8080-exec-6] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:45:29.203 [http-nio-8080-exec-9] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:45:59.287 [http-nio-8080-exec-7] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:46:29.301 [http-nio-8080-exec-3] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:46:59.322 [http-nio-8080-exec-1] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:48:26.353 [http-nio-8080-exec-5] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:49:26.295 [http-nio-8080-exec-3] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:50:26.295 [http-nio-8080-exec-10] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:51:26.293 [http-nio-8080-exec-7] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:52:26.327 [http-nio-8080-exec-3] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:52:56.282 [http-nio-8080-exec-2] WARN  org.example.api.controller.FruitController - 无效的token: test_token
+2025-08-20 01:52:56.624 [http-nio-8080-exec-2] INFO  org.example.api.service.impl.FruitServiceImpl - 解析关键词: [酸甜, 可口, 水果]
+2025-08-20 01:52:56.640 [http-nio-8080-exec-2] INFO  org.example.api.service.impl.FruitServiceImpl - 推荐水果数量: 12
+2025-08-20 01:52:56.641 [http-nio-8080-exec-2] WARN  org.example.api.service.impl.FruitServiceImpl - 无法从token获取用户ID，使用默认值: 1
+2025-08-20 01:53:26.156 [http-nio-8080-exec-10] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:54:26.103 [http-nio-8080-exec-5] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:55:26.102 [http-nio-8080-exec-8] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:56:26.100 [http-nio-8080-exec-6] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:57:26.135 [http-nio-8080-exec-9] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:58:26.107 [http-nio-8080-exec-4] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 01:59:26.149 [http-nio-8080-exec-2] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 02:00:26.101 [http-nio-8080-exec-10] DEBUG org.example.api.interceptor.AuthInterceptor - 用户认证成功，用户ID: 3
+2025-08-20 14:16:55.236 [restartedMain] INFO  org.example.api.ApiApplication - Starting ApiApplication using Java 1.8.0_351 on 192.168.2.7 with PID 95122 (/Users/peng/Downloads/full-goods-parent/full-goods-api/target/classes started by peng in /Users/peng/Downloads/full-goods-parent)
+2025-08-20 14:16:55.242 [restartedMain] INFO  org.example.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-20 14:16:57.879 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'addressMapper' and 'org.example.api.mapper.AddressMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.880 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'bannerMapper' and 'org.example.api.mapper.BannerMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.881 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'cartMapper' and 'org.example.api.mapper.CartMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.882 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerServiceSessionMapper' and 'org.example.api.mapper.CustomerServiceSessionMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.882 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'customerStatisticsMapper' and 'org.example.api.mapper.CustomerStatisticsMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.882 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'flashSaleMapper' and 'org.example.api.mapper.FlashSaleMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.882 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitCategoryMapper' and 'org.example.api.mapper.FruitCategoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.882 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'fruitMapper' and 'org.example.api.mapper.FruitMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.882 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageMapper' and 'org.example.api.mapper.MessageMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.882 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'messageTemplateMapper' and 'org.example.api.mapper.MessageTemplateMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.882 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderItemMapper' and 'org.example.api.mapper.OrderItemMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.882 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'orderMapper' and 'org.example.api.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.882 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'recommendHistoryMapper' and 'org.example.api.mapper.RecommendHistoryMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.882 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'org.example.api.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2025-08-20 14:16:57.883 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.example.api.mapper, org.example.common.mapper]' package. Please check your configuration.
+2025-08-20 14:16:59.713 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-20 14:16:59.715 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-20 14:16:59.715 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-20 14:16:59.848 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-08-20 14:17:00.386 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-08-20 14:17:01.999 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-08-20 14:17:06.515 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-20 14:17:09.070 [restartedMain] INFO  org.example.api.ApiApplication - Started ApiApplication in 14.764 seconds (JVM running for 15.638)
+2025-08-20 14:17:09.234 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-08-20 14:17:09.289 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

@@ -1,0 +1,17 @@
+
+n
+java:S1192°"PDefine a constant instead of duplicating this literal "å•†å“ä¸å­˜åœ¨" 3 times.(×ŒÕ‡8¹§òÇ‹3
+K
+java:S5411’"(Use a primitive boolean expression here.(˜Ì†Ûüÿÿÿÿ8»§òÇ‹3
+K
+java:S5411¤"(Use a primitive boolean expression here.(‰ú‡Çüÿÿÿÿ8»§òÇ‹3
+]	java:S125E"<This block of commented-out lines of code should be removed.(’Ê’úÿÿÿÿ8ïÀ€È‹3
+q
+java:S3252^"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(‹‹¥®úÿÿÿÿ8Í§òÇ‹3
+]	java:S125d"<This block of commented-out lines of code should be removed.(’Ê’úÿÿÿÿ8×—„È‹3
+R
+java:S1874ƒ"/Remove this use of "isEmpty"; it is deprecated.(ªîØÿÿÿÿÿ8Ğ§òÇ‹3
+M
+java:S1874ˆ"/Remove this use of "isEmpty"; it is deprecated.(å’Î™8Ğ§òÇ‹3
+M
+java:S1874„"/Remove this use of "isEmpty"; it is deprecated.(ãŞ†é8Õ§òÇ‹3

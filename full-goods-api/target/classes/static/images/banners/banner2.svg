@@ -1,0 +1,59 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e0f7fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad1)" />
+  
+  <!-- 装饰元素 -->
+  <circle cx="100" cy="100" r="50" fill="#FFEB3B" opacity="0.3" />
+  <circle cx="1100" cy="300" r="70" fill="#FF9800" opacity="0.3" />
+  
+  <!-- 水果组合 -->
+  <!-- 西瓜 -->
+  <g transform="translate(200, 200)">
+    <circle cx="0" cy="0" r="80" fill="#4CAF50" />
+    <circle cx="0" cy="0" r="70" fill="#E91E63" />
+    <path d="M -60 -40 L 60 -40 L 60 40 L -60 40 Z" fill="#E91E63" />
+    <path d="M -60 -40 L 60 -40 L 0 40 Z" fill="#E91E63" />
+    <!-- 西瓜纹理 -->
+    <line x1="-60" y1="-20" x2="60" y2="-20" stroke="#000" stroke-width="1" opacity="0.1" />
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="#000" stroke-width="1" opacity="0.1" />
+    <line x1="-60" y1="20" x2="60" y2="20" stroke="#000" stroke-width="1" opacity="0.1" />
+    <!-- 西瓜籽 -->
+    <ellipse cx="-40" cy="-10" rx="3" ry="5" fill="#000" opacity="0.7" />
+    <ellipse cx="-20" cy="10" rx="3" ry="5" fill="#000" opacity="0.7" />
+    <ellipse cx="0" cy="-15" rx="3" ry="5" fill="#000" opacity="0.7" />
+    <ellipse cx="20" cy="5" rx="3" ry="5" fill="#000" opacity="0.7" />
+    <ellipse cx="40" cy="-5" rx="3" ry="5" fill="#000" opacity="0.7" />
+  </g>
+  
+  <!-- 香蕉 -->
+  <g transform="translate(500, 200)">
+    <path d="M -20 -60 C 40 -60 60 -40 60 0 C 60 40 40 60 0 60 C -40 60 -60 40 -60 0 C -60 -40 -40 -60 -20 -60 Z" fill="#FFEB3B" />
+    <path d="M -15 -50 C 30 -50 50 -35 50 0 C 50 35 30 50 0 50 C -30 50 -50 35 -50 0 C -50 -35 -30 -50 -15 -50 Z" fill="#FFF176" />
+    <path d="M -10 -40 L -10 40 C -30 40 -40 30 -40 0 C -40 -30 -30 -40 -10 -40 Z" fill="#F57F17" opacity="0.1" />
+  </g>
+  
+  <!-- 蓝莓 -->
+  <g transform="translate(800, 200)">
+    <circle cx="-30" cy="-30" r="20" fill="#303F9F" />
+    <circle cx="0" cy="-40" r="20" fill="#3949AB" />
+    <circle cx="30" cy="-30" r="20" fill="#3F51B5" />
+    <circle cx="-40" cy="0" r="20" fill="#5C6BC0" />
+    <circle cx="0" cy="0" r="20" fill="#7986CB" />
+    <circle cx="40" cy="0" r="20" fill="#9FA8DA" />
+    <circle cx="-30" cy="30" r="20" fill="#C5CAE9" />
+    <circle cx="0" cy="40" r="20" fill="#E8EAF6" />
+    <circle cx="30" cy="30" r="20" fill="#3F51B5" />
+    <!-- 叶子 -->
+    <path d="M 0 -60 Q 10 -80 30 -70 Q 40 -60 30 -50" stroke="#4CAF50" stroke-width="3" fill="#4CAF50" />
+  </g>
+  
+  <!-- 文字 -->
+  <text x="50%" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#333333">精选水果，每日新鲜配送</text>
+  <text x="50%" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#555555">新人首单立减30元</text>
+</svg>

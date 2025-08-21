@@ -1,0 +1,3 @@
+2025-08-20 14:21:23.771 [http-nio-8082-exec-8] ERROR BUSINESS - 未知异常 - URI: /admin/admin/user/list, 异常类型: NestedServletException, 错误信息: Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: org/example/admin/service/impl/AdminUserServiceImpl$1
+2025-08-20 14:21:23.798 [http-nio-8082-exec-8] ERROR BUSINESS - 异常发生 - 组件: GlobalExceptionHandler, 操作: handleException, 异常: Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: org/example/admin/service/impl/AdminUserServiceImpl$1
+2025-08-20 23:52:06.979 [http-nio-8082-exec-1] WARN  BUSINESS - 缺少请求参数 - URI: /admin/admin/model/upload, 参数名: description

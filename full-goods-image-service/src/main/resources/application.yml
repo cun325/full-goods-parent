@@ -1,0 +1,31 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /image-service
+
+spring:
+  application:
+    name: full-goods-image-service
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+      enabled: true
+
+# 图片上传配置
+image:
+  upload:
+    # 上传路径 - 使用相对路径，适配Windows环境
+    path: D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images
+    # 允许的文件类型
+    allowed-types: jpg,jpeg,png,gif,bmp,webp
+    # 最大文件大小(MB)
+    max-size: 10
+    # 访问URL前缀
+    url-prefix: /uploads/images/
+
+logging:
+  level:
+    com.fullgoods: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
