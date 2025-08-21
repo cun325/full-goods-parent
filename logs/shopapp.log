@@ -6563,3 +6563,194 @@ Consider the following:
 2025-08-21 15:26:45.804 DEBUG 19288 --- [http-nio-8083-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:26:45 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
 2025-08-21 15:26:45.805 DEBUG 19288 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
 2025-08-21 15:26:45.827 DEBUG 19288 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:39:10.950 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/strawberry.jpg", parameters={}
+2025-08-21 15:39:10.950 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/coffee.jpg", parameters={}
+2025-08-21 15:39:10.950 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:39:10.954 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:39:10.954 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:39:10.950 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:39:10.955 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:39:10.955 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:39:10.955 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:39:10.955 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:39:10.956 DEBUG 19288 --- [http-nio-8083-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:39:10.956 DEBUG 19288 --- [http-nio-8083-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:39:10.957 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:39:10.957 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:39:10.957 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:39:10 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:39:10.957 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:39:10 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:39:10.958 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:39:10.958 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:39:12.506 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/image-service/uploads/images/review2.jpg", parameters={}
+2025-08-21 15:39:12.506 DEBUG 19288 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/image-service/uploads/images/review1.jpg", parameters={}
+2025-08-21 15:39:12.506 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:39:12.506 DEBUG 19288 --- [http-nio-8083-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:39:12.506 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:39:12.506 DEBUG 19288 --- [http-nio-8083-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:39:12.506 DEBUG 19288 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:39:12.506 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:39:12.507 DEBUG 19288 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:39:12.508 DEBUG 19288 --- [http-nio-8083-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:39:12.508 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:39:12.509 DEBUG 19288 --- [http-nio-8083-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:39:12.511 DEBUG 19288 --- [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:39:12.512 DEBUG 19288 --- [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:39:12 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:39:12.515 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:39:12.516 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:39:12 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:39:12.522 DEBUG 19288 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:39:12.523 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:39:16.333 DEBUG 19288 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/coffee.jpg", parameters={}
+2025-08-21 15:39:16.333 DEBUG 19288 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/strawberry.jpg", parameters={}
+2025-08-21 15:39:16.333 DEBUG 19288 --- [http-nio-8083-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:39:16.333 DEBUG 19288 --- [http-nio-8083-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:39:16.333 DEBUG 19288 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:39:16.333 DEBUG 19288 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:39:16.333 DEBUG 19288 --- [http-nio-8083-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:39:16.333 DEBUG 19288 --- [http-nio-8083-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:39:16.337 DEBUG 19288 --- [http-nio-8083-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:39:16.339 DEBUG 19288 --- [http-nio-8083-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:39:16.339 DEBUG 19288 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:39:16.339 DEBUG 19288 --- [http-nio-8083-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:39:16 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:39:16.339 DEBUG 19288 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:39:16.340 DEBUG 19288 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:39:16.340 DEBUG 19288 --- [http-nio-8083-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:39:16.350 DEBUG 19288 --- [http-nio-8083-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:39:16.351 DEBUG 19288 --- [http-nio-8083-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:39:16 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:39:16.352 DEBUG 19288 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:39:55.892 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/image-service/uploads/images/review2.jpg", parameters={}
+2025-08-21 15:39:55.892 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/image-service/uploads/images/review1.jpg", parameters={}
+2025-08-21 15:39:55.895 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:39:55.895 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:39:55.895 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:39:55.895 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:39:55.895 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:39:55.895 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:39:55.897 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:39:55.899 DEBUG 19288 --- [http-nio-8083-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:39:55.899 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:39:55.899 DEBUG 19288 --- [http-nio-8083-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:39:55.899 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:39:55.899 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:39:55.900 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:39:55 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:39:55.900 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:39:55 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:39:55.903 DEBUG 19288 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:39:55.902 DEBUG 19288 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:39:59.217 DEBUG 19288 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/coffee.jpg", parameters={}
+2025-08-21 15:39:59.217 DEBUG 19288 --- [http-nio-8083-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:39:59.217 DEBUG 19288 --- [http-nio-8083-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:39:59.217 DEBUG 19288 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:39:59.217 DEBUG 19288 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:39:59.219 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/strawberry.jpg", parameters={}
+2025-08-21 15:39:59.219 DEBUG 19288 --- [http-nio-8083-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:39:59.219 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:39:59.221 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:39:59.221 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:39:59.221 DEBUG 19288 --- [http-nio-8083-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:39:59.222 DEBUG 19288 --- [http-nio-8083-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:39:59 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:39:59.223 DEBUG 19288 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:39:59.224 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:39:59.235 DEBUG 19288 --- [http-nio-8083-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:39:59.237 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:39:59.239 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:39:59 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:39:59.241 DEBUG 19288 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:44:40.200 DEBUG 19288 --- [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer.
+2025-08-21 15:44:47.923  INFO 19684 --- [main] o.e.i.ImageServiceApplication            : Starting ImageServiceApplication using Java 1.8.0_462 on cuncun with PID 19684 (D:\毕业设计\full-goods-parent\full-goods-image-service\target\classes started by 黄春红 in D:\毕业设计\full-goods-parent)
+2025-08-21 15:44:47.939 DEBUG 19684 --- [main] o.e.i.ImageServiceApplication            : Running with Spring Boot v2.7.5, Spring v5.3.23
+2025-08-21 15:44:47.939  INFO 19684 --- [main] o.e.i.ImageServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-08-21 15:44:48.712  INFO 19684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-21 15:44:48.716  INFO 19684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-21 15:44:48.740  INFO 19684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-08-21 15:44:49.305  INFO 19684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2025-08-21 15:44:49.320  INFO 19684 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8083"]
+2025-08-21 15:44:49.321  INFO 19684 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-21 15:44:49.322  INFO 19684 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-08-21 15:44:49.479  INFO 19684 --- [main] o.a.c.c.C.[.[.[/image-service]           : Initializing Spring embedded WebApplicationContext
+2025-08-21 15:44:49.481  INFO 19684 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1494 ms
+2025-08-21 15:44:49.769 DEBUG 19684 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-21 15:44:49.854 DEBUG 19684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2025-08-21 15:44:49.858 DEBUG 19684 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /uploads/images/**] in 'resourceHandlerMapping'
+2025-08-21 15:44:49.873 DEBUG 19684 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-21 15:44:50.388 DEBUG 19684 --- [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
+2025-08-21 15:44:50.389 DEBUG 19684 --- [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added.
+2025-08-21 15:44:50.447  INFO 19684 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8083"]
+2025-08-21 15:44:50.485  INFO 19684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path '/image-service'
+2025-08-21 15:44:50.499  INFO 19684 --- [main] o.e.i.ImageServiceApplication            : Started ImageServiceApplication in 3.32 seconds (JVM running for 4.669)
+2025-08-21 15:45:25.382  INFO 19684 --- [http-nio-8083-exec-1] o.a.c.c.C.[.[.[/image-service]           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-21 15:45:25.385  INFO 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-21 15:45:25.385 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-08-21 15:45:25.385 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-08-21 15:45:25.385 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-08-21 15:45:25.387 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@222933
+2025-08-21 15:45:25.387 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@55e27c6
+2025-08-21 15:45:25.389 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-21 15:45:25.389  INFO 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-08-21 15:45:25.412 DEBUG 19684 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/034787c0-fd22-4f97-8c4b-f347e692db09.jpg", parameters={}
+2025-08-21 15:45:25.412 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/5fb49b12-373c-4ba9-ae73-e1b95680a9bb.jpg", parameters={}
+2025-08-21 15:45:25.424 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:45:25.424 DEBUG 19684 --- [http-nio-8083-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:45:25.445 DEBUG 19684 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-21 15:45:25.445 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-21 15:45:32.833 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/image-service/uploads/images/review1.jpg", parameters={}
+2025-08-21 15:45:32.833 DEBUG 19684 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/image-service/uploads/images/review2.jpg", parameters={}
+2025-08-21 15:45:32.834 DEBUG 19684 --- [http-nio-8083-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:45:32.834 DEBUG 19684 --- [http-nio-8083-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:45:32.834 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:45:32.835 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:45:32.835 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:45:32.835 DEBUG 19684 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:45:32.860 DEBUG 19684 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:45:32.860 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:45:32.864 DEBUG 19684 --- [http-nio-8083-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:45:32.865 DEBUG 19684 --- [http-nio-8083-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:45:32.930 DEBUG 19684 --- [http-nio-8083-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:45:32.930 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:45:32.930 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:45:32 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:45:32.930 DEBUG 19684 --- [http-nio-8083-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:45:32 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:45:33.012 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:45:33.012 DEBUG 19684 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:45:37.014 DEBUG 19684 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/coffee.jpg", parameters={}
+2025-08-21 15:45:37.015 DEBUG 19684 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/strawberry.jpg", parameters={}
+2025-08-21 15:45:37.016 DEBUG 19684 --- [http-nio-8083-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:45:37.017 DEBUG 19684 --- [http-nio-8083-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:45:37.017 DEBUG 19684 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:45:37.017 DEBUG 19684 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:45:37.017 DEBUG 19684 --- [http-nio-8083-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:45:37.018 DEBUG 19684 --- [http-nio-8083-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:45:37.019 DEBUG 19684 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:45:37.019 DEBUG 19684 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:45:37.020 DEBUG 19684 --- [http-nio-8083-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:45:37.021 DEBUG 19684 --- [http-nio-8083-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:45:37.021 DEBUG 19684 --- [http-nio-8083-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:45:37.021 DEBUG 19684 --- [http-nio-8083-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:45:37 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:45:37.022 DEBUG 19684 --- [http-nio-8083-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:45:37.023 DEBUG 19684 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:45:37.023 DEBUG 19684 --- [http-nio-8083-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:45:37 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:45:37.025 DEBUG 19684 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:45:41.119 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/coffee.jpg", parameters={}
+2025-08-21 15:45:41.119 DEBUG 19684 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/2025/08/17/strawberry.jpg", parameters={}
+2025-08-21 15:45:41.120 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:45:41.120 DEBUG 19684 --- [http-nio-8083-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:45:41.121 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:45:41.121 DEBUG 19684 --- [http-nio-8083-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:45:41.121 DEBUG 19684 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:45:41.121 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:45:41.121 DEBUG 19684 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:45:41.121 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:45:41.122 DEBUG 19684 --- [http-nio-8083-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:45:41.122 DEBUG 19684 --- [http-nio-8083-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:45:41.123 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:45:41.123 DEBUG 19684 --- [http-nio-8083-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:45:41.123 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:45:41 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:45:41.123 DEBUG 19684 --- [http-nio-8083-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:45:41 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:45:41.123 DEBUG 19684 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:45:41.124 DEBUG 19684 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:45:43.211 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/image-service/uploads/images/image-service/uploads/images/default-avatar.jpg", parameters={}
+2025-08-21 15:45:43.212 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:D:/毕业设计/full-goods-parent/full-goods-image-service/uploads/images/]]
+2025-08-21 15:45:43.213 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-08-21 15:45:43.248 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-08-21 15:45:43.282 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/image-service/error", parameters={}
+2025-08-21 15:45:43.283 DEBUG 19684 --- [http-nio-8083-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-08-21 15:45:43.296 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-08-21 15:45:43.296 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 21 15:45:43 CST 2025, status=404, error=Not Found, path=/image-service/uploads/im (truncated)...]
+2025-08-21 15:45:43.298 DEBUG 19684 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-08-21 15:47:21 [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 3]

@@ -4996,3 +4996,34 @@ Caused by: java.lang.ClassNotFoundException: org.example.api.vo.AddressVO
 2025-08-21 15:30:28.012 [MessageBroker-2] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
 2025-08-21 15:31:28.017 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
 2025-08-21 15:32:28.027 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:33:28.027 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:34:28.019 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:35:28.023 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:36:28.019 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:37:28.021 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:38:28.013 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:39:03.243 [http-nio-8080-exec-7] WARN  BUSINESS - 参数类型不匹配 - URI: /api/order/detail/confirm, 参数名: orderId, 期望类型: class java.lang.Long, 实际值: confirm
+2025-08-21 15:39:03.243 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "confirm"]
+2025-08-21 15:39:12.473 [http-nio-8080-exec-7] WARN  BUSINESS - 参数类型不匹配 - URI: /api/fruit/undefined, 参数名: id, 期望类型: class java.lang.Long, 实际值: undefined
+2025-08-21 15:39:12.475 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2025-08-21 15:39:28.021 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:39:55.865 [http-nio-8080-exec-6] WARN  BUSINESS - 参数类型不匹配 - URI: /api/fruit/undefined, 参数名: id, 期望类型: class java.lang.Long, 实际值: undefined
+2025-08-21 15:39:55.865 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2025-08-21 15:40:28.016 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:41:28.023 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:42:28.027 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:43:28.017 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:44:28.025 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:45:28.033 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 10ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:45:55.379 [http-nio-8080-exec-8] WARN  BUSINESS - HTTP方法不支持 - URI: /api/fruit/behavior, 方法: POST, 支持的方法: GET
+2025-08-21 15:45:55.380 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2025-08-21 15:45:56.549 [http-nio-8080-exec-9] WARN  BUSINESS - HTTP方法不支持 - URI: /api/fruit/behavior, 方法: POST, 支持的方法: GET
+2025-08-21 15:45:56.549 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2025-08-21 15:46:28.027 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:47:28.027 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:47:35.338 [http-nio-8080-exec-3] WARN  org.example.api.controller.FruitController - 无效的token: 833cfc0dd7ae4180ae676a90978dea331755760702087
+2025-08-21 15:47:35.802 [http-nio-8080-exec-3] INFO  org.example.api.service.impl.NLPServiceImpl - 输入: 山东的水果, 提取关键词: [山东, 水果]
+2025-08-21 15:47:35.803 [http-nio-8080-exec-3] INFO  org.example.api.service.impl.FruitServiceImpl - 解析关键词: [山东, 水果]
+2025-08-21 15:47:35.850 [http-nio-8080-exec-3] INFO  org.example.api.service.impl.FruitServiceImpl - 推荐水果数量: 12
+2025-08-21 15:48:28.014 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:49:28.014 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
