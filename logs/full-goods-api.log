@@ -5027,3 +5027,82 @@ Caused by: java.lang.ClassNotFoundException: org.example.api.vo.AddressVO
 2025-08-21 15:47:35.850 [http-nio-8080-exec-3] INFO  org.example.api.service.impl.FruitServiceImpl - 推荐水果数量: 12
 2025-08-21 15:48:28.014 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
 2025-08-21 15:49:28.014 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:50:28.014 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:51:28.012 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:52:28.014 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:53:28.014 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:54:28.020 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:55:28.018 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:56:28.027 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:57:28.016 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:58:28.025 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:59:28.017 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 15:59:46.612 [http-nio-8080-exec-10] WARN  BUSINESS - 参数类型不匹配 - URI: /api/order/detail/confirm, 参数名: orderId, 期望类型: class java.lang.Long, 实际值: confirm
+2025-08-21 15:59:46.616 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "confirm"]
+2025-08-21 16:00:28.021 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:01:28.014 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:02:28.016 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:03:28.021 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:04:24.738 [http-nio-8080-exec-8] WARN  BUSINESS - 参数类型不匹配 - URI: /api/order/detail/confirm, 参数名: orderId, 期望类型: class java.lang.Long, 实际值: confirm
+2025-08-21 16:04:24.738 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "confirm"]
+2025-08-21 16:04:28.019 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:05:28.017 [MessageBroker-4] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:06:28.022 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:07:28.016 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:08:28.021 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:09:28.020 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:10:28.025 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:11:28.018 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:12:28.026 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:13:28.022 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:14:28.023 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:15:28.042 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:16:28.012 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:17:13.254 [http-nio-8080-exec-3] WARN  BUSINESS - 参数类型不匹配 - URI: /api/order/detail/confirm, 参数名: orderId, 期望类型: class java.lang.Long, 实际值: confirm
+2025-08-21 16:17:13.255 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "confirm"]
+2025-08-21 16:17:28.024 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:18:28.024 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:19:28.011 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:20:28.016 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:21:28.019 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:22:28.017 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:23:28.013 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:24:28.023 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:25:28.016 [MessageBroker-8] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:25:34.219 [http-nio-8080-exec-2] WARN  org.example.api.controller.FruitController - 无效的token: 833cfc0dd7ae4180ae676a90978dea331755760702087
+2025-08-21 16:25:34.220 [http-nio-8080-exec-2] INFO  org.example.api.service.impl.NLPServiceImpl - 输入: 山东的水果, 提取关键词: [山东, 水果]
+2025-08-21 16:25:34.220 [http-nio-8080-exec-2] INFO  org.example.api.service.impl.FruitServiceImpl - 解析关键词: [山东, 水果]
+2025-08-21 16:25:34.224 [http-nio-8080-exec-2] INFO  org.example.api.service.impl.FruitServiceImpl - 推荐水果数量: 12
+2025-08-21 16:26:28.013 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:27:28.017 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:28:28.021 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 5ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:29:28.013 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:30:28.014 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:31:28.021 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:32:28.022 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:33:28.014 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:34:28.020 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:35:28.018 [MessageBroker-6] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:36:28.015 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:37:28.020 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:38:28.017 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:39:28.017 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:40:28.024 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:41:28.025 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:42:28.024 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:43:28.026 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 4ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:44:28.022 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:45:28.028 [MessageBroker-3] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 11ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:46:28.017 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:47:28.032 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 8ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:48:28.017 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:49:28.013 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:50:28.023 [MessageBroker-1] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:51:28.020 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 6ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:52:28.016 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:53:28.020 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:54:28.022 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:55:28.017 [MessageBroker-7] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 0ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:56:28.025 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 2ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:57:28.011 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
+2025-08-21 16:58:28.023 [MessageBroker-5] INFO  BUSINESS - 定时任务执行成功 - 任务: 订单自动取消任务, 耗时: 1ms, 详情: 检查了0个超时订单，成功取消0个
