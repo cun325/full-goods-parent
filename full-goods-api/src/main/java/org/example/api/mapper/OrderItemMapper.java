@@ -1,6 +1,7 @@
 package org.example.api.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.example.common.entity.OrderItem;
 
 import java.util.List;
@@ -28,12 +29,12 @@ public interface OrderItemMapper {
     List<OrderItem> selectByOrderNo(String orderNo);
 
     /**
-     * 根据ID查询订单项
+     * 新增订单项
      *
-     * @param id 订单项ID
-     * @return 订单项信息
+     * @param orderItem 订单项信息
+     * @return 影响行数
      */
-    OrderItem selectById(Long id);
+    int insert(OrderItem orderItem);
 
     /**
      * 批量新增订单项
@@ -41,15 +42,7 @@ public interface OrderItemMapper {
      * @param orderItems 订单项列表
      * @return 影响行数
      */
-    int batchInsert(List<OrderItem> orderItems);
-
-    /**
-     * 新增订单项
-     *
-     * @param orderItem 订单项信息
-     * @return 影响行数
-     */
-    int insert(OrderItem orderItem);
+    int insertBatch(@Param("orderItems") List<OrderItem> orderItems);
 
     /**
      * 修改订单项
@@ -74,12 +67,4 @@ public interface OrderItemMapper {
      * @return 影响行数
      */
     int deleteByOrderId(Long orderId);
-
-    /**
-     * 根据订单编号删除订单项
-     *
-     * @param orderNo 订单编号
-     * @return 影响行数
-     */
-    int deleteByOrderNo(String orderNo);
 }

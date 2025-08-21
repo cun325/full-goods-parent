@@ -46,7 +46,7 @@
         <include refid="Base_Column_List" />
         FROM t_message
         WHERE user_id = #{userId} AND message_type = #{messageType}
-        ORDER BY status ASC, create_time DESC
+        ORDER BY id ASC
     </select>
 
     <select id="selectUnreadByUserId" parameterType="java.lang.Long" resultMap="BaseResultMap">
@@ -91,7 +91,7 @@
         <include refid="Base_Column_List" />
         FROM t_message
         WHERE user_id = #{userId} AND message_type = #{messageType}
-        ORDER BY status ASC, create_time DESC
+        ORDER BY status ASC, create_time ASC
         LIMIT #{offset}, #{limit}
     </select>
 
@@ -306,6 +306,13 @@
         SELECT COUNT(*)
         FROM t_message
         WHERE user_id = #{userId}
+    </select>
+    
+    <!-- 根据用户ID和标题统计未读客服消息数量 -->
+    <select id="countUnreadByUserIdAndTitle" resultType="int">
+        SELECT COUNT(*)
+        FROM t_message
+        WHERE user_id = #{userId} AND title = #{title} AND status = 0
     </select>
 
 </mapper>

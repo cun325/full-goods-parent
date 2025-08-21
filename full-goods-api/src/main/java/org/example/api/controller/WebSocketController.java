@@ -2,6 +2,9 @@ package org.example.api.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.example.api.service.WebSocketMessageService;
+import org.example.api.service.MessageService;
+import org.example.common.entity.Message;
+import org.example.common.response.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
@@ -23,6 +26,9 @@ public class WebSocketController {
 
     @Autowired
     private WebSocketMessageService webSocketMessageService;
+    
+    @Autowired
+    private MessageService messageService;
 
     /**
      * 处理客户端发送的消息
@@ -123,15 +129,100 @@ public class WebSocketController {
         try {
             log.info("收到发送给用户{}的客服消息：{}", userId, message);
             
-            Map<String, Object> serviceMessage = new HashMap<>();
-            serviceMessage.put("type", "SERVICE_MESSAGE");
-            serviceMessage.put("content", message.get("content"));
-            serviceMessage.put("sender", principal != null ? principal.getName() : "客服");
-            serviceMessage.put("timestamp", System.currentTimeMillis());
+            // 保存消息到数据库
+            Message serviceMessage = new Message();
+            serviceMessage.setUserId(userId);
+            serviceMessage.setMessageType(2); // 客服消息
+            // 根据发送者类型设置不同的标题
+            if (principal != null) {
+                // 用户发送的消息
+                serviceMessage.setTitle("客户消息");
+            } else {
+                // 管理员发送的消息
+                serviceMessage.setTitle("客服消息");
+            }
+            serviceMessage.setContent((String) message.get("content"));
+            serviceMessage.setStatus(0); // 未读
+            serviceMessage.setSenderId(principal != null ? Long.valueOf(principal.getName()) : null);
+            serviceMessage.setSenderType(1); // 用户发送
             
-            webSocketMessageService.sendServiceMessageToUser(userId, serviceMessage);
+            Result<Boolean> result = messageService.sendMessage(serviceMessage);
+            if (result.getCode() != 200) {
+                log.error("保存客服消息失败: {}", result.getMessage());
+            }
+            
+            // 通过WebSocket发送给客服管理端
+            Map<String, Object> wsMessage = new HashMap<>();
+            wsMessage.put("type", "customer_service");
+            wsMessage.put("content", message.get("content"));
+            wsMessage.put("userId", userId);
+            wsMessage.put("timestamp", System.currentTimeMillis());
+            wsMessage.put("messageId", serviceMessage.getId());
+            wsMessage.put("id", serviceMessage.getId()); // 确保ID字段正确
+            wsMessage.put("senderType", 1); // 用户发送
+            
+            // 发送给所有订阅了客服消息的管理员
+            webSocketMessageService.sendServiceMessageToCustomerService(wsMessage); // 发送给客服系统
+            
+            // 同时发送给用户自己，确保用户端能实时看到自己发送的消息
+            webSocketMessageService.sendServiceMessageToUser(userId, wsMessage);
         } catch (Exception e) {
             log.error("发送客服消息失败", e);
+        }
+    }
+
+    /**
+     * 处理客服回复消息
+     *
+     * @param userId    用户ID
+     * @param message   消息内容
+     * @param principal 用户信息（客服）
+     */
+    @MessageMapping("/service/reply/{userId}")
+    public void sendServiceReply(@DestinationVariable Long userId, @Payload Map<String, Object> message, Principal principal) {
+        try {
+            log.info("客服回复用户{}的消息：{}", userId, message);
+            
+            // 保存回复消息到数据库
+            Message replyMessage = new Message();
+            replyMessage.setUserId(userId);
+            replyMessage.setMessageType(2); // 客服消息
+            // 根据发送者类型设置不同的标题
+            if (principal != null) {
+                // 管理员发送的消息
+                replyMessage.setTitle("客服消息");
+            } else {
+                // 用户发送的消息
+                replyMessage.setTitle("客户消息");
+            }
+            replyMessage.setContent((String) message.get("content"));
+            replyMessage.setStatus(0); // 未读
+            replyMessage.setSenderId(principal != null ? Long.valueOf(principal.getName()) : null);
+            replyMessage.setSenderType(3); // 客服回复
+            
+            Result<Boolean> result = messageService.sendMessage(replyMessage);
+            if (result.getCode() != 200) {
+                log.error("保存客服回复消息失败: {}", result.getMessage());
+            }
+            
+            // 通过WebSocket发送给用户
+            Map<String, Object> wsMessage = new HashMap<>();
+            wsMessage.put("type", "customer_service_reply");
+            wsMessage.put("content", message.get("content"));
+            wsMessage.put("userId", userId);
+            wsMessage.put("timestamp", System.currentTimeMillis());
+            wsMessage.put("messageId", replyMessage.getId());
+            // 添加额外字段确保前端能正确处理
+            wsMessage.put("senderType", 3); // 客服发送
+            wsMessage.put("id", replyMessage.getId()); // 确保ID字段正确
+            
+            // 发送给指定用户
+            webSocketMessageService.sendServiceMessageToUser(userId, wsMessage);
+            
+            // 同时发送给客服系统，确保客服管理端也能实时看到
+            webSocketMessageService.sendServiceMessageToCustomerService(wsMessage);
+        } catch (Exception e) {
+            log.error("发送客服回复消息失败", e);
         }
     }
 

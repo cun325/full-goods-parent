@@ -207,11 +207,11 @@ public class MessageServiceImpl implements MessageService {
     }
 
     @Override
-    public Result<Boolean> sendSystemNotification(Long userId, String title, String content, String iconUrl, String linkUrl) {
+    public Result<Boolean> sendSystemNotification(Long userId, String title, String content, String iconUrl, String linkUrl, Integer messageType) {
         try {
             Message message = new Message();
             message.setUserId(userId);
-            message.setMessageType(3); // 3-系统通知
+            message.setMessageType(messageType); // 使用传入的消息类型
             message.setTitle(title);
             message.setContent(content);
             message.setIconUrl(iconUrl);
@@ -277,6 +277,7 @@ public class MessageServiceImpl implements MessageService {
             List<Message> messages = messageMapper.selectByUserIdAndType(userId, messageType);
             PageInfo<Message> pageInfo = new PageInfo<>(messages);
             
+            log.info("获取用户{}的{}类型消息，共{}条", userId, messageType, pageInfo.getTotal());
             return Result.success(pageInfo);
         } catch (Exception e) {
             log.error("根据类型获取用户消息列表失败", e);
@@ -342,6 +343,21 @@ public class MessageServiceImpl implements MessageService {
         } catch (Exception e) {
             log.error("根据类型获取用户未读消息数量失败", e);
             return Result.failed("获取用户未读消息数量失败: " + e.getMessage());
+        }
+    }
+
+    @Override
+    public Result<Integer> getUnreadCustomerServiceMessageCountByTitle(Long userId, String title) {
+        try {
+            if (userId == null || title == null) {
+                return Result.failed("用户ID和消息标题不能为空");
+            }
+            
+            int count = messageMapper.countUnreadByUserIdAndTitle(userId, title);
+            return Result.success(count);
+        } catch (Exception e) {
+            log.error("根据标题获取用户未读客服消息数量失败", e);
+            return Result.failed("获取用户未读客服消息数量失败: " + e.getMessage());
         }
     }
 
@@ -607,8 +623,8 @@ public class MessageServiceImpl implements MessageService {
             // 创建回复消息
             Message replyMessage = new Message();
             replyMessage.setUserId(originalMessage.getUserId());
-            replyMessage.setMessageType(4); // 4-客服回复
-            replyMessage.setTitle("客服回复：" + originalMessage.getTitle());
+            replyMessage.setMessageType(2); // 2-客服回复
+            replyMessage.setTitle(originalMessage.getTitle());
             replyMessage.setContent(replyContent);
             replyMessage.setStatus(0); // 0-未读
             replyMessage.setCreateTime(new Date());

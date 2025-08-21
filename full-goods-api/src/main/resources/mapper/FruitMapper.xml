@@ -100,13 +100,14 @@
         WHERE id = #{id}
     </select>
 
-    <select id="selectByCategory" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <select id="selectByCategory" resultMap="BaseResultMap">
         SELECT
         <include refid="Base_Column_List" />
-        FROM t_fruit
-        WHERE category_id = #{categoryId}
-        AND status = 1
-        ORDER BY id ASC
+        FROM t_fruit f
+        LEFT JOIN t_fruit_category fc ON f.category_id = fc.id
+        WHERE f.status = 1
+        AND (fc.name = #{category} OR fc.id = #{category})
+        ORDER BY f.id ASC
     </select>
 
     <select id="selectByKeyword" resultMap="BaseResultMap">
@@ -308,6 +309,16 @@
         ORDER BY create_time DESC
         LIMIT #{limit}
     </select>
+
+    <select id="selectRecommended" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM t_fruit
+        WHERE status = 1
+        AND recommended = 1
+        ORDER BY create_time DESC
+        LIMIT #{limit}
+    </select>
     
     <!-- ==================== 推荐相关SQL映射 ==================== -->
     
@@ -399,7 +410,7 @@
                 AND f.status = #{status}
             </if>
         </where>
-        ORDER BY f.recommended DESC, f.id ASC
+        ORDER BY f.create_time DESC
     </select>
     
     <!-- 统计各分类的水果数量 -->

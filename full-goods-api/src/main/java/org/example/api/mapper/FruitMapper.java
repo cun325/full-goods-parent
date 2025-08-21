@@ -106,7 +106,7 @@ public interface FruitMapper {
      * @param name 水果名称
      * @return 水果信息
      */
-    @Select("SELECT * FROM fruit WHERE name = #{name} AND status = 1")
+   // @Select("SELECT * FROM fruit WHERE name = #{name} AND status = 1")
     Fruit selectByName(@Param("name") String name);
 
     /**
@@ -199,7 +199,14 @@ public interface FruitMapper {
       * @return 最新商品列表
       */
      List<Fruit> selectNewFruits(@Param("limit") Integer limit);
-     
+
+
+    /**
+     *  获取最新推荐列表
+     * @param limit
+     * @return
+     */
+    List<Fruit> selectRecommended(@Param("limit") Integer limit);
      /**
       * 更新商品推荐状态
       *

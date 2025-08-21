@@ -251,4 +251,13 @@ public interface MessageMapper {
      * @return 聊天记录总数
      */
     int countChatMessagesByUserId(@Param("userId") Long userId);
+    
+    /**
+     * 根据用户ID和标题统计未读客服消息数量
+     * 
+     * @param userId 用户ID
+     * @param title 消息标题
+     * @return 未读客服消息数量
+     */
+    int countUnreadByUserIdAndTitle(@Param("userId") Long userId, @Param("title") String title);
 }

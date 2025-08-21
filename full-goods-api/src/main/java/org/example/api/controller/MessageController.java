@@ -85,18 +85,22 @@ public class MessageController {
             if (request.get("content") == null || request.get("content").toString().trim().isEmpty()) {
                 return Result.failed("消息内容不能为空");
             }
-            
+            String userIda = request.get("userId").toString() ;
             String title = request.get("title").toString();
             String content = request.get("content").toString();
             String iconUrl = request.get("iconUrl") != null ? request.get("iconUrl").toString() : null;
             String linkUrl = request.get("linkUrl") != null ? request.get("linkUrl").toString() : null;
+            
+            // 获取消息类型，默认为3（系统通知），但支持自定义
+            Integer messageType = request.get("messageType") != null ? 
+                Integer.valueOf(request.get("messageType").toString()) : 3;
             
             // 处理目标用户
             String targetType = request.get("targetType") != null ? request.get("targetType").toString() : "all";
             
             if ("all".equals(targetType)) {
                 // 发送给所有用户 - 这里简化处理，发送给用户ID为1的用户作为示例
-                return messageService.sendSystemNotification(1L, title, content, iconUrl, linkUrl);
+                return messageService.sendSystemNotification(Long.parseLong(userIda), title, content, iconUrl, linkUrl, messageType);
             } else if ("specific".equals(targetType)) {
                 // 发送给指定用户
                 String userIds = request.get("userIds") != null ? request.get("userIds").toString() : "";
@@ -110,7 +114,7 @@ public class MessageController {
                 for (String userIdStr : userIdArray) {
                     try {
                         Long userId = Long.valueOf(userIdStr.trim());
-                        Result<Boolean> result = messageService.sendSystemNotification(userId, title, content, iconUrl, linkUrl);
+                        Result<Boolean> result = messageService.sendSystemNotification(userId, title, content, iconUrl, linkUrl, messageType);
                          if (result.getCode() != 200) {
                              allSuccess = false;
                          }
@@ -119,18 +123,15 @@ public class MessageController {
                         allSuccess = false;
                     }
                 }
-                return allSuccess ? Result.success(true) : Result.failed("部分消息发送失败");
-            } else {
-                // 兼容旧版本API，直接使用userId参数
-                if (request.get("userId") == null) {
-                    return Result.failed("用户ID不能为空");
+                
+                if (allSuccess) {
+                    return Result.success(true, "系统通知发送成功");
+                } else {
+                    return Result.failed("部分系统通知发送失败");
                 }
-                Long userId = Long.valueOf(request.get("userId").toString());
-                return messageService.sendSystemNotification(userId, title, content, iconUrl, linkUrl);
+            } else {
+                return Result.failed("不支持的目标类型: " + targetType);
             }
-            
-        } catch (NumberFormatException e) {
-            return Result.failed("用户ID格式不正确");
         } catch (Exception e) {
             log.error("发送系统通知失败", e);
             return Result.failed("发送系统通知失败: " + e.getMessage());
@@ -179,7 +180,7 @@ public class MessageController {
             @Parameter(description = "每页大小") @RequestParam(defaultValue = "10") Integer size) {
         try {
             Long userId = UserContext.getCurrentUserId();
-            return messageService.getUserMessagesByType(userId, messageType, page, size);
+            return messageService.getUserMessagesByType(userId, messageType, page, 99999);
         } catch (Exception e) {
             log.error("按类型获取用户消息失败: {}", e.getMessage(), e);
             return Result.failed("获取消息列表失败");
@@ -245,6 +246,22 @@ public class MessageController {
         } catch (Exception e) {
             log.error("按类型获取未读消息数量失败: {}", e.getMessage(), e);
             return Result.failed("获取未读消息数量失败");
+        }
+    }
+    
+    /**
+     * 按标题获取用户未读客服消息数量
+     */
+    @GetMapping("/user/unread/count/title/{title}")
+    @Operation(summary = "按标题获取未读客服消息数量", description = "获取当前用户特定标题的未读客服消息数量")
+    public Result<Integer> getUnreadCustomerServiceMessageCountByTitle(
+            @Parameter(description = "消息标题") @PathVariable String title) {
+        try {
+            Long userId = UserContext.getCurrentUserId();
+            return messageService.getUnreadCustomerServiceMessageCountByTitle(userId, title);
+        } catch (Exception e) {
+            log.error("按标题获取未读客服消息数量失败: {}", e.getMessage(), e);
+            return Result.failed("获取未读客服消息数量失败");
         }
     }
 

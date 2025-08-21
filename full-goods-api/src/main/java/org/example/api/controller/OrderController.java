@@ -14,6 +14,7 @@ import org.example.api.mapper.OrderMapper;
 import org.example.api.mapper.FruitMapper;
 import org.example.api.service.OrderService;
 import org.example.api.service.UserService;
+import org.example.api.service.MessageService;
 import org.example.api.vo.OrderItemVO;
 import org.example.api.vo.OrderVO;
 import org.example.common.entity.Order;
@@ -58,6 +59,9 @@ public class OrderController {
     
     @Autowired
     private FruitMapper fruitMapper;
+    
+    @Autowired
+    private MessageService messageService;
 
     @PostMapping("/create")
     @ApiOperation(value = "创建订单", notes = "用户创建新订单，支持购物车结算和立即购买")
@@ -199,6 +203,59 @@ public class OrderController {
         }
     }
 
+    @GetMapping("/detail/no/{orderNo}")
+    @ApiOperation("根据订单号获取订单详情")
+    public Result<OrderVO> getOrderByOrderNo(
+            @ApiParam("订单号") @PathVariable String orderNo,
+            @ApiParam("用户token") @RequestParam String token) {
+        try {
+            // 验证token获取用户信息
+            if (StringUtils.isEmpty(token)) {
+                return Result.failed("用户未登录");
+            }
+
+            User user = userService.getByToken(token);
+            if (user == null) {
+                return Result.failed("用户不存在或token已过期");
+            }
+
+            // 根据订单号获取订单详情
+            Order order = orderMapper.selectByOrderNo(orderNo);
+            if (order == null) {
+                return Result.failed("订单不存在");
+            }
+
+            // 验证订单是否属于当前用户
+            if (!order.getUserId().equals(user.getId())) {
+                return Result.failed("无权访问该订单");
+            }
+
+            // 转换为VO
+            OrderVO orderVO = new OrderVO();
+            BeanUtils.copyProperties(order, orderVO);
+
+            // 获取订单项列表
+            List<OrderItem> orderItems = orderItemMapper.selectByOrderNo(orderNo);
+            List<OrderItemVO> orderItemVOList = orderItems.stream().map(item -> {
+                OrderItemVO itemVO = new OrderItemVO();
+                BeanUtils.copyProperties(item, itemVO);
+                return itemVO;
+            }).collect(Collectors.toList());
+            orderVO.setItems(orderItemVOList);
+
+            // 计算商品总数量
+            Integer totalQuantity = orderItems.stream()
+                .mapToInt(OrderItem::getQuantity)
+                .sum();
+            orderVO.setTotalQuantity(totalQuantity);
+
+            return Result.success(orderVO);
+        } catch (Exception e) {
+            log.error("获取订单详情失败", e);
+            return Result.failed("获取订单详情失败");
+        }
+    }
+
     @PostMapping("/cancel/{orderId}")
     @ApiOperation("取消订单")
     public Result<Boolean> cancelOrder(@PathVariable Long orderId, @RequestBody java.util.Map<String, String> request) {
@@ -221,6 +278,44 @@ public class OrderController {
         } catch (Exception e) {
             log.error("取消订单失败", e);
             return Result.failed("取消订单失败");
+        }
+    }
+
+    @PostMapping("/pay/no/{orderNo}")
+    @ApiOperation("通过订单号支付订单")
+    public Result<Boolean> payOrderByOrderNo(@ApiParam("订单号") @PathVariable String orderNo, 
+                                           @RequestBody java.util.Map<String, Object> request) {
+        String token = (String) request.get("token");
+        Integer payType = (Integer) request.get("payType");
+        try {
+            // 验证token获取用户信息
+            if (StringUtils.isEmpty(token)) {
+                return Result.failed("用户未登录");
+            }
+
+            User user = userService.getByToken(token);
+            if (user == null) {
+                return Result.failed("用户不存在或token已过期");
+            }
+
+            // 根据订单号获取订单
+            Order order = orderMapper.selectByOrderNo(orderNo);
+            if (order == null) {
+                return Result.failed("订单不存在");
+            }
+
+            // 验证订单是否属于当前用户
+            if (!order.getUserId().equals(user.getId())) {
+                return Result.failed("无权操作该订单");
+            }
+
+            // 支付订单
+            boolean success = orderService.payOrder(order.getId(), user.getId(), payType);
+            
+            return success ? Result.success(true) : Result.failed("支付失败");
+        } catch (Exception e) {
+            log.error("支付订单失败", e);
+            return Result.failed("支付订单失败");
         }
     }
 
@@ -315,14 +410,19 @@ public class OrderController {
                         break;
                 }
             }
-            
+
             List<Order> orders;
+            Long total = 0L;
             if (StringUtils.hasText(search) || statusInt != null || userId != null) {
                 // 根据条件查询
                 orders = orderMapper.selectByConditionsWithPage(search, statusInt);
+                // 手动查询总数
+                total = orderMapper.countTotal(); // 这里应该根据条件查询对应的count方法
             } else {
                 // 查询所有
                 orders = orderMapper.selectAllWithPage();
+                // 查询所有订单总数
+                total = orderMapper.countTotal();
             }
             
             // 转换为VO并获取订单项
@@ -444,6 +544,17 @@ public class OrderController {
             order.setTrackingNumber(trackingNumber);
             order.setCourier(courier);
             int result = orderMapper.updateByPrimaryKey(order);
+            
+            // 发送物流通知给用户
+            if (result > 0) {
+                try {
+                    String content = String.format("您的订单%s已发货，快递公司：%s，快递单号：%s，预计1-3天送达。", 
+                        order.getOrderNo(), courier, trackingNumber);
+                    messageService.sendLogisticsNotification(order.getUserId(), order.getOrderNo(), "已发货", content);
+                } catch (Exception e) {
+                    log.error("发送物流通知失败，订单ID: {}", orderId, e);
+                }
+            }
             
             return result > 0 ? Result.success(true) : Result.failed("发货失败");
         } catch (Exception e) {

@@ -47,14 +47,15 @@ public interface MessageService {
 
     /**
      * 发送系统通知
-     * @param userId 用户ID（为null时发送给所有用户）
-     * @param title 通知标题
-     * @param content 通知内容
+     * @param userId 用户ID
+     * @param title 消息标题
+     * @param content 消息内容
      * @param iconUrl 图标URL
-     * @param linkUrl 跳转链接
+     * @param linkUrl 链接URL
+     * @param messageType 消息类型
      * @return 发送结果
      */
-    Result<Boolean> sendSystemNotification(Long userId, String title, String content, String iconUrl, String linkUrl);
+    Result<Boolean> sendSystemNotification(Long userId, String title, String content, String iconUrl, String linkUrl, Integer messageType);
 
     /**
      * 发送优惠活动通知
@@ -109,18 +110,29 @@ public interface MessageService {
     Result<Integer> getUnreadMessageCount(Long userId);
 
     /**
-     * 根据消息类型获取用户未读消息数量
-     * @param userId 用户ID
+     * 根据类型获取用户未读消息数量
+     *
+     * @param userId      用户ID
      * @param messageType 消息类型
      * @return 未读消息数量
      */
     Result<Integer> getUnreadMessageCountByType(Long userId, Integer messageType);
 
     /**
-     * 标记消息为已读
-     * @param messageId 消息ID
+     * 根据标题获取用户未读客服消息数量
+     *
      * @param userId 用户ID
-     * @return 操作结果
+     * @param title 消息标题
+     * @return 未读客服消息数量
+     */
+    Result<Integer> getUnreadCustomerServiceMessageCountByTitle(Long userId, String title);
+
+    /**
+     * 标记消息为已读
+     *
+     * @param messageId 消息ID
+     * @param userId    用户ID
+     * @return 是否成功
      */
     Result<Boolean> markMessageAsRead(Long messageId, Long userId);
 

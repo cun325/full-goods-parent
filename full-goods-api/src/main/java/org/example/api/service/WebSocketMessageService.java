@@ -58,11 +58,33 @@ public class WebSocketMessageService {
      */
     public void sendServiceMessageToUser(Long userId, Object serviceMessage) {
         try {
+            // 发送到用户特定队列
             String destination = "/user/" + userId + "/queue/service";
             messagingTemplate.convertAndSend(destination, serviceMessage);
             log.info("向用户{}发送客服WebSocket消息成功", userId);
+            
+            // 同时发送到通用队列，以防客户端订阅了通用队列
+            String generalDestination = "/user/queue/service";
+            messagingTemplate.convertAndSend(generalDestination, serviceMessage);
+            log.info("向通用队列发送客服WebSocket消息成功");
         } catch (Exception e) {
             log.error("向用户{}发送客服WebSocket消息失败", userId, e);
+        }
+    }
+
+    /**
+     * 向客服系统发送消息（供管理员使用）
+     *
+     * @param serviceMessage 客服消息
+     */
+    public void sendServiceMessageToCustomerService(Object serviceMessage) {
+        try {
+            // 发送给所有在线的客服人员
+            String destination = "/topic/service";
+            messagingTemplate.convertAndSend(destination, serviceMessage);
+            log.info("向客服系统发送WebSocket消息成功");
+        } catch (Exception e) {
+            log.error("向客服系统发送WebSocket消息失败", e);
         }
     }
 
@@ -87,112 +109,10 @@ public class WebSocketMessageService {
      */
     public void broadcastPromotionMessage(Object promotion) {
         try {
-            messagingTemplate.convertAndSend("/topic/promotion", promotion);
+            messagingTemplate.convertAndSend("/topic/promotions", promotion);
             log.info("广播优惠活动消息成功");
         } catch (Exception e) {
             log.error("广播优惠活动消息失败", e);
-        }
-    }
-
-    /**
-     * 发送订单状态更新消息
-     *
-     * @param userId      用户ID
-     * @param orderUpdate 订单更新信息
-     */
-    public void sendOrderUpdateToUser(Long userId, Object orderUpdate) {
-        try {
-            String destination = "/user/" + userId + "/queue/orders";
-            messagingTemplate.convertAndSend(destination, orderUpdate);
-            log.info("向用户{}发送订单更新消息成功", userId);
-        } catch (Exception e) {
-            log.error("向用户{}发送订单更新消息失败", userId, e);
-        }
-    }
-
-    /**
-     * 发送物流更新消息
-     *
-     * @param userId          用户ID
-     * @param logisticsUpdate 物流更新信息
-     */
-    public void sendLogisticsUpdateToUser(Long userId, Object logisticsUpdate) {
-        try {
-            String destination = "/user/" + userId + "/queue/logistics";
-            messagingTemplate.convertAndSend(destination, logisticsUpdate);
-            log.info("向用户{}发送物流更新消息成功", userId);
-        } catch (Exception e) {
-            log.error("向用户{}发送物流更新消息失败", userId, e);
-        }
-    }
-
-    /**
-     * 发送支付结果消息
-     *
-     * @param userId        用户ID
-     * @param paymentResult 支付结果信息
-     */
-    public void sendPaymentResultToUser(Long userId, Object paymentResult) {
-        try {
-            String destination = "/user/" + userId + "/queue/payment";
-            messagingTemplate.convertAndSend(destination, paymentResult);
-            log.info("向用户{}发送支付结果消息成功", userId);
-        } catch (Exception e) {
-            log.error("向用户{}发送支付结果消息失败", userId, e);
-        }
-    }
-
-    /**
-     * 发送自定义消息到指定目标
-     *
-     * @param destination 目标地址
-     * @param message     消息内容
-     * @param headers     消息头（可选）
-     */
-    public void sendCustomMessage(String destination, Object message, Map<String, Object> headers) {
-        try {
-            if (headers != null && !headers.isEmpty()) {
-                messagingTemplate.convertAndSend(destination, message, headers);
-            } else {
-                messagingTemplate.convertAndSend(destination, message);
-            }
-            log.info("发送自定义消息到{}成功", destination);
-        } catch (Exception e) {
-            log.error("发送自定义消息到{}失败", destination, e);
-        }
-    }
-
-    /**
-     * 发送在线状态更新
-     *
-     * @param userId       用户ID
-     * @param onlineStatus 在线状态
-     */
-    public void sendOnlineStatusUpdate(Long userId, Object onlineStatus) {
-        try {
-            String destination = "/user/" + userId + "/queue/status";
-            messagingTemplate.convertAndSend(destination, onlineStatus);
-            log.info("向用户{}发送在线状态更新成功", userId);
-        } catch (Exception e) {
-            log.error("向用户{}发送在线状态更新失败", userId, e);
-        }
-    }
-
-    /**
-     * 发送未读消息数量更新
-     *
-     * @param userId      用户ID
-     * @param unreadCount 未读消息数量
-     */
-    public void sendUnreadCountUpdate(Long userId, Integer unreadCount) {
-        try {
-            String destination = "/user/" + userId + "/queue/unread";
-            Map<String, Object> payload = new HashMap<>();
-            payload.put("unreadCount", unreadCount);
-            messagingTemplate.convertAndSend(destination, payload);
-            log.info("向用户{}发送未读消息数量更新成功，数量：{}", userId, unreadCount);
-        } catch (Exception e) {
-            log.error("向用户{}发送未读消息数量更新失败", userId, e);
         }
     }
 }

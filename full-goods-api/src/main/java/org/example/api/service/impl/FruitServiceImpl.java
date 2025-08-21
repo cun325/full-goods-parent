@@ -69,27 +69,27 @@ public class FruitServiceImpl implements FruitService {
     private String serverPort;
     
     @Override
-    @Cacheable(value = "fruitCache", key = "'all'")
+    //@Cacheable(value = "fruitCache", key = "'all'")
     public List<Fruit> getAllFruits() {
         List<Fruit> fruits = fruitMapper.selectAll();
         // 处理图片URL
-        for (Fruit fruit : fruits) {
+     /*   for (Fruit fruit : fruits) {
             fruit.setImageUrl(processImageUrl(fruit.getImageUrl()));
-        }
+        }*/
         return fruits;
     }
 
     @Override
-    @Cacheable(value = "fruitCache", key = "'id:' + #id", unless = "#result == null")
+ //   @Cacheable(value = "fruitCache", key = "'id:' + #id", unless = "#result == null")
     public Fruit getById(Long id) {
         if (id == null) {
             return null;
         }
         Fruit fruit = fruitMapper.selectById(id);
-        if (fruit != null) {
+/*        if (fruit != null) {
             // 处理图片URL
             fruit.setImageUrl(processImageUrl(fruit.getImageUrl()));
-        }
+        }*/
         return fruit;
     }
 
@@ -122,9 +122,9 @@ public class FruitServiceImpl implements FruitService {
             saveRecommendHistory(userId, recommendDTO.getCondition());
             
             // 处理图片URL
-            for (Fruit fruit : recommendList) {
+        /*    for (Fruit fruit : recommendList) {
                 fruit.setImageUrl(processImageUrl(fruit.getImageUrl()));
-            }
+            }*/
             
             log.info("推荐水果数量: {}", recommendList.size());
             return recommendList;
@@ -172,9 +172,9 @@ public class FruitServiceImpl implements FruitService {
         saveRecommendHistory(userId, recommendDTO.getCondition());
         
         // 处理图片URL
-        for (Fruit fruit : recommendList) {
+     /*   for (Fruit fruit : recommendList) {
             fruit.setImageUrl(processImageUrl(fruit.getImageUrl()));
-        }
+        }*/
         
         return recommendList;
     }
@@ -236,7 +236,7 @@ public class FruitServiceImpl implements FruitService {
     public List<Fruit> getRecommendFruits(Integer limit, Boolean isRecommended) {
         int limitValue = (limit != null && limit > 0) ? limit : 6;
         // 使用selectNewFruits方法替代不存在的selectRecommended方法
-        return fruitMapper.selectNewFruits(limitValue);
+        return fruitMapper.selectRecommended(limitValue);
     }
     
     @Override
@@ -275,14 +275,16 @@ public class FruitServiceImpl implements FruitService {
     
     @Override
     public List<Fruit> getFruitsByCategoryId(Long categoryId) {
-        // 这个方法在Mapper中没有直接实现，暂时返回空列表
-        return Collections.emptyList();
+        if (categoryId == null) {
+            return Collections.emptyList();
+        }
+        return fruitMapper.selectByCategoryId(categoryId);
     }
     
     @Override
     public List<Fruit> searchByConditions(String search, String category, Integer status) {
         // 实现搜索逻辑
-        return fruitMapper.selectAll(); // 简化实现，实际应根据条件查询
+        return fruitMapper.selectByConditions(search, category, status);
     }
     
     @Override

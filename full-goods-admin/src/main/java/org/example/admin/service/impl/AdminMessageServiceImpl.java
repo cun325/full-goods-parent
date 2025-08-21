@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
+import org.springframework.web.util.UriComponentsBuilder;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.*;
@@ -31,27 +32,29 @@ public class AdminMessageServiceImpl implements AdminMessageService {
     @Override
     public Map<String, Object> getMessageList(int page, int size, String search, String status, String type) {
         try {
-            // 构建查询参数
-            StringBuilder urlBuilder = new StringBuilder(API_BASE_URL + "/messages/user/list?page=" + page + "&size=" + size);
+            // 使用UriComponentsBuilder构建URL，确保参数正确编码
+            UriComponentsBuilder uriBuilder = UriComponentsBuilder.fromHttpUrl(API_BASE_URL + "/messages/user/list")
+                    .queryParam("page", page)
+                    .queryParam("size", size);
             
             if (status != null && !status.isEmpty()) {
-                urlBuilder.append("&status=").append(status);
+                uriBuilder.queryParam("status", status);
             }
             if (type != null && !type.isEmpty()) {
-                urlBuilder.append("&messageType=").append(type);
+                uriBuilder.queryParam("messageType", type);
             }
             if (search != null && !search.isEmpty()) {
                 // 如果search是数字，作为userId查询
                 try {
                     Long userId = Long.parseLong(search);
-                    urlBuilder.append("&userId=").append(userId);
+                    uriBuilder.queryParam("userId", userId);
                 } catch (NumberFormatException e) {
                     // 如果不是数字，忽略search参数
                 }
             }
             
             ResponseEntity<Result> response = restTemplate.exchange(
-                urlBuilder.toString(),
+                uriBuilder.toUriString(),
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<Result>() {}
@@ -262,6 +265,11 @@ public class AdminMessageServiceImpl implements AdminMessageService {
         try {
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
+            
+            // 确保messageType为2（客服消息）
+            if (messageData.get("messageType") == null) {
+                messageData.put("messageType", 2);
+            }
             
             HttpEntity<Map<String, Object>> entity = new HttpEntity<>(messageData, headers);
             
