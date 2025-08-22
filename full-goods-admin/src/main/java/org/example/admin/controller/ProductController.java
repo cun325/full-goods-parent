@@ -2,6 +2,7 @@ package org.example.admin.controller;
 
 import org.example.admin.service.AdminProductService;
 
+import org.example.admin.vo.CategoryVo;
 import org.example.common.entity.Fruit;
 import org.example.common.response.Result;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -195,9 +196,9 @@ public class ProductController {
      * 获取商品分类列表
      */
     @GetMapping("/categories")
-    public Result<List<String>> getCategories() {
+    public Result<List<CategoryVo>> getCategories() {
         try {
-            List<String> categories = adminProductService.getCategories();
+            List<CategoryVo> categories = adminProductService.getCategories();
             return Result.success(categories);
         } catch (Exception e) {
             return Result.failed("获取分类列表失败: " + e.getMessage());

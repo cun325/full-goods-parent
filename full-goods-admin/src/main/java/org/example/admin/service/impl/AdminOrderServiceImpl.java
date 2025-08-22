@@ -180,6 +180,39 @@ public class AdminOrderServiceImpl implements AdminOrderService {
     }
 
     @Override
+    public BigDecimal getTodayRevenue() {
+        try {
+            ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
+                API_BASE_URL + "/order/admin/today-revenue",
+                HttpMethod.GET,
+                null,
+                new ParameterizedTypeReference<Map<String, Object>>() {}
+            );
+            
+            Map<String, Object> result = response.getBody();
+            if (result != null && result.get("code").equals(200)) {
+                Object data = result.get("data");
+                if (data instanceof Map) {
+                    Object revenue = ((Map<?, ?>) data).get("todayRevenue");
+                    if (revenue instanceof BigDecimal) {
+                        return (BigDecimal) revenue;
+                    } else if (revenue instanceof Number) {
+                        return BigDecimal.valueOf(((Number) revenue).doubleValue());
+                    }
+                } else if (data instanceof BigDecimal) {
+                    return (BigDecimal) data;
+                } else if (data instanceof Number) {
+                    return BigDecimal.valueOf(((Number) data).doubleValue());
+                }
+            }
+            return BigDecimal.ZERO;
+        } catch (Exception e) {
+            log.error("获取今日销售额失败: " + e.getMessage(), e);
+            return BigDecimal.ZERO;
+        }
+    }
+
+    @Override
     public Map<String, Object> getOrderStatistics() {
         try {
             ResponseEntity<Map<String, Object>> response = restTemplate.exchange(

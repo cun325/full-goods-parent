@@ -1,5 +1,6 @@
 package org.example.admin.service;
 
+import org.example.admin.vo.CategoryVo;
 import org.example.common.entity.Fruit;
 
 import java.util.List;
@@ -53,12 +54,18 @@ public interface AdminProductService {
     /**
      * 获取商品分类列表
      */
-    List<String> getCategories();
+    List<CategoryVo> getCategories();
 
     /**
      * 获取商品统计数据
      */
     Map<String, Object> getProductStatistics();
+
+    /**
+     * 获取库存不足商品数量
+     * @return 库存不足商品数量
+     */
+    Long getLowStockCount();
 
     /**
      * 设置商品推荐状态

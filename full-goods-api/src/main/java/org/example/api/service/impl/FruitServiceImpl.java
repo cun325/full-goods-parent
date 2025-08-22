@@ -266,6 +266,7 @@ public class FruitServiceImpl implements FruitService {
     public List<CategoryVO> getCategories() {
         // 从数据库获取所有启用的分类
         List<CategoryVO> categories = fruitCategoryMapper.selectAllEnabled();
+        log.info("获取到{}个启用的水果分类", categories);
         return categories;
     }
     

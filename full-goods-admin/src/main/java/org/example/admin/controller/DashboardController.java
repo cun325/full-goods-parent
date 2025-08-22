@@ -1,66 +1,71 @@
 package org.example.admin.controller;
 
-import org.example.common.response.Result;
 import org.example.admin.service.AdminOrderService;
 import org.example.admin.service.AdminProductService;
-import org.example.admin.service.AdminUserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.ResponseEntity;
 
 import java.math.BigDecimal;
 import java.util.*;
 
-/**
- * 仪表盘控制器
- */
 @RestController
 @RequestMapping("/admin/dashboard")
 @CrossOrigin(origins = "*")
 public class DashboardController {
 
+    private static final Logger log = LoggerFactory.getLogger(DashboardController.class);
+    
     @Autowired
     private AdminOrderService adminOrderService;
     
     @Autowired
     private AdminProductService adminProductService;
-    
-    @Autowired
-    private AdminUserService adminUserService;
 
     /**
      * 获取仪表盘统计数据
      */
     @GetMapping("/statistics")
-    public Result<Map<String, Object>> getDashboardStatistics() {
+    public ResponseEntity<Map<String, Object>> getDashboardStatistics() {
         try {
             Map<String, Object> statistics = new HashMap<>();
             
-            // 获取用户统计数据
-            Map<String, Object> userStats = adminUserService.getUserStatistics();
-            statistics.putAll(userStats);
-            
             // 获取订单统计数据
             Map<String, Object> orderStats = adminOrderService.getOrderStatistics();
-            statistics.putAll(orderStats);
             
             // 获取商品统计数据
             Map<String, Object> productStats = adminProductService.getProductStatistics();
-            statistics.putAll(productStats);
             
-            return Result.success(statistics);
+            // 今日销售额
+            BigDecimal todayRevenue = adminOrderService.getTodayRevenue();
+            statistics.put("todayRevenue", todayRevenue);
+            
+            // 订单总量
+            Object totalOrders = orderStats.get("totalOrders");
+            statistics.put("totalOrders", totalOrders != null ? totalOrders : 0);
+            
+            // 待处理订单 (待支付)
+            Object pendingOrders = orderStats.get("pendingOrders");
+            statistics.put("pendingOrders", pendingOrders != null ? pendingOrders : 0);
+            
+            // 库存不足商品
+            Long lowStockProducts = adminProductService.getLowStockCount();
+            statistics.put("lowStockProducts", lowStockProducts);
+            
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 200);
+            result.put("message", "获取统计数据成功");
+            result.put("data", statistics);
+            
+            return ResponseEntity.ok(result);
         } catch (Exception e) {
-            // 如果获取真实数据失败，使用模拟数据
-            Map<String, Object> statistics = new HashMap<>();
-            statistics.put("totalOrders", 1250);
-            statistics.put("totalUsers", 2580);
-            statistics.put("totalProducts", 156);
-            statistics.put("totalRevenue", BigDecimal.valueOf(125000.50));
-            statistics.put("todayOrders", 45);
-            statistics.put("todayUsers", 12);
-            statistics.put("todayRevenue", BigDecimal.valueOf(2250.30));
-            statistics.put("pendingOrders", 23);
-            statistics.put("lowStockProducts", 8);
-            return Result.success(statistics);
+            log.error("获取仪表盘统计数据失败", e);
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 500);
+            result.put("message", "获取统计数据失败: " + e.getMessage());
+            return ResponseEntity.ok(result);
         }
     }
 
@@ -68,51 +73,73 @@ public class DashboardController {
      * 获取销售趋势数据
      */
     @GetMapping("/sales-trend")
-    public Result<Map<String, Object>> getSalesTrend(@RequestParam(defaultValue = "7") int days) {
+    public ResponseEntity<Map<String, Object>> getSalesTrend(@RequestParam(defaultValue = "7") int days) {
         try {
-            // 尝试获取真实的销售趋势数据
             Map<String, Object> trendData = adminOrderService.getSalesTrend(days);
-            return Result.success(trendData);
+            
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 200);
+            result.put("message", "获取销售趋势成功");
+            result.put("data", trendData);
+            
+            return ResponseEntity.ok(result);
         } catch (Exception e) {
-            // 如果获取真实数据失败，使用模拟数据
-            Map<String, Object> trendData = new HashMap<>();
-            
-            List<String> dates = new ArrayList<>();
-            List<Double> sales = new ArrayList<>();
-            List<Integer> orders = new ArrayList<>();
-            
-            // 模拟最近指定天数的数据
-            for (int i = days - 1; i >= 0; i--) {
-                dates.add("2024-01-" + String.format("%02d", 15 + i));
-                sales.add(1000 + Math.random() * 2000);
-                orders.add(20 + (int)(Math.random() * 30));
-            }
-            
-            trendData.put("dates", dates);
-            trendData.put("sales", sales);
-            trendData.put("orders", orders);
-            
-            return Result.success(trendData);
+            log.error("获取销售趋势失败", e);
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 500);
+            result.put("message", "获取销售趋势失败: " + e.getMessage());
+            return ResponseEntity.ok(result);
         }
     }
 
     /**
-     * 获取发货效率数据
+     * 获取用户统计数据
      */
-    @GetMapping("/delivery-efficiency")
-    public Result<Map<String, Object>> getDeliveryEfficiency() {
+    @GetMapping("/user-statistics")
+    public ResponseEntity<Map<String, Object>> getUserStatistics() {
         try {
-            Map<String, Object> efficiencyData = new HashMap<>();
+            // 模拟用户统计数据
+            Map<String, Object> userStats = new HashMap<>();
+            userStats.put("totalUsers", 1234);
+            userStats.put("newUsersToday", 25);
+            userStats.put("activeUsers", 867);
+            userStats.put("userGrowthRate", 2.5);
             
-            List<String> categories = Arrays.asList("当日发货", "次日发货", "2-3天发货", "3天以上");
-            List<Integer> values = Arrays.asList(65, 25, 8, 2);
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 200);
+            result.put("message", "获取用户统计数据成功");
+            result.put("data", userStats);
             
-            efficiencyData.put("categories", categories);
-            efficiencyData.put("values", values);
-            
-            return Result.success(efficiencyData);
+            return ResponseEntity.ok(result);
         } catch (Exception e) {
-            return Result.failed("获取发货效率失败: " + e.getMessage());
+            log.error("获取用户统计数据失败", e);
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 500);
+            result.put("message", "获取用户统计数据失败: " + e.getMessage());
+            return ResponseEntity.ok(result);
+        }
+    }
+
+    /**
+     * 获取商品统计数据
+     */
+    @GetMapping("/product-statistics")
+    public ResponseEntity<Map<String, Object>> getProductStatistics() {
+        try {
+            Map<String, Object> productStats = adminProductService.getProductStatistics();
+            
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 200);
+            result.put("message", "获取商品统计数据成功");
+            result.put("data", productStats);
+            
+            return ResponseEntity.ok(result);
+        } catch (Exception e) {
+            log.error("获取商品统计数据失败", e);
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 500);
+            result.put("message", "获取商品统计数据失败: " + e.getMessage());
+            return ResponseEntity.ok(result);
         }
     }
 
@@ -120,50 +147,31 @@ public class DashboardController {
      * 获取推广效果数据
      */
     @GetMapping("/promotion-effect")
-    public Result<Map<String, Object>> getPromotionEffect() {
+    public ResponseEntity<Map<String, Object>> getPromotionEffect() {
         try {
+            // 模拟推广效果数据
             Map<String, Object> promotionData = new HashMap<>();
             
-            List<String> channels = Arrays.asList("微信小程序", "APP", "H5", "其他");
-            List<Integer> orders = Arrays.asList(450, 320, 280, 200);
-            List<BigDecimal> revenue = Arrays.asList(
-                BigDecimal.valueOf(45000), BigDecimal.valueOf(32000),
-                BigDecimal.valueOf(28000), BigDecimal.valueOf(20000)
-            );
+            List<String> channels = Arrays.asList("搜索引擎", "社交媒体", "邮件营销", "直接访问", "推荐链接");
+            List<Integer> orders = Arrays.asList(120, 200, 150, 80, 70);
+            List<Integer> revenue = Arrays.asList(12000, 25000, 18000, 9500, 8200);
             
             promotionData.put("channels", channels);
             promotionData.put("orders", orders);
             promotionData.put("revenue", revenue);
             
-            return Result.success(promotionData);
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 200);
+            result.put("message", "获取推广效果数据成功");
+            result.put("data", promotionData);
+            
+            return ResponseEntity.ok(result);
         } catch (Exception e) {
-            return Result.failed("获取推广效果失败: " + e.getMessage());
-        }
-    }
-
-    /**
-     * 获取延迟发货原因数据
-     */
-    @GetMapping("/delay-reasons")
-    public Result<List<Map<String, Object>>> getDelayReasons() {
-        try {
-            List<Map<String, Object>> reasons = new ArrayList<>();
-            
-            String[] reasonTexts = {"库存不足", "商品缺货", "物流延误", "系统故障", "人员不足"};
-            Integer[] counts = {15, 8, 5, 3, 2};
-            String[] impacts = {"高", "中", "低", "中", "低"};
-            
-            for (int i = 0; i < reasonTexts.length; i++) {
-                Map<String, Object> reason = new HashMap<>();
-                reason.put("reason", reasonTexts[i]);
-                reason.put("count", counts[i]);
-                reason.put("impact", impacts[i]);
-                reasons.add(reason);
-            }
-            
-            return Result.success(reasons);
-        } catch (Exception e) {
-            return Result.failed("获取延迟原因失败: " + e.getMessage());
+            log.error("获取推广效果数据失败", e);
+            Map<String, Object> result = new HashMap<>();
+            result.put("code", 500);
+            result.put("message", "获取推广效果数据失败: " + e.getMessage());
+            return ResponseEntity.ok(result);
         }
     }
 }

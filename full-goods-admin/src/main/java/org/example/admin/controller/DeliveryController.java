@@ -23,62 +23,6 @@ public class DeliveryController {
 
     private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
     
-    // 模拟订单数据
-    private static List<Map<String, Object>> orders = new ArrayList<>();
-    private static Long nextId = 1L;
-    
-    static {
-        // 初始化一些模拟订单数据，包含已付款待发货的订单
-        orders.add(createOrder(nextId++, "ORD202401001", "张三", "13800138001", new BigDecimal("128.50"), 1, "北京市朝阳区xxx街道xxx号"));
-        orders.add(createOrder(nextId++, "ORD202401002", "李四", "13800138002", new BigDecimal("89.90"), 1, "上海市浦东新区xxx路xxx号"));
-        orders.add(createOrder(nextId++, "ORD202401003", "王五", "13800138003", new BigDecimal("256.80"), 2, "广州市天河区xxx大道xxx号"));
-        orders.add(createOrder(nextId++, "ORD202401004", "赵六", "13800138004", new BigDecimal("45.60"), 1, "深圳市南山区xxx街xxx号"));
-        orders.add(createOrder(nextId++, "ORD202401005", "钱七", "13800138005", new BigDecimal("178.30"), 3, "杭州市西湖区xxx路xxx号"));
-        orders.add(createOrder(nextId++, "ORD202401006", "孙八", "13800138006", new BigDecimal("99.80"), 1, "成都市锦江区xxx街道xxx号"));
-        orders.add(createOrder(nextId++, "ORD202401007", "周九", "13800138007", new BigDecimal("156.20"), 1, "武汉市洪山区xxx路xxx号"));
-    }
-    
-    private static Map<String, Object> createOrder(Long id, String orderNo, String userName, String phone, BigDecimal amount, Integer status, String address) {
-        Map<String, Object> order = new HashMap<>();
-        order.put("id", id);
-        order.put("orderNo", orderNo);
-        order.put("receiverName", userName);
-        order.put("receiverPhone", phone);
-        order.put("totalAmount", amount);
-        order.put("payAmount", amount);
-        order.put("status", status);
-        order.put("receiverAddress", address);
-        order.put("receiverProvince", "省份");
-        order.put("receiverCity", "城市");
-        order.put("receiverDistrict", "区县");
-        order.put("orderTime", LocalDateTime.now().minusDays((long)(Math.random() * 7)).format(formatter));
-        order.put("createTime", LocalDateTime.now().format(formatter));
-        order.put("updateTime", LocalDateTime.now().format(formatter));
-        
-        // 添加商品明细
-        List<Map<String, Object>> items = new ArrayList<>();
-        items.add(createOrderItem("苹果", 2, new BigDecimal("12.50")));
-        items.add(createOrderItem("香蕉", 3, new BigDecimal("8.90")));
-        order.put("items", items);
-        
-        // 如果已发货，添加快递信息
-        if (status == 2 || status == 3) {
-            order.put("expressCompany", "顺丰速运");
-            order.put("expressNo", "SF" + System.currentTimeMillis());
-            order.put("shipTime", LocalDateTime.now().minusDays(1).format(formatter));
-        }
-        
-        return order;
-    }
-    
-    private static Map<String, Object> createOrderItem(String productName, Integer quantity, BigDecimal price) {
-        Map<String, Object> item = new HashMap<>();
-        item.put("productName", productName);
-        item.put("quantity", quantity);
-        item.put("price", price);
-        item.put("subtotal", price.multiply(new BigDecimal(quantity)));
-        return item;
-    }
 
     /**
      * 获取待发货订单列表

@@ -66,6 +66,12 @@ public interface AdminOrderService {
     Map<String, Object> getOrderStatistics();
 
     /**
+     * 获取今日销售额
+     * @return 今日销售额
+     */
+    java.math.BigDecimal getTodayRevenue();
+
+    /**
      * 获取销售趋势数据
      */
     Map<String, Object> getSalesTrend(int days);

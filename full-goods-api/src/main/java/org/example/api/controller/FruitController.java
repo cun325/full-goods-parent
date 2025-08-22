@@ -401,7 +401,24 @@ public class FruitController {
             return Result.failed("获取商品统计数据失败: " + e.getMessage());
         }
     }
-
+    
+    @ApiOperation("管理员获取库存不足商品数量")
+    @GetMapping("/admin/low-stock-count")
+    public Result<Map<String, Object>> getLowStockCount() {
+        try {
+            Map<String, Object> result = new HashMap<>();
+            
+            // 库存不足商品数（库存小于等于10）
+            Long lowStockCount = fruitMapper.countLowStock(10);
+            result.put("lowStockCount", lowStockCount);
+            
+            return Result.success(result);
+        } catch (Exception e) {
+            log.error("获取库存不足商品数量失败", e);
+            return Result.failed("获取库存不足商品数量失败: " + e.getMessage());
+        }
+    }
+    
     @ApiOperation("管理员设置商品推荐状态")
     @PutMapping("/admin/recommend/{id}")
     public Result<String> setRecommended(@PathVariable Long id, @RequestBody Map<String, Object> request) {

@@ -55,9 +55,9 @@ public class Fruit extends BaseEntity {
     private String imageUrl;
 
     /**
-     * 分类（如：热带水果、应季水果等）
+     * 分类ID（如：热带水果、应季水果等）
      */
-    private String category;
+    private Integer categoryId;
 
     /**
      * 口感（如：酸甜、香甜等）

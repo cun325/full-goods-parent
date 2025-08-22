@@ -99,4 +99,9 @@ public interface TrainingService {
      * 导出模型
      */
     Result<Map<String, Object>> exportModel(Long taskId, String format);
+    
+    /**
+     * 使用模型进行预测
+     */
+    Result<Map<String, Object>> predictWithModel(Long taskId, Map<String, Object> input);
 }

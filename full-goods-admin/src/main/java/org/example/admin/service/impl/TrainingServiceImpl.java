@@ -12,10 +12,10 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import java.io.*;
+import java.nio.file.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -31,18 +31,20 @@ public class TrainingServiceImpl implements TrainingService {
     
     @Autowired
     private NLPTrainingEngine trainingEngine;
-    
-
 
     private static final String TRAINING_API_BASE_URL = "http://localhost:8080/api/training";
     private static final String UPLOAD_DIR = "uploads/datasets";
+    private static final String DATASETS_PERSISTENCE_FILE = "datasets.dat";
+    private static final String TASKS_PERSISTENCE_FILE = "tasks.dat";
     
     // 存储数据集信息
     private final Map<Long, DatasetInfo> datasets = new HashMap<>();
     private Long nextDatasetId = 1L;
     
     // 数据集信息类
-    public static class DatasetInfo {
+    public static class DatasetInfo implements Serializable {
+        private static final long serialVersionUID = 1L;
+        
         private Long id;
         private String name;
         private String description;
@@ -51,6 +53,9 @@ public class TrainingServiceImpl implements TrainingService {
         private String status;
         private Date uploadTime;
         private long size;
+        
+        public DatasetInfo() {
+        }
         
         public DatasetInfo(Long id, String name, String description, String dataType, String filePath) {
             this.id = id;
@@ -64,15 +69,134 @@ public class TrainingServiceImpl implements TrainingService {
         
         // Getters and Setters
         public Long getId() { return id; }
+        public void setId(Long id) { this.id = id; }
         public String getName() { return name; }
+        public void setName(String name) { this.name = name; }
         public String getDescription() { return description; }
+        public void setDescription(String description) { this.description = description; }
         public String getDataType() { return dataType; }
+        public void setDataType(String dataType) { this.dataType = dataType; }
         public String getFilePath() { return filePath; }
+        public void setFilePath(String filePath) { this.filePath = filePath; }
         public String getStatus() { return status; }
         public void setStatus(String status) { this.status = status; }
         public Date getUploadTime() { return uploadTime; }
+        public void setUploadTime(Date uploadTime) { this.uploadTime = uploadTime; }
         public long getSize() { return size; }
         public void setSize(long size) { this.size = size; }
+    }
+    
+    /**
+     * 在服务启动时加载持久化的数据集和任务信息
+     */
+    @PostConstruct
+    public void loadPersistentData() {
+        loadDatasets();
+        loadTasks();
+    }
+    
+    /**
+     * 在服务关闭前持久化数据集和任务信息
+     */
+    @PreDestroy
+    public void savePersistentData() {
+        saveDatasets();
+        saveTasks();
+    }
+    
+    /**
+     * 加载持久化的数据集信息
+     */
+    private void loadDatasets() {
+        try {
+            Path persistenceFile = Paths.get(DATASETS_PERSISTENCE_FILE);
+            if (Files.exists(persistenceFile)) {
+                try (ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(persistenceFile))) {
+                    Map<Long, DatasetInfo> loadedDatasets = (Map<Long, DatasetInfo>) ois.readObject();
+                    datasets.putAll(loadedDatasets);
+                    
+                    // 更新nextDatasetId以避免ID冲突
+                    Optional<Long> maxId = loadedDatasets.keySet().stream().max(Long::compareTo);
+                    if (maxId.isPresent()) {
+                        nextDatasetId = maxId.get() + 1;
+                    }
+                    
+                    log.info("成功加载 {} 个数据集信息", loadedDatasets.size());
+                }
+            } else {
+                log.info("数据集持久化文件不存在，将创建新的数据集");
+            }
+        } catch (Exception e) {
+            log.error("加载数据集信息失败", e);
+        }
+    }
+    
+    /**
+     * 持久化数据集信息
+     */
+    private void saveDatasets() {
+        try {
+            Path persistenceFile = Paths.get(DATASETS_PERSISTENCE_FILE);
+            try (ObjectOutputStream oos = new ObjectOutputStream(Files.newOutputStream(persistenceFile))) {
+                oos.writeObject(datasets);
+                log.info("成功保存 {} 个数据集信息", datasets.size());
+            }
+        } catch (Exception e) {
+            log.error("保存数据集信息失败", e);
+        }
+    }
+    
+    /**
+     * 加载持久化的任务信息
+     */
+    private void loadTasks() {
+        try {
+            Path persistenceFile = Paths.get(TASKS_PERSISTENCE_FILE);
+            if (Files.exists(persistenceFile)) {
+                try (ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(persistenceFile))) {
+                    Collection<NLPTrainingEngine.TrainingTask> loadedTasks = (Collection<NLPTrainingEngine.TrainingTask>) ois.readObject();
+
+                    if (loadedTasks != null && !loadedTasks.isEmpty()) {
+                        for (NLPTrainingEngine.TrainingTask task : loadedTasks) {
+                            // 只恢复未完成的任务
+                            if (!"completed".equals(task.getStatus()) && !"failed".equals(task.getStatus())) {
+                                task.setStatus("stopped"); // 将未完成任务设置为已停止状态
+                            }
+                            trainingEngine.addTask(task);
+                        }
+
+                        log.info("成功加载 {} 个训练任务信息", loadedTasks.size());
+                    } else {
+                        log.warn("持久化文件中没有可恢复的任务");
+                    }
+                }
+            } else {
+                log.info("训练任务持久化文件不存在");
+            }
+        } catch (IOException e) {
+            log.error("IO异常：加载训练任务信息失败", e);
+        } catch (ClassNotFoundException e) {
+            log.error("找不到类：加载训练任务信息失败", e);
+        } catch (Exception e) {
+            log.error("未知异常：加载训练任务信息失败", e);
+        }
+    }
+    
+    /**
+     * 持久化任务信息
+     */
+    private void saveTasks() {
+        try {
+            Path persistenceFile = Paths.get(TASKS_PERSISTENCE_FILE);
+            Map<Long, NLPTrainingEngine.TrainingTask> tasks = trainingEngine.getAllTasks();
+            
+            try (ObjectOutputStream oos = new ObjectOutputStream(Files.newOutputStream(persistenceFile))) {
+                oos.writeObject(tasks.values());
+                log.info("成功保存 {} 个训练任务信息", tasks.size());
+            }
+        } catch (Exception e) {
+            log.error("保存训练任务信息失败", e);
+        }
     }
 
     @Override
@@ -156,24 +280,15 @@ public class TrainingServiceImpl implements TrainingService {
     @Override
     public Result<Map<String, Object>> getTrainingTaskDetail(Long id) {
         try {
-            ResponseEntity<Result> response = restTemplate.exchange(
-                TRAINING_API_BASE_URL + "/tasks/" + id,
-                HttpMethod.GET,
-                null,
-                new ParameterizedTypeReference<Result>() {}
-            );
-
-            Result result = response.getBody();
-            if (result != null && result.getCode() == 200) {
-                return Result.success((Map<String, Object>) result.getData());
-            } else {
-                return Result.failed("获取训练任务详情失败");
+            NLPTrainingEngine.TrainingTask task = trainingEngine.getTrainingTask(id);
+            if (task == null) {
+                return Result.failed("训练任务不存在");
             }
+            
+            return Result.success(convertTaskToMap(task));
         } catch (Exception e) {
             log.error("获取训练任务详情失败", e);
-            // 返回模拟数据
-            Map<String, Object> mockDetail = createMockTaskDetail(id);
-            return Result.success(mockDetail);
+            return Result.failed("获取训练任务详情失败: " + e.getMessage());
         }
     }
 
@@ -185,7 +300,8 @@ public class TrainingServiceImpl implements TrainingService {
                 return Result.failed("训练任务不存在");
             }
             
-            if ("pending".equals(task.getStatus())) {
+            // 允许启动状态为pending或stopped的任务
+            if ("pending".equals(task.getStatus()) || "stopped".equals(task.getStatus())) {
                 task.setStatus("training");
                 log.info("启动训练任务: {} (ID: {})", task.getName(), id);
                 return Result.success(true);
@@ -436,26 +552,32 @@ public class TrainingServiceImpl implements TrainingService {
     @Override
     public Result<Boolean> exportModel(Long id, Map<String, Object> exportConfig) {
         try {
-            HttpHeaders headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_JSON);
-            HttpEntity<Map<String, Object>> entity = new HttpEntity<>(exportConfig, headers);
-
-            ResponseEntity<Result> response = restTemplate.exchange(
-                TRAINING_API_BASE_URL + "/tasks/" + id + "/export",
-                HttpMethod.POST,
-                entity,
-                new ParameterizedTypeReference<Result>() {}
-            );
-
-            Result result = response.getBody();
-            if (result != null && result.getCode() == 200) {
-                return Result.success(true);
-            } else {
-                return Result.failed("导出模型失败");
+            // 检查任务是否存在
+            NLPTrainingEngine.TrainingTask task = trainingEngine.getTrainingTask(id);
+            if (task == null) {
+                return Result.failed("训练任务不存在");
             }
+            
+            // 检查模型是否已完成训练
+            if (!"completed".equals(task.getStatus())) {
+                return Result.failed("模型尚未训练完成，无法导出");
+            }
+            
+            // 检查模型文件是否存在
+            if (!trainingEngine.isModelExists(id)) {
+                return Result.failed("模型文件不存在");
+            }
+            
+            // 执行模型导出（这里可以添加实际的导出逻辑）
+            String format = (String) exportConfig.get("format");
+            trainingEngine.exportModel(id, format);
+            
+            log.info("导出模型成功，任务ID: {}", id);
+            return Result.success(true);
+            
         } catch (Exception e) {
             log.error("导出模型失败", e);
-            return Result.success(true); // 模拟成功
+            return Result.failed("导出模型失败: " + e.getMessage());
         }
     }
 
@@ -548,8 +670,9 @@ public class TrainingServiceImpl implements TrainingService {
         taskMap.put("totalEpochs", task.getTotalEpochs());
         taskMap.put("currentLoss", task.getCurrentLoss());
         taskMap.put("currentAccuracy", task.getCurrentAccuracy());
-        taskMap.put("startTime", new Date(task.getStartTime()));
-        taskMap.put("createTime", new Date(task.getStartTime()));
+        taskMap.put("startTime", task.getStartTime());
+        taskMap.put("endTime", task.getEndTime());
+        taskMap.put("logs", task.getLogs());
         return taskMap;
     }
     
@@ -628,7 +751,18 @@ public class TrainingServiceImpl implements TrainingService {
     @Override
     public Result<Map<String, Object>> deployModel(Long taskId, String deploymentName, String deploymentType) {
         try {
-            Map<String, Object> deployment = trainingEngine.deployModel(taskId, deploymentName, deploymentType);
+            // 检查模型是否存在
+            if (!trainingEngine.isModelExists(taskId)) {
+                return Result.failed("模型不存在或尚未训练完成");
+            }
+            
+            // 创建部署信息
+            Map<String, Object> deployment = new HashMap<>();
+            deployment.put("taskId", taskId);
+            deployment.put("deploymentName", deploymentName);
+            deployment.put("deploymentType", deploymentType);
+            deployment.put("deploymentTime", new Date());
+            deployment.put("status", "success");
             
             log.info("模型部署完成，任务ID: {}, 部署名称: {}", taskId, deploymentName);
             return Result.success(deployment);
@@ -640,16 +774,70 @@ public class TrainingServiceImpl implements TrainingService {
     }
     
     @Override
-    public Result<Map<String, Object>> exportModel(Long taskId, String format) {
+    public Result<Map<String, Object>> predictWithModel(Long taskId, Map<String, Object> input) {
         try {
-            Map<String, Object> export = trainingEngine.exportModel(taskId, format);
+            // 检查任务是否存在
+            NLPTrainingEngine.TrainingTask task = trainingEngine.getTrainingTask(taskId);
+            if (task == null) {
+                return Result.failed("训练任务不存在");
+            }
             
-            log.info("模型导出完成，任务ID: {}, 格式: {}", taskId, format);
-            return Result.success(export);
+            // 检查模型是否已完成训练
+            if (!"completed".equals(task.getStatus())) {
+                return Result.failed("模型尚未训练完成，无法进行预测");
+            }
+            
+            // 检查模型文件是否存在
+            if (!trainingEngine.isModelExists(taskId)) {
+                return Result.failed("模型文件不存在");
+            }
+            
+            // 执行模型预测
+            Map<String, Object> result = trainingEngine.predictWithModel(taskId, input);
+            
+            log.info("模型预测完成，任务ID: {}", taskId);
+            return Result.success(result);
             
         } catch (Exception e) {
-            log.error("模型导出失败", e);
-            return Result.failed("模型导出失败: " + e.getMessage());
+            log.error("模型预测失败", e);
+            return Result.failed("模型预测失败: " + e.getMessage());
+        }
+    }
+    
+    @Override
+    public Result<Map<String, Object>> exportModel(Long taskId, String format) {
+        try {
+            // 检查任务是否存在
+            NLPTrainingEngine.TrainingTask task = trainingEngine.getTrainingTask(taskId);
+            if (task == null) {
+                return Result.failed("训练任务不存在");
+            }
+            
+            // 检查模型是否已完成训练
+            if (!"completed".equals(task.getStatus())) {
+                return Result.failed("模型尚未训练完成，无法导出");
+            }
+            
+            // 检查模型文件是否存在
+            if (!trainingEngine.isModelExists(taskId)) {
+                return Result.failed("模型文件不存在");
+            }
+            
+            // 执行模型导出（这里可以添加实际的导出逻辑）
+            trainingEngine.exportModel(taskId, format);
+            
+            Map<String, Object> result = new HashMap<>();
+            result.put("taskId", taskId);
+            result.put("format", format);
+            result.put("exportTime", new Date());
+            result.put("status", "success");
+            
+            log.info("导出模型成功，任务ID: {}", taskId);
+            return Result.success(result);
+            
+        } catch (Exception e) {
+            log.error("导出模型失败", e);
+            return Result.failed("导出模型失败: " + e.getMessage());
         }
     }
 

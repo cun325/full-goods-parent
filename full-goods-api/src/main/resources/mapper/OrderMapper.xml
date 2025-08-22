@@ -244,12 +244,27 @@
         ) as monthly_stats
     </select>
     
+    <select id="sumTodayRevenue" resultType="java.math.BigDecimal">
+        SELECT COALESCE(SUM(pay_amount), 0) FROM t_order 
+        WHERE status IN (1, 2, 3) AND DATE(create_time) = CURDATE()
+    </select>
+    
     <select id="findUnpaidOrdersBeforeTime" resultMap="BaseResultMap">
         SELECT
         <include refid="Base_Column_List"/>
         FROM t_order
         WHERE status = 0 AND create_time &lt; #{beforeTime}
         ORDER BY create_time ASC
+    </select>
+    
+    <select id="countByDateRange" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM t_order 
+        WHERE create_time &gt;= #{startDate} AND create_time &lt; #{endDate} AND status IN (1, 2, 3)
+    </select>
+    
+    <select id="sumSalesByDateRange" resultType="java.math.BigDecimal">
+        SELECT COALESCE(SUM(pay_amount), 0) FROM t_order 
+        WHERE create_time &gt;= #{startDate} AND create_time &lt; #{endDate} AND status IN (1, 2, 3)
     </select>
     
 </mapper>

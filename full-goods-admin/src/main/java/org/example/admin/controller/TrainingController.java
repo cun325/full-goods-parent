@@ -117,16 +117,6 @@ public class TrainingController {
     }
 
     /**
-     * 模型评估
-     */
-    @PostMapping("/tasks/{id}/evaluate")
-    public Result<Map<String, Object>> evaluateModel(
-            @PathVariable Long id,
-            @RequestBody Map<String, Object> evaluationConfig) {
-        return trainingService.evaluateModel(id, evaluationConfig);
-    }
-
-    /**
      * 获取训练统计信息
      */
     @GetMapping("/statistics")
@@ -161,13 +151,18 @@ public class TrainingController {
     }
 
     /**
-     * 评估模型
+     * 模型评估
      */
-    @PostMapping("/tasks/{taskId}/evaluate")
+    @PostMapping("/tasks/{id}/evaluate")
     public Result<Map<String, Object>> evaluateModel(
-            @PathVariable Long taskId,
-            @RequestParam Long testDatasetId) {
-        return trainingService.evaluateModel(taskId, testDatasetId);
+            @PathVariable Long id,
+            @RequestBody Map<String, Object> evaluationConfig) {
+        try {
+            Long testDatasetId = Long.valueOf(evaluationConfig.get("testDatasetId").toString());
+            return trainingService.evaluateModel(id, testDatasetId);
+        } catch (Exception e) {
+            return Result.failed("参数错误: " + e.getMessage());
+        }
     }
 
     /**
@@ -182,12 +177,13 @@ public class TrainingController {
     }
 
     /**
-     * 导出模型
+     * 模型预测
      */
-    @PostMapping("/tasks/{taskId}/export")
-    public Result<Map<String, Object>> exportModel(
+    @PostMapping("/tasks/{taskId}/predict")
+    public Result<Map<String, Object>> predictWithModel(
             @PathVariable Long taskId,
-            @RequestParam String format) {
-        return trainingService.exportModel(taskId, format);
+            @RequestBody Map<String, Object> input) {
+        return trainingService.predictWithModel(taskId, input);
     }
+
 }

@@ -1,8 +1,11 @@
 package org.example.admin.service.impl;
 
 import lombok.extern.slf4j.Slf4j;
+import org.example.admin.mapper.CategoryMapper;
 import org.example.admin.service.AdminProductService;
+import org.example.admin.vo.CategoryVo;
 import org.example.common.entity.Fruit;
+import org.example.common.entity.FruitCategory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -12,6 +15,7 @@ import org.springframework.http.ResponseEntity;
 
 import java.math.BigDecimal;
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * 商品管理服务实现类
@@ -22,6 +26,9 @@ public class AdminProductServiceImpl implements AdminProductService {
 
     @Autowired
     private RestTemplate restTemplate;
+    
+    @Autowired
+    private CategoryMapper categoryMapper;
 
     private static final String API_BASE_URL = "http://localhost:8080/api";
 
@@ -137,18 +144,14 @@ public class AdminProductServiceImpl implements AdminProductService {
     }
 
     @Override
-    public List<String> getCategories() {
+    public List<CategoryVo> getCategories() {
         try {
-            ResponseEntity<List<String>> response = restTemplate.exchange(
-                API_BASE_URL + "/fruit/categories",
-                HttpMethod.GET,
-                null,
-                new ParameterizedTypeReference<List<String>>() {}
-            );
-            return response.getBody();
+            // 直接从数据库获取所有分类名称
+            List<CategoryVo> categories = categoryMapper.selectAll();
+            return categories;
         } catch (Exception e) {
-            // 返回模拟分类数据
-            return Arrays.asList("热带水果", "温带水果", "亚热带水果", "进口水果", "有机水果");
+            log.error("获取商品分类列表失败", e);
+            return new ArrayList<>(); // 返回空列表而不是模拟数据
         }
     }
 
@@ -219,6 +222,35 @@ public class AdminProductServiceImpl implements AdminProductService {
         } catch (Exception e) {
             log.error("取消商品限时特惠失败: " + e.getMessage());
             throw new RuntimeException("取消商品限时特惠失败: " + e.getMessage());
+        }
+    }
+
+    @Override
+    public Long getLowStockCount() {
+        try {
+            ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
+                API_BASE_URL + "/fruit/admin/low-stock-count",
+                HttpMethod.GET,
+                null,
+                new ParameterizedTypeReference<Map<String, Object>>() {}
+            );
+            
+            Map<String, Object> result = response.getBody();
+            if (result != null && result.get("code").equals(200)) {
+                Object data = result.get("data");
+                if (data instanceof Map) {
+                    Object count = ((Map<?, ?>) data).get("lowStockCount");
+                    if (count instanceof Number) {
+                        return ((Number) count).longValue();
+                    }
+                } else if (data instanceof Number) {
+                    return ((Number) data).longValue();
+                }
+            }
+            return 0L;
+        } catch (Exception e) {
+            log.error("获取库存不足商品数量失败: " + e.getMessage(), e);
+            return 0L;
         }
     }
 
@@ -316,7 +348,7 @@ public class AdminProductServiceImpl implements AdminProductService {
         Fruit fruit = new Fruit();
         fruit.setId(id);
         fruit.setName("商品" + id);
-        fruit.setCategory("热带水果");
+       // fruit.setCategory("热带水果");
         fruit.setUnit("500g/份");
         fruit.setOrigin("海南");
         fruit.setPrice(BigDecimal.valueOf(10.0 + id));

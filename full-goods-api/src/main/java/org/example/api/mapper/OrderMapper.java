@@ -4,6 +4,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.example.common.entity.Order;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
@@ -85,9 +86,63 @@ public interface OrderMapper {
      * @return 影响行数
      */
     int deleteById(Long id);
-    
+
+    /**
+     * 根据日期范围查询订单数量
+     *
+     * @param startDate 开始日期
+     * @param endDate 结束日期
+     * @return 订单数量
+     */
+    Integer countByDateRange(@Param("startDate") Date startDate, @Param("endDate") Date endDate);
+
+    /**
+     * 根据日期范围查询销售总额
+     *
+     * @param startDate 开始日期
+     * @param endDate 结束日期
+     * @return 销售总额
+     */
+    BigDecimal sumSalesByDateRange(@Param("startDate") Date startDate, @Param("endDate") Date endDate);
+
+    /**
+     * 查询订单总数
+     *
+     * @return 订单总数
+     */
+    Long countTotal();
+
+    /**
+     * 查询今日订单数
+     *
+     * @return 今日订单数
+     */
+    Long countTodayOrders();
+
+    /**
+     * 查询今日销售额
+     *
+     * @return 今日销售额
+     */
+    BigDecimal sumTodayRevenue();
+
+    /**
+     * 根据状态查询订单数
+     *
+     * @param status 订单状态
+     * @return 订单数
+     */
+    Long countByStatus(Integer status);
+
+    /**
+     * 计算月增长率
+     *
+     * @return 月增长率
+     */
+    Double calculateMonthlyGrowth();
+
     // ==================== Admin相关方法 ====================
-    
+
     /**
      * 根据主键查询订单
      *
@@ -95,7 +150,7 @@ public interface OrderMapper {
      * @return 订单信息
      */
     Order selectByPrimaryKey(@Param("id") Long id);
-    
+
     /**
      * 根据主键更新订单
      *
@@ -103,7 +158,7 @@ public interface OrderMapper {
      * @return 影响行数
      */
     int updateByPrimaryKey(Order order);
-    
+
     /**
      * 根据主键删除订单
      *
@@ -111,35 +166,6 @@ public interface OrderMapper {
      * @return 影响行数
      */
     int deleteByPrimaryKey(@Param("id") Long id);
-    
-    /**
-     * 统计订单总数
-     *
-     * @return 订单总数
-     */
-    Long countTotal();
-    
-    /**
-     * 统计今日订单数
-     *
-     * @return 今日订单数
-     */
-    Long countTodayOrders();
-    
-    /**
-     * 根据状态统计订单数
-     *
-     * @param status 订单状态
-     * @return 订单数量
-     */
-    Long countByStatus(@Param("status") Integer status);
-    
-    /**
-     * 计算月度增长率
-     *
-     * @return 月度增长率
-     */
-    Double calculateMonthlyGrowth();
 
     /**
      * 查询指定时间之前创建的未付款订单

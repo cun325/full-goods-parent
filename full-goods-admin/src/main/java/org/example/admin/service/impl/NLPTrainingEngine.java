@@ -15,8 +15,9 @@ import java.util.stream.Collectors;
  */
 @Slf4j
 @Component
-public class NLPTrainingEngine {
-
+public class NLPTrainingEngine implements Serializable {
+    private static final long serialVersionUID = 1L;
+    
     private final ExecutorService trainingExecutor = Executors.newFixedThreadPool(2);
     private final Map<Long, TrainingTask> runningTasks = new ConcurrentHashMap<>();
     private final Map<String, Integer> vocabulary = new ConcurrentHashMap<>();
@@ -25,7 +26,9 @@ public class NLPTrainingEngine {
     /**
      * 训练任务类
      */
-    public static class TrainingTask {
+    public static class TrainingTask implements Serializable {
+        private static final long serialVersionUID = 1L;
+        
         private Long id;
         private String name;
         private String modelType;
@@ -34,12 +37,19 @@ public class NLPTrainingEngine {
         private int currentEpoch;
         private int totalEpochs;
         private double currentLoss;
-        private double currentAccuracy;
+        private double currentAccuracy; // 确保是double类型
         private List<String> logs;
-        private Future<?> future;
+        private transient Future<?> future; // 不序列化Future对象
         private long startTime;
         private long endTime;
-        
+    
+        /**
+         * 用于反序列化的无参构造函数
+         */
+        public TrainingTask() {
+            this.logs = new ArrayList<>();
+        }
+    
         public TrainingTask(Long id, String name, String modelType, int totalEpochs) {
             this.id = id;
             this.name = name;
@@ -49,15 +59,18 @@ public class NLPTrainingEngine {
             this.progress = 0;
             this.currentEpoch = 0;
             this.currentLoss = 1.0;
-            this.currentAccuracy = 0.0;
+            this.currentAccuracy = 0.0; // 初始化为0.0
             this.logs = new ArrayList<>();
             this.startTime = System.currentTimeMillis();
         }
-        
+    
         // Getters and Setters
         public Long getId() { return id; }
+        public void setId(Long id) { this.id = id; }
         public String getName() { return name; }
+        public void setName(String name) { this.name = name; }
         public String getModelType() { return modelType; }
+        public void setModelType(String modelType) { this.modelType = modelType; }
         public String getStatus() { return status; }
         public void setStatus(String status) { this.status = status; }
         public int getProgress() { return progress; }
@@ -65,17 +78,20 @@ public class NLPTrainingEngine {
         public int getCurrentEpoch() { return currentEpoch; }
         public void setCurrentEpoch(int currentEpoch) { this.currentEpoch = currentEpoch; }
         public int getTotalEpochs() { return totalEpochs; }
+        public void setTotalEpochs(int totalEpochs) { this.totalEpochs = totalEpochs; }
         public double getCurrentLoss() { return currentLoss; }
         public void setCurrentLoss(double currentLoss) { this.currentLoss = currentLoss; }
         public double getCurrentAccuracy() { return currentAccuracy; }
         public void setCurrentAccuracy(double currentAccuracy) { this.currentAccuracy = currentAccuracy; }
         public List<String> getLogs() { return logs; }
+        public void setLogs(List<String> logs) { this.logs = logs; }
         public Future<?> getFuture() { return future; }
         public void setFuture(Future<?> future) { this.future = future; }
         public long getStartTime() { return startTime; }
+        public void setStartTime(long startTime) { this.startTime = startTime; }
         public long getEndTime() { return endTime; }
         public void setEndTime(long endTime) { this.endTime = endTime; }
-        
+    
         public void addLog(String level, String message) {
             String timestamp = new Date().toString();
             String logEntry = String.format("%s [%s] %s", timestamp, level, message);
@@ -405,6 +421,25 @@ public class NLPTrainingEngine {
     }
 
     /**
+     * 对文本进行分词
+     * 
+     * @param text 输入文本
+     * @return 分词结果
+     */
+    public List<String> tokenize(String text) {
+        // 文本清理
+        String cleanText = textCleanPattern.matcher(text).replaceAll(" ");
+        
+        // 简单分词（按空格分割）
+        List<String> tokens = Arrays.stream(cleanText.toLowerCase().split("\\s+"))
+            .filter(token -> !token.trim().isEmpty())
+            .filter(token -> token.length() > 1) // 过滤单字符
+            .collect(Collectors.toList());
+            
+        return tokens;
+    }
+    
+    /**
      * 数据预处理
      */
     private void preprocessDataset(Dataset dataset) {
@@ -464,7 +499,7 @@ public class NLPTrainingEngine {
     }
 
     /**
-     * 保存模型
+     * 保存训练好的模型到文件系统
      */
     private void saveModel(TrainingTask task, Object classifier) {
         try {
@@ -488,11 +523,33 @@ public class NLPTrainingEngine {
                     writer.println("Classifier Type: FruitRecommendationClassifier");
                     writer.println("Fruit Scores Count: " + fruitClassifier.fruitScores.size());
                     writer.println("User Preferences Count: " + fruitClassifier.userPreferences.size());
+                    
+                    // 保存水果推荐模型数据
+                    Path fruitDataPath = modelDir.resolve("fruit_data.ser");
+                    try (ObjectOutputStream oos = new ObjectOutputStream(Files.newOutputStream(fruitDataPath))) {
+                        oos.writeObject(fruitClassifier.fruitScores);
+                        oos.writeObject(fruitClassifier.userPreferences);
+                        oos.writeObject(fruitClassifier.fruitFeatures);
+                    }
                 } else if (classifier instanceof NaiveBayesClassifier) {
                     NaiveBayesClassifier nbClassifier = (NaiveBayesClassifier) classifier;
                     writer.println("Classifier Type: NaiveBayesClassifier");
                     writer.println("Class Probabilities Count: " + nbClassifier.classProbabilities.size());
+                    
+                    // 保存朴素贝叶斯模型数据
+                    Path nbDataPath = modelDir.resolve("nb_data.ser");
+                    try (ObjectOutputStream oos = new ObjectOutputStream(Files.newOutputStream(nbDataPath))) {
+                        oos.writeObject(nbClassifier.classProbabilities);
+                        oos.writeObject(nbClassifier.featureProbabilities);
+                        oos.writeObject(nbClassifier.vocabulary);
+                    }
                 }
+            }
+            
+            // 保存词汇表
+            Path vocabPath = modelDir.resolve("vocabulary.ser");
+            try (ObjectOutputStream oos = new ObjectOutputStream(Files.newOutputStream(vocabPath))) {
+                oos.writeObject(vocabulary);
             }
             
             task.addLog("INFO", "模型已保存到: " + modelDir.toString());
@@ -502,7 +559,131 @@ public class NLPTrainingEngine {
             log.error("Failed to save model for task {}", task.getId(), e);
         }
     }
-
+    
+    /**
+     * 从文件系统加载训练好的模型
+     */
+    public Object loadModel(Long taskId) {
+        try {
+            Path modelDir = Paths.get("models", "task_" + taskId);
+            if (!Files.exists(modelDir)) {
+                throw new FileNotFoundException("模型目录不存在: " + modelDir.toString());
+            }
+            
+            // 读取模型信息
+            Path modelInfoPath = modelDir.resolve("model_info.txt");
+            List<String> lines = Files.readAllLines(modelInfoPath);
+            
+            String modelType = null;
+            for (String line : lines) {
+                if (line.startsWith("Model Type: ")) {
+                    modelType = line.substring("Model Type: ".length()).trim();
+                    break;
+                }
+            }
+            
+            if (modelType == null) {
+                throw new RuntimeException("无法确定模型类型");
+            }
+            
+            // 根据模型类型加载相应的模型数据
+            if ("fruit_recommendation".equals(modelType)) {
+                Path fruitDataPath = modelDir.resolve("fruit_data.ser");
+                if (!Files.exists(fruitDataPath)) {
+                    throw new FileNotFoundException("水果推荐模型数据文件不存在: " + fruitDataPath.toString());
+                }
+                
+                FruitRecommendationClassifier classifier = new FruitRecommendationClassifier();
+                try (ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(fruitDataPath))) {
+                    classifier.fruitScores = (Map<String, Double>) ois.readObject();
+                    classifier.userPreferences = (Map<String, Map<String, Double>>) ois.readObject();
+                    classifier.fruitFeatures = (Map<String, Map<String, Double>>) ois.readObject();
+                }
+                
+                return classifier;
+            } else if ("text_classification".equals(modelType)) {
+                Path nbDataPath = modelDir.resolve("nb_data.ser");
+                if (!Files.exists(nbDataPath)) {
+                    throw new FileNotFoundException("朴素贝叶斯模型数据文件不存在: " + nbDataPath.toString());
+                }
+                
+                NaiveBayesClassifier classifier = new NaiveBayesClassifier();
+                try (ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(nbDataPath))) {
+                    classifier.classProbabilities = (Map<String, Double>) ois.readObject();
+                    classifier.featureProbabilities = (Map<String, Map<String, Double>>) ois.readObject();
+                    classifier.vocabulary = (Set<String>) ois.readObject();
+                }
+                
+                return classifier;
+            }
+            
+            throw new RuntimeException("不支持的模型类型: " + modelType);
+            
+        } catch (Exception e) {
+            log.error("加载模型失败，任务ID: {}", taskId, e);
+            throw new RuntimeException("加载模型失败: " + e.getMessage(), e);
+        }
+    }
+    
+    /**
+     * 使用模型进行预测
+     */
+    public Map<String, Object> predictWithModel(Long taskId, Map<String, Object> input) {
+        TrainingTask task = runningTasks.get(taskId);
+        if (task == null) {
+            throw new RuntimeException("训练任务不存在");
+        }
+        
+        if (!"completed".equals(task.getStatus())) {
+            throw new RuntimeException("模型尚未训练完成");
+        }
+        
+        // 加载模型
+        Object model = loadModel(taskId);
+        if (model == null) {
+            throw new RuntimeException("模型加载失败");
+        }
+        
+        // 根据模型类型进行预测
+        Map<String, Object> result = new HashMap<>();
+        String text = (String) input.get("text");
+        
+        if (model instanceof FruitRecommendationClassifier) {
+            // 水果推荐预测
+            FruitRecommendationClassifier classifier = (FruitRecommendationClassifier) model;
+            List<String> recommendations = classifier.recommend(text, 5); // 推荐前5个水果
+            
+            result.put("type", "fruit_recommendation");
+            result.put("recommendations", recommendations);
+            result.put("input", text);
+            
+        } else if (model instanceof NaiveBayesClassifier) {
+            // 文本分类预测
+            NaiveBayesClassifier classifier = (NaiveBayesClassifier) model;
+            Map<String, Double> scores = classifier.predict(tokenize(text));
+            String predictedClass = classifier.classify(tokenize(text));
+            
+            result.put("type", "text_classification");
+            result.put("predictedClass", predictedClass);
+            result.put("scores", scores);
+            result.put("input", text);
+            
+        } else {
+            throw new RuntimeException("不支持的模型类型");
+        }
+        
+        return result;
+    }
+    
+    /**
+     * 检查模型是否存在
+     */
+    public boolean isModelExists(Long taskId) {
+        Path modelDir = Paths.get("models", "task_" + taskId);
+        Path modelInfoPath = modelDir.resolve("model_info.txt");
+        return Files.exists(modelInfoPath);
+    }
+    
     /**
      * 停止训练任务
      */
@@ -619,51 +800,24 @@ public class NLPTrainingEngine {
      /**
       * 导出模型
       */
-     public Map<String, Object> exportModel(Long taskId, String format) {
-         TrainingTask task = runningTasks.get(taskId);
-         if (task == null) {
-             throw new RuntimeException("训练任务不存在");
-         }
-         
-         if (!"completed".equals(task.getStatus()) && !"deployed".equals(task.getStatus())) {
-             throw new RuntimeException("模型尚未训练完成");
-         }
-         
-         Map<String, Object> export = new HashMap<>();
-         
-         // 生成导出文件路径
-         String filename = String.format("model_%s_%d.%s", 
-             task.getName().replaceAll("\\s+", "_"), taskId, format.toLowerCase());
-         String exportPath = "exports/models/" + filename;
-         
-         // 模拟导出过程
-         try {
-             // 创建导出目录
-             java.nio.file.Path exportDir = java.nio.file.Paths.get("exports/models");
-             if (!java.nio.file.Files.exists(exportDir)) {
-                 java.nio.file.Files.createDirectories(exportDir);
-             }
-             
-             // 模拟保存模型文件
-             String modelData = String.format("NLP Model Export\nTask: %s\nModel Type: %s\nFormat: %s\nExport Time: %s", 
-                 task.getName(), task.getModelType(), format, new Date());
-             java.nio.file.Files.write(java.nio.file.Paths.get(exportPath), modelData.getBytes());
-             
-             export.put("filename", filename);
-             export.put("filePath", exportPath);
-             export.put("format", format);
-             export.put("size", modelData.length());
-             export.put("exportTime", new Date());
-             export.put("downloadUrl", "/api/training/models/download/" + filename);
-             
-             task.addLog("INFO", String.format("模型已导出: %s", filename));
-             
-         } catch (Exception e) {
-             throw new RuntimeException("模型导出失败: " + e.getMessage(), e);
-         }
-         
-         return export;
-     }
+     public void exportModel(Long taskId, String format) {
+        TrainingTask task = runningTasks.get(taskId);
+        if (task == null) {
+            throw new RuntimeException("训练任务不存在");
+        }
+        
+        if (!"completed".equals(task.getStatus())) {
+            throw new RuntimeException("模型尚未训练完成");
+        }
+        
+        // 检查模型是否存在
+        if (!isModelExists(taskId)) {
+            throw new RuntimeException("模型文件不存在");
+        }
+        
+        // 这里可以添加实际的导出逻辑
+        task.addLog("INFO", "模型导出请求: format=" + format);
+    }
  
      /**
       * 获取训练任务
@@ -776,5 +930,21 @@ public class NLPTrainingEngine {
             trainingExecutor.shutdownNow();
             Thread.currentThread().interrupt();
         }
+    }
+    
+    /**
+     * 添加任务到引擎中
+     * @param task 训练任务
+     */
+    public void addTask(TrainingTask task) {
+        runningTasks.put(task.getId(), task);
+    }
+    
+    /**
+     * 获取所有任务
+     * @return 所有任务的集合
+     */
+    public Map<Long, TrainingTask> getAllTasks() {
+        return runningTasks;
     }
 }

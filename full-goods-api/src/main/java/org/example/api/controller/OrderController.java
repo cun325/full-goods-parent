@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.api.dto.CreateOrderDTO;
 import org.example.api.mapper.OrderItemMapper;
 import org.example.api.mapper.OrderMapper;
+import org.example.api.mapper.FruitMapper;
 import org.example.api.service.OrderService;
 import org.example.api.service.UserService;
 import org.example.api.vo.OrderItemVO;
@@ -25,7 +26,13 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.math.BigDecimal;
 import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Calendar;
 import java.util.stream.Collectors;
 
 /**
@@ -48,6 +55,9 @@ public class OrderController {
 
     @Autowired
     private OrderMapper orderMapper;
+    
+    @Autowired
+    private FruitMapper fruitMapper;
 
     @PostMapping("/create")
     @ApiOperation(value = "创建订单", notes = "用户创建新订单，支持购物车结算和立即购买")
@@ -472,6 +482,10 @@ public class OrderController {
             Long todayOrders = orderMapper.countTodayOrders();
             statistics.put("todayOrders", todayOrders);
             
+            // 今日销售额
+            BigDecimal todayRevenue = orderMapper.sumTodayRevenue();
+            statistics.put("todayRevenue", todayRevenue != null ? todayRevenue : BigDecimal.ZERO);
+            
             // 各状态订单数
             Long pendingOrders = orderMapper.countByStatus(0); // 待支付
             Long paidOrders = orderMapper.countByStatus(1); // 已支付
@@ -485,6 +499,10 @@ public class OrderController {
             statistics.put("completedOrders", completedOrders);
             statistics.put("cancelledOrders", cancelledOrders);
             
+            // 库存不足商品数（库存小于等于10）
+            Long lowStockProducts = fruitMapper.countLowStock(10);
+            statistics.put("lowStockProducts", lowStockProducts);
+            
             // 月增长率
             Double monthlyGrowth = orderMapper.calculateMonthlyGrowth();
             statistics.put("monthlyGrowth", monthlyGrowth);
@@ -493,6 +511,69 @@ public class OrderController {
         } catch (Exception e) {
             log.error("获取订单统计数据失败", e);
             return Result.failed("获取订单统计数据失败");
+        }
+    }
+    
+    @GetMapping("/admin/today-revenue")
+    @ApiOperation("管理员获取今日销售额")
+    public Result<java.util.Map<String, Object>> getTodayRevenue() {
+        try {
+            java.util.Map<String, Object> result = new java.util.HashMap<>();
+            
+            // 今日销售额
+            BigDecimal todayRevenue = orderMapper.sumTodayRevenue();
+            result.put("todayRevenue", todayRevenue != null ? todayRevenue : BigDecimal.ZERO);
+            
+            return Result.success(result);
+        } catch (Exception e) {
+            log.error("获取今日销售额失败", e);
+            return Result.failed("获取今日销售额失败");
+        }
+    }
+    
+    /**
+     * 获取销售趋势数据
+     */
+    @GetMapping("/sales-trend")
+    @ApiOperation("获取销售趋势数据")
+    public Result<Map<String, Object>> getSalesTrend(@RequestParam(defaultValue = "7") int days) {
+        try {
+            Map<String, Object> trendData = new HashMap<>();
+            
+            // 计算日期范围
+            List<String> dates = new ArrayList<>();
+            List<BigDecimal> sales = new ArrayList<>();
+            List<Integer> orders = new ArrayList<>();
+            
+            Calendar calendar = Calendar.getInstance();
+            calendar.add(Calendar.DAY_OF_YEAR, -(days - 1));
+            
+            for (int i = 0; i < days; i++) {
+                // 格式化日期
+                String dateStr = String.format("%tY-%tm-%td", calendar, calendar, calendar);
+                dates.add(dateStr);
+                
+                // 获取该日期的销售数据
+                Date startDate = calendar.getTime();
+                calendar.add(Calendar.DAY_OF_YEAR, 1);
+                Date endDate = calendar.getTime();
+                
+                // 查询该日期的订单数量和销售总额
+                Integer orderCount = orderMapper.countByDateRange(startDate, endDate);
+                BigDecimal totalSales = orderMapper.sumSalesByDateRange(startDate, endDate);
+                
+                orders.add(orderCount != null ? orderCount : 0);
+                sales.add(totalSales != null ? totalSales : BigDecimal.ZERO);
+            }
+            
+            trendData.put("dates", dates);
+            trendData.put("sales", sales);
+            trendData.put("orders", orders);
+            
+            return Result.success(trendData);
+        } catch (Exception e) {
+            log.error("获取销售趋势数据失败", e);
+            return Result.failed("获取销售趋势数据失败: " + e.getMessage());
         }
     }
 }
