@@ -26,4 +26,7 @@ public class CategoryVO implements Serializable {
 
     @ApiModelProperty(value = "图标URL")
     private String iconUrl;
+    
+    @ApiModelProperty(value = "水果数量")
+    private Integer fruitCount;
 }

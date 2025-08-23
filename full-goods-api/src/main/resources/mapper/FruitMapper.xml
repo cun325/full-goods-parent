@@ -141,7 +141,8 @@
     
     <select id="selectByKeywords" resultMap="BaseResultMap">
         SELECT
-        <include refid="Base_Column_List" />,
+        <include refid="Base_Column_List" />
+        ,
         (
             <foreach collection="keywords" item="keyword" separator=" + ">
                 (
@@ -399,6 +400,16 @@
             </if>
         </where>
         ORDER BY f.recommended DESC, f.id ASC
+    </select>
+    
+    <!-- 统计各分类的水果数量 -->
+    <select id="selectCategoryCounts" resultType="org.example.api.mapper.FruitMapper$CategoryCount">
+        SELECT 
+            fc.name as category,
+            COUNT(f.id) as count
+        FROM t_fruit_category fc
+        LEFT JOIN t_fruit f ON fc.id = f.category_id AND f.status = 1
+        GROUP BY fc.id, fc.name
     </select>
     
 </mapper>

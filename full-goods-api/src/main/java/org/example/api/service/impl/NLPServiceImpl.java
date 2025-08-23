@@ -30,7 +30,7 @@ public class NLPServiceImpl implements NLPService {
     private static final Map<String, Integer> SENTIMENT_DICT = new HashMap<>();
     
     // 初始化特性关键词和情感词典
-    static {
+  /*  static {
         // 口感相关关键词 - 更详细的分类
         TASTE_KEYWORDS.put("甜", Arrays.asList("甜", "香甜", "清甜", "甜腻", "甜美", "甘甜", "蜜甜", "甜润"));
         TASTE_KEYWORDS.put("酸", Arrays.asList("酸", "酸甜", "微酸", "酸爽", "酸涩", "酸味"));
@@ -67,7 +67,7 @@ public class NLPServiceImpl implements NLPService {
         SENTIMENT_DICT.put("讨厌", -1);
         SENTIMENT_DICT.put("难吃", -1);
     }
-
+*/
     @Override
     public Map<String, Object> analyzeInput(String input) {
         Map<String, Object> result = new HashMap<>();

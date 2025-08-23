@@ -2,6 +2,7 @@ package org.example.api.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 import org.example.api.vo.FruitVO;
 import org.example.common.entity.Fruit;
 import org.example.common.entity.FlashSale;
@@ -98,6 +99,15 @@ public interface FruitMapper {
      * @return 水果列表
      */
     List<Fruit> selectByKeywords(@Param("keywords") List<String> keywords);
+
+    /**
+     * 根据水果名称查询
+     *
+     * @param name 水果名称
+     * @return 水果信息
+     */
+    @Select("SELECT * FROM fruit WHERE name = #{name} AND status = 1")
+    Fruit selectByName(@Param("name") String name);
 
     /**
      * 新增水果
@@ -243,4 +253,33 @@ public interface FruitMapper {
       * @return 商品列表（包含限时特惠信息）
       */
      List<FruitVO> selectWithFlashSaleInfo(@Param("search") String search, @Param("category") String category, @Param("status") Integer status);
+     
+     /**
+      * 统计各分类的水果数量
+      *
+      * @return 分类统计列表
+      */
+     List<CategoryCount> selectCategoryCounts();
+     
+     class CategoryCount {
+        private String category;
+        private int count;
+        
+        // getters and setters
+        public String getCategory() {
+            return category;
+        }
+        
+        public void setCategory(String category) {
+            this.category = category;
+        }
+        
+        public int getCount() {
+            return count;
+        }
+        
+        public void setCount(int count) {
+            this.count = count;
+        }
+    }
 }

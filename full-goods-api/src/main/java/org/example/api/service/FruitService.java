@@ -94,7 +94,7 @@ public interface FruitService {
      * @return 水果列表
      */
     List<Fruit> getFruitsByCategory(String category);
-    
+
     /**
      * 根据分类ID获取水果列表
      *
