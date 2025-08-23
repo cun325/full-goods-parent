@@ -31,7 +31,7 @@ public class AdminOrderServiceImpl implements AdminOrderService {
     @Override
     public Map<String, Object> getOrderList(int page, int size, String search, String status, String startDate, String endDate) {
         try {
-            // 构建查询参数
+            // 构建查询参数，注意PageHelper页码从1开始
             StringBuilder url = new StringBuilder(API_BASE_URL + "/order/admin/list?page=" + page + "&size=" + size);
             if (search != null && !search.trim().isEmpty()) {
                 url.append("&search=").append(search);
@@ -60,8 +60,9 @@ public class AdminOrderServiceImpl implements AdminOrderService {
                 Map<String, Object> adminResult = new HashMap<>();
                 adminResult.put("list", data.get("list"));
                 adminResult.put("total", data.get("total"));
-                adminResult.put("page", data.get("pageNum"));
-                adminResult.put("size", data.get("pageSize"));
+                adminResult.put("pageNum", data.get("pageNum"));
+                adminResult.put("pageSize", data.get("pageSize"));
+                adminResult.put("pages", data.get("pages"));
                 return adminResult;
             } else {
                 throw new RuntimeException("API调用失败");
