@@ -143,6 +143,17 @@ public class FruitServiceImpl implements FruitService {
         List<String> keywords = nlpService.extractKeywords(recommendDTO.getCondition());
         log.info("解析关键词: {}", keywords);
         
+        // 检查关键词列表是否为空
+        if (keywords == null || keywords.isEmpty()) {
+            // 如果没有关键词，返回所有水果
+            List<Fruit> allFruits = getAllFruits();
+            int limit = recommendDTO.getLimit() != null ? recommendDTO.getLimit() : 5;
+            if (allFruits.size() > limit) {
+                return new ArrayList<>(allFruits.subList(0, limit));
+            }
+            return allFruits;
+        }
+        
         // 根据关键词查询水果
         List<Fruit> recommendList = fruitMapper.selectByKeywords(keywords);
         log.info("回退推荐水果数量: {}", recommendList.size());
@@ -172,9 +183,9 @@ public class FruitServiceImpl implements FruitService {
         saveRecommendHistory(userId, recommendDTO.getCondition());
         
         // 处理图片URL
-     /*   for (Fruit fruit : recommendList) {
+        for (Fruit fruit : recommendList) {
             fruit.setImageUrl(processImageUrl(fruit.getImageUrl()));
-        }*/
+        }
         
         return recommendList;
     }
@@ -188,7 +199,7 @@ public class FruitServiceImpl implements FruitService {
         history.setUserId(userId);
         history.setCondition(condition);
         history.setCreateTime(new Date());
-        
+        log.info("保存推荐历史记录开始");
         // 保存到数据库
         int result = recommendHistoryMapper.insert(history);
         

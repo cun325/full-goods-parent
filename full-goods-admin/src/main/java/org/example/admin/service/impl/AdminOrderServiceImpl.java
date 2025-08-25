@@ -27,51 +27,86 @@ public class AdminOrderServiceImpl implements AdminOrderService {
     private RestTemplate restTemplate;
 
     private static final String API_BASE_URL = "http://localhost:8080/api";
+//
+//    @Override
+//    public Map<String, Object> getOrderList(int page, int size, String search, String status, String startDate, String endDate) {
+//        try {
+//            // 构建查询参数，注意PageHelper页码从1开始
+//            StringBuilder url = new StringBuilder(API_BASE_URL + "/order/admin/list?page=" + page + "&size=" + size);
+//            if (search != null && !search.trim().isEmpty()) {
+//                url.append("&search=").append(search);
+//            }
+//            if (status != null && !status.trim().isEmpty()) {
+//                url.append("&status=").append(status);
+//            }
+//            if (startDate != null && !startDate.trim().isEmpty()) {
+//                url.append("&startDate=").append(startDate);
+//            }
+//            if (endDate != null && !endDate.trim().isEmpty()) {
+//                url.append("&endDate=").append(endDate);
+//            }
+//
+//            ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
+//                url.toString(),
+//                HttpMethod.GET,
+//                null,
+//                new ParameterizedTypeReference<Map<String, Object>>() {}
+//            );
+//
+//            Map<String, Object> result = response.getBody();
+//            if (result != null && result.get("code").equals(200)) {
+//                // 提取data字段中的PageInfo数据
+//                Map<String, Object> data = (Map<String, Object>) result.get("data");
+//                Map<String, Object> adminResult = new HashMap<>();
+//                adminResult.put("list", data.get("list"));
+//                adminResult.put("total", data.get("total"));
+//                adminResult.put("pageNum", data.get("pageNum"));
+//                adminResult.put("pageSize", data.get("pageSize"));
+//                adminResult.put("pages", data.get("pages"));
+//                return adminResult;
+//            } else {
+//                throw new RuntimeException("API调用失败");
+//            }
+//        } catch (Exception e) {
+//            throw new RuntimeException("获取订单列表失败: " + e.getMessage());
+//        }
+//    }
+@Override
+public Map<String, Object> getOrderList(int page, int size, String search, String status, String startDate, String endDate) {
+    try {
+        // 构建查询参数
+        StringBuilder url = new StringBuilder(API_BASE_URL + "/order/admin/list?page=" + page + "&size=" + size);
+        if (search != null && !search.trim().isEmpty()) {
+            url.append("&search=").append(search);
+        }
+        if (status != null && !status.trim().isEmpty()) {
+            url.append("&status=").append(status);
+        }
+        if (startDate != null && !startDate.trim().isEmpty()) {
+            url.append("&startDate=").append(startDate);
+        }
+        if (endDate != null && !endDate.trim().isEmpty()) {
+            url.append("&endDate=").append(endDate);
+        }
 
-    @Override
-    public Map<String, Object> getOrderList(int page, int size, String search, String status, String startDate, String endDate) {
-        try {
-            // 构建查询参数，注意PageHelper页码从1开始
-            StringBuilder url = new StringBuilder(API_BASE_URL + "/order/admin/list?page=" + page + "&size=" + size);
-            if (search != null && !search.trim().isEmpty()) {
-                url.append("&search=").append(search);
-            }
-            if (status != null && !status.trim().isEmpty()) {
-                url.append("&status=").append(status);
-            }
-            if (startDate != null && !startDate.trim().isEmpty()) {
-                url.append("&startDate=").append(startDate);
-            }
-            if (endDate != null && !endDate.trim().isEmpty()) {
-                url.append("&endDate=").append(endDate);
-            }
-
-            ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
+        ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
                 url.toString(),
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<Map<String, Object>>() {}
-            );
+        );
 
-            Map<String, Object> result = response.getBody();
-            if (result != null && result.get("code").equals(200)) {
-                // 提取data字段中的PageInfo数据
-                Map<String, Object> data = (Map<String, Object>) result.get("data");
-                Map<String, Object> adminResult = new HashMap<>();
-                adminResult.put("list", data.get("list"));
-                adminResult.put("total", data.get("total"));
-                adminResult.put("pageNum", data.get("pageNum"));
-                adminResult.put("pageSize", data.get("pageSize"));
-                adminResult.put("pages", data.get("pages"));
-                return adminResult;
-            } else {
-                throw new RuntimeException("API调用失败");
-            }
-        } catch (Exception e) {
-            throw new RuntimeException("获取订单列表失败: " + e.getMessage());
+        Map<String, Object> result = response.getBody();
+        if (result != null && result.get("code").equals(200)) {
+            // 直接返回API的数据，保持PageInfo结构的完整性
+            return (Map<String, Object>) result.get("data");
+        } else {
+            throw new RuntimeException("API调用失败");
         }
+    } catch (Exception e) {
+        throw new RuntimeException("获取订单列表失败: " + e.getMessage());
     }
-
+}
     @Override
     public Order getOrderById(Long id) {
         try {

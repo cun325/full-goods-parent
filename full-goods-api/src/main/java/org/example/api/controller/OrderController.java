@@ -369,95 +369,183 @@ public class OrderController {
             return Result.failed("确认收货失败");
         }
     }
+//
+//    @GetMapping("/admin/list")
+//    @ApiOperation("管理员获取订单列表（分页）")
+//    public Result<PageInfo<OrderVO>> getOrderListForAdmin(
+//            @ApiParam("页码") @RequestParam(defaultValue = "1") Integer page,
+//            @ApiParam("每页大小") @RequestParam(defaultValue = "10") Integer size,
+//            @ApiParam("搜索关键词") @RequestParam(required = false) String search,
+//            @ApiParam("订单状态") @RequestParam(required = false) String status,
+//            @ApiParam("用户ID") @RequestParam(required = false) Long userId) {
+//        try {
+//            // 设置分页参数
+//            PageHelper.startPage(page, size);
+//
+//            // 将字符串状态转换为整数状态
+//            Integer statusInt = null;
+//            if (StringUtils.hasText(status)) {
+//                switch (status.toLowerCase()) {
+//                    case "pending":
+//                        statusInt = 0; // 待付款
+//                        break;
+//                    case "paid":
+//                        statusInt = 1; // 已付款（待发货）
+//                        break;
+//                    case "shipped":
+//                        statusInt = 2; // 已发货
+//                        break;
+//                    case "delivered":
+//                        statusInt = 3; // 已送达
+//                        break;
+//                    case "cancelled":
+//                        statusInt = 4; // 已取消
+//                        break;
+//                    default:
+//                        try {
+//                            statusInt = Integer.parseInt(status);
+//                        } catch (NumberFormatException e) {
+//                            // 如果无法解析，保持为null
+//                        }
+//                        break;
+//                }
+//            }
+//
+//            List<Order> orders;
+//            Long total = 0L;
+//            if (StringUtils.hasText(search) || statusInt != null || userId != null) {
+//                // 根据条件查询
+//                orders = orderMapper.selectByConditionsWithPage(search, statusInt);
+//                // 手动查询总数
+//                total = orderMapper.countTotal(); // 这里应该根据条件查询对应的count方法
+//            } else {
+//                // 查询所有
+//                orders = orderMapper.selectAllWithPage();
+//                // 查询所有订单总数
+//                total = orderMapper.countTotal();
+//            }
+//
+//            // 转换为VO并获取订单项
+//            List<OrderVO> orderVOList = orders.stream().map(order -> {
+//                OrderVO orderVO = new OrderVO();
+//                BeanUtils.copyProperties(order, orderVO);
+//
+//                // 获取订单项列表
+//                List<OrderItem> orderItems = orderItemMapper.selectByOrderId(order.getId());
+//                List<OrderItemVO> orderItemVOList = orderItems.stream().map(item -> {
+//                    OrderItemVO itemVO = new OrderItemVO();
+//                    BeanUtils.copyProperties(item, itemVO);
+//                    return itemVO;
+//                }).collect(Collectors.toList());
+//                orderVO.setItems(orderItemVOList);
+//
+//                // 计算商品总数量
+//                Integer totalQuantity = orderItems.stream()
+//                    .mapToInt(OrderItem::getQuantity)
+//                    .sum();
+//                orderVO.setTotalQuantity(totalQuantity);
+//
+//                return orderVO;
+//            }).collect(Collectors.toList());
+//
+//            // 创建分页信息
+//            PageInfo<OrderVO> pageInfo = new PageInfo<>(orderVOList);
+//
+//            return Result.success(pageInfo);
+//        } catch (Exception e) {
+//            log.error("获取订单列表失败", e);
+//            return Result.failed("获取订单列表失败");
+//        }
+//    }
+//
+@GetMapping("/admin/list")
+@ApiOperation("管理员获取订单列表（分页）")
+public Result<PageInfo<OrderVO>> getOrderListForAdmin(
+        @ApiParam("页码") @RequestParam(defaultValue = "1") Integer page,
+        @ApiParam("每页大小") @RequestParam(defaultValue = "10") Integer size,
+        @ApiParam("搜索关键词") @RequestParam(required = false) String search,
+        @ApiParam("订单状态") @RequestParam(required = false) String status,
+        @ApiParam("用户ID") @RequestParam(required = false) Long userId) {
+    try {
+        // 设置分页参数
+        PageHelper.startPage(page, size);
 
-    @GetMapping("/admin/list")
-    @ApiOperation("管理员获取订单列表（分页）")
-    public Result<PageInfo<OrderVO>> getOrderListForAdmin(
-            @ApiParam("页码") @RequestParam(defaultValue = "1") Integer page,
-            @ApiParam("每页大小") @RequestParam(defaultValue = "10") Integer size,
-            @ApiParam("搜索关键词") @RequestParam(required = false) String search,
-            @ApiParam("订单状态") @RequestParam(required = false) String status,
-            @ApiParam("用户ID") @RequestParam(required = false) Long userId) {
-        try {
-            // 设置分页参数
-            PageHelper.startPage(page, size);
-            
-            // 将字符串状态转换为整数状态
-            Integer statusInt = null;
-            if (StringUtils.hasText(status)) {
-                switch (status.toLowerCase()) {
-                    case "pending":
-                        statusInt = 0; // 待付款
-                        break;
-                    case "paid":
-                        statusInt = 1; // 已付款（待发货）
-                        break;
-                    case "shipped":
-                        statusInt = 2; // 已发货
-                        break;
-                    case "delivered":
-                        statusInt = 3; // 已送达
-                        break;
-                    case "cancelled":
-                        statusInt = 4; // 已取消
-                        break;
-                    default:
-                        try {
-                            statusInt = Integer.parseInt(status);
-                        } catch (NumberFormatException e) {
-                            // 如果无法解析，保持为null
-                        }
-                        break;
-                }
+        // 将字符串状态转换为整数状态
+        Integer statusInt = null;
+        if (StringUtils.hasText(status)) {
+            switch (status.toLowerCase()) {
+                case "pending":
+                    statusInt = 0; // 待付款
+                    break;
+                case "paid":
+                    statusInt = 1; // 已付款（待发货）
+                    break;
+                case "shipped":
+                    statusInt = 2; // 已发货
+                    break;
+                case "delivered":
+                    statusInt = 3; // 已送达
+                    break;
+                case "cancelled":
+                    statusInt = 4; // 已取消
+                    break;
+                default:
+                    try {
+                        statusInt = Integer.parseInt(status);
+                    } catch (NumberFormatException e) {
+                        // 如果无法解析，保持为null
+                    }
+                    break;
             }
+        }
 
-            List<Order> orders;
-            Long total = 0L;
-            if (StringUtils.hasText(search) || statusInt != null || userId != null) {
-                // 根据条件查询
-                orders = orderMapper.selectByConditionsWithPage(search, statusInt);
-                // 手动查询总数
-                total = orderMapper.countTotal(); // 这里应该根据条件查询对应的count方法
-            } else {
-                // 查询所有
-                orders = orderMapper.selectAllWithPage();
-                // 查询所有订单总数
-                total = orderMapper.countTotal();
-            }
-            
-            // 转换为VO并获取订单项
-            List<OrderVO> orderVOList = orders.stream().map(order -> {
-                OrderVO orderVO = new OrderVO();
-                BeanUtils.copyProperties(order, orderVO);
-                
-                // 获取订单项列表
-                List<OrderItem> orderItems = orderItemMapper.selectByOrderId(order.getId());
-                List<OrderItemVO> orderItemVOList = orderItems.stream().map(item -> {
-                    OrderItemVO itemVO = new OrderItemVO();
-                    BeanUtils.copyProperties(item, itemVO);
-                    return itemVO;
-                }).collect(Collectors.toList());
-                orderVO.setItems(orderItemVOList);
-                
-                // 计算商品总数量
-                Integer totalQuantity = orderItems.stream()
+        List<Order> orders;
+        Long total = 0L;
+        if (StringUtils.hasText(search) || statusInt != null || userId != null) {
+            // 根据条件查询
+            orders = orderMapper.selectByConditionsWithPage(search, statusInt);
+            // 手动查询总数
+            total = orderMapper.countTotal(); // 这里应该根据条件查询对应的count方法
+        } else {
+            // 查询所有
+            orders = orderMapper.selectAllWithPage();
+            // 查询所有订单总数
+            total = orderMapper.countTotal();
+        }
+
+        // 转换为VO并获取订单项
+        List<OrderVO> orderVOList = orders.stream().map(order -> {
+            OrderVO orderVO = new OrderVO();
+            BeanUtils.copyProperties(order, orderVO);
+
+            // 获取订单项列表
+            List<OrderItem> orderItems = orderItemMapper.selectByOrderId(order.getId());
+            List<OrderItemVO> orderItemVOList = orderItems.stream().map(item -> {
+                OrderItemVO itemVO = new OrderItemVO();
+                BeanUtils.copyProperties(item, itemVO);
+                return itemVO;
+            }).collect(Collectors.toList());
+            orderVO.setItems(orderItemVOList);
+
+            // 计算商品总数量
+            Integer totalQuantity = orderItems.stream()
                     .mapToInt(OrderItem::getQuantity)
                     .sum();
-                orderVO.setTotalQuantity(totalQuantity);
-                
-                return orderVO;
-            }).collect(Collectors.toList());
-            
-            // 创建分页信息
-            PageInfo<OrderVO> pageInfo = new PageInfo<>(orderVOList);
-            
-            return Result.success(pageInfo);
-        } catch (Exception e) {
-            log.error("获取订单列表失败", e);
-            return Result.failed("获取订单列表失败");
-        }
-    }
-    
+            orderVO.setTotalQuantity(totalQuantity);
+
+            return orderVO;
+        }).collect(Collectors.toList());
+
+        // 创建分页信息
+        PageInfo<OrderVO> pageInfo = new PageInfo<>(orderVOList);
+        // 手动设置正确的总数
+        pageInfo.setTotal(total);
+
+        return Result.success(pageInfo);
+    } catch (Exception e) {
+        log.error("获取订单列表失败", e);
+        return Result.failed("获取订单列表失败");
+    }}
     @GetMapping("/admin/detail/{orderId}")
     @ApiOperation("管理员获取订单详情")
     public Result<OrderVO> getOrderDetailForAdmin(@PathVariable Long orderId) {

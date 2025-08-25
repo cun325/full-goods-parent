@@ -106,7 +106,7 @@ public interface FruitMapper {
      * @param name 水果名称
      * @return 水果信息
      */
-   // @Select("SELECT * FROM fruit WHERE name = #{name} AND status = 1")
+  //  @Select("SELECT * FROM t_fruit WHERE name = #{name} AND status = 1")
     Fruit selectByName(@Param("name") String name);
 
     /**
